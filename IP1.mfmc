@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>IP1</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Encoder Name="Encoder" PinLeft="2" PinRight="3" EncoderType="0" />
+  <Encoder Name="Encoder 1" PinLeft="4" PinRight="5" EncoderType="0" />
+  <Encoder Name="Encoder 2" PinLeft="6" PinRight="7" EncoderType="0" />
+  <Encoder Name="Encoder 3" PinLeft="8" PinRight="9" EncoderType="0" />
+  <Button Name="Heading Push" Pin="10" />
+  <Button Name="NAV GPS" Pin="11" />
+  <Encoder Name="Encoder 4" PinLeft="12" PinRight="13" EncoderType="0" />
+  <Encoder Name="Encoder 5" PinLeft="14" PinRight="15" EncoderType="0" />
+  <Encoder Name="Encoder 6" PinLeft="16" PinRight="17" EncoderType="0" />
+</Config>

@@ -1,2 +1,3 @@
-# c172-mobiflight
-Cessna 172 Homepit MobiFlight Configurations
+# C172 MobiFlight
+
+MobiFlight Configurations for my Cessna 172 Homepit

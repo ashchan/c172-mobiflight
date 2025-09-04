@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>GNS</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="COM_SWAP" Pin="10" />
+  <Button Name="COM_PRESS" Pin="45" />
+  <Button Name="NAV_SWAP" Pin="46" />
+  <Encoder Name="NAV" PinLeft="47" PinRight="48" EncoderType="0" />
+  <Button Name="NAV_PRESS" Pin="49" />
+  <Button Name="CDI" Pin="34" />
+  <Button Name="OBS" Pin="35" />
+  <Button Name="MSG" Pin="36" />
+  <Button Name="FPL" Pin="37" />
+  <Button Name="VNAV" Pin="38" />
+  <Button Name="PROC" Pin="39" />
+  <Button Name="R_PRESS" Pin="59" />
+  <Button Name="ENT" Pin="60" />
+  <Button Name="CLR" Pin="61" />
+  <Button Name="MENU" Pin="64" />
+  <Button Name="DIRECT" Pin="65" />
+  <Button Name="RNG_DN" Pin="66" />
+  <Button Name="RNG_UP" Pin="67" />
+  <Encoder Name="Left Fine" PinLeft="50" PinRight="51" EncoderType="2" />
+  <Encoder Name="Left Rough" PinLeft="52" PinRight="53" EncoderType="2" />
+  <Encoder Name="Right Fine" PinLeft="40" PinRight="41" EncoderType="2" />
+  <Encoder Name="Right Rough" PinLeft="42" PinRight="43" EncoderType="2" />
+  <Encoder Name="COM" PinLeft="12" PinRight="44" EncoderType="0" />
+  <Button Name="L_PRESS" Pin="33" />
+  <Button Name="BUTTON_EXT_1" Pin="2" />
+  <Button Name="BUTTON_EXT_2" Pin="14" />
+  <Button Name="BUTTON_EXT_3" Pin="15" />
+  <Button Name="BUTTON_EXT_4" Pin="18" />
+  <Button Name="BUTTON_EXT_5" Pin="54" />
+  <Button Name="BUTTON_EXT_6" Pin="55" />
+  <Button Name="BUTTON_EXT_7" Pin="56" />
+  <Button Name="BUTTON_EXT_8" Pin="57" />
+  <Button Name="BUTTON_EXT_9" Pin="58" />
+  <Button Name="BUTTON_EXT_10" Pin="23" />
+  <Button Name="BUTTON_EXT_11" Pin="24" />
+  <Button Name="BUTTON_EXT_12" Pin="25" />
+  <Button Name="BUTTON_EXT_13" Pin="26" />
+  <Button Name="BUTTON_EXT_14" Pin="27" />
+  <Button Name="BUTTON_EXT_15" Pin="28" />
+  <Encoder Name="ENCODER_EXT_1" PinLeft="4" PinRight="5" EncoderType="2" />
+  <Encoder Name="ENCODER_EXT_2" PinLeft="16" PinRight="17" EncoderType="2" />
+  <Encoder Name="ENCODER_EXT_3" PinLeft="6" PinRight="7" EncoderType="2" />
+  <Encoder Name="ENCODER_EXT_4" PinLeft="8" PinRight="9" EncoderType="2" />
+</Config>

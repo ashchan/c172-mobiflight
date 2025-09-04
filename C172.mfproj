@@ -1,0 +1,768 @@
+{
+  "Name": "C172",
+  "ConfigFiles": [
+    {
+      "Label": "New file",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_COMSWAP_Push)",
+              "PresetId": "68675bb4-602b-4228-8866-1e0e24f46965"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 3",
+          "GUID": "5eda45bd-5e22-40e3-af1e-9ed7d631a530",
+          "Active": true,
+          "Name": "AS530 - COM Swap",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_NAVSWAP_Push)",
+              "PresetId": "9f0c963a-4940-4876-a8af-7cb60a1b9f51"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 4",
+          "GUID": "93ae2370-08f4-4afb-8d54-103eb80267fb",
+          "Active": true,
+          "Name": "AS530 - NAV Swap",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_LeftSmallKnob_Push)",
+              "PresetId": "f0260cd1-9089-4595-893d-a2b8686f2fa1"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 5",
+          "GUID": "3b3e46ca-09e7-4f7d-b964-a0c8706586ca",
+          "Active": true,
+          "Name": "AS530 - Push CV",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_LeftLargeKnob_Left)",
+              "PresetId": "05518a2f-5e17-4bae-ac90-dc5517d26277"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_LeftLargeKnob_Right)",
+              "PresetId": "defaf8fa-8018-4e70-8a7d-86e533b253f7"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 4",
+          "GUID": "9f12699f-ba60-4319-b21e-3db425fdf163",
+          "Active": true,
+          "Name": "AS530 - Left Large Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_LeftSmallKnob_Left)",
+              "PresetId": "54c9fbef-275b-4c8f-8357-c921d5c717b2"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_LeftSmallKnob_Right)",
+              "PresetId": "f27546e8-b061-464c-8509-f9e7e884e161"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 5",
+          "GUID": "26343575-6f4d-4217-8400-e88b66b0821b",
+          "Active": true,
+          "Name": "AS530 - Left Small Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_CDI_Push)",
+              "PresetId": "74d557fa-7e41-4cd4-ac0a-07054836557a"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 6",
+          "GUID": "31c60d4a-c087-448b-8a94-39aaf7ee9853",
+          "Active": true,
+          "Name": "AS530 - CDI",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_OBS_Push)",
+              "PresetId": "3d7ad856-adcc-4fc4-9c0c-c8c669439116"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 19",
+          "GUID": "78581f44-6785-410c-8272-44d5ed20be44",
+          "Active": true,
+          "Name": "AS530 - OBS",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_MSG_Push)",
+              "PresetId": "33f2e276-9327-49ee-87e5-fc6aac074656"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 20",
+          "GUID": "16b6d5f3-674b-4d11-a93f-0a2e00b27dbf",
+          "Active": true,
+          "Name": "AS530 - MSG",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_FPL_Push)",
+              "PresetId": "e2d52825-f506-4df6-a08f-ededf6320314"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 21",
+          "GUID": "55c153c4-8ce5-4ffc-b6a4-b6736afe0c9a",
+          "Active": true,
+          "Name": "AS530 - FPL",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_VNAV_Push)",
+              "PresetId": "05fef90a-d70d-4b7a-8b2c-0dddce861212"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 22",
+          "GUID": "75f9931e-9094-48a4-85ac-c29f9bce4c30",
+          "Active": true,
+          "Name": "AS530 - VNAV",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_PROC_Push)",
+              "PresetId": "86fe165a-ddb9-4657-862f-d2b0fb3a6816"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 23",
+          "GUID": "b857249e-f81b-470b-af4d-36d7b79b786b",
+          "Active": true,
+          "Name": "AS530 - PROC",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_RNG_Zoom)",
+              "PresetId": "4bed29e5-ec89-472d-afa4-29d21431857e"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 24",
+          "GUID": "975f9f8b-c4bf-4ea8-ac7f-d7b219d1cd53",
+          "Active": true,
+          "Name": " AS530 - Range Zoom",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_RNG_Dezoom)",
+              "PresetId": "98cce1bc-318d-4bd4-a378-919c875aa564"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 25",
+          "GUID": "a0ee911f-d4a5-408d-8627-de15a1f6aafd",
+          "Active": true,
+          "Name": "AS530 - Range Dezoom",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_DirectTo_Push)",
+              "PresetId": "3ae5605a-c023-4b7a-bf8e-11312b6d1986"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 26",
+          "GUID": "ad2798db-ed6b-41cd-958f-1e48e21f7ac7",
+          "Active": true,
+          "Name": "AS530 - Direct To",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_MENU_Push)",
+              "PresetId": "6af12162-8455-4f53-ad22-8fd6bb82c8f2"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 27",
+          "GUID": "7f0fbb68-8659-45ba-8045-9b7a8e17b11c",
+          "Active": true,
+          "Name": "AS530 - Menu",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_CLR_Push)",
+              "PresetId": "96dec0cd-5aac-46a9-8def-741869273cfc"
+            },
+            "onRelease": null,
+            "onLongRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_CLR_Push_Long)",
+              "PresetId": "77b5d7aa-6f17-4d0a-a716-1f5918e76f25"
+            },
+            "onHold": null,
+            "LongReleaseDelay": 2000,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 28",
+          "GUID": "d9ee75e3-ecf8-46ad-ba7a-7dbd4bf59787",
+          "Active": true,
+          "Name": "AS530 - CLR",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_ENT_Push)",
+              "PresetId": "307f9eed-94f8-41d0-b169-83d00d9a4f2f"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 29",
+          "GUID": "2b77cf83-2be9-4ad2-9e78-48d6748b437a",
+          "Active": true,
+          "Name": "AS530 - ENT",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "4e6c2031-fda8-4210-a2c3-e489a0eb02f7",
+              "Value": "(A:GENERAL ENG RPM:1,Rpm)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "RPM Stepper",
+            "Address": "RPM Stepper",
+            "InputRev": 3500,
+            "TestValue": 500,
+            "OutputRev": 1470,
+            "CompassMode": false,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "RPM Stepper",
+          "GUID": "7907042c-4289-40a6-8893-76f842d82672",
+          "Active": true,
+          "Name": "IP - RPM",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        }
+      ]
+    }
+  ]
+}
