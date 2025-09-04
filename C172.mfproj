@@ -725,8 +725,8 @@
             "String": null
           },
           "Device": {
-            "Name": "RPM Stepper",
-            "Address": "RPM Stepper",
+            "Name": "Engine RPM",
+            "Address": "Engine RPM",
             "InputRev": 3500,
             "TestValue": 500,
             "OutputRev": 1470,
@@ -736,7 +736,7 @@
             "Type": "Stepper"
           },
           "DeviceType": "Stepper",
-          "DeviceName": "RPM Stepper",
+          "DeviceName": "Engine RPM",
           "GUID": "7907042c-4289-40a6-8893-76f842d82672",
           "Active": true,
           "Name": "IP - RPM",
@@ -758,8 +758,459 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "2282.03271484375",
+          "Value": "2282.03271484375",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "39dd04b5-fb23-4684-85d7-39e224d0a463",
+              "Value": "(A:ADF CARD,Degrees)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ADF Card",
+            "Address": "ADF Card",
+            "InputRev": 360,
+            "TestValue": 500,
+            "OutputRev": 5355,
+            "CompassMode": true,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "ADF Card",
+          "GUID": "efc445c8-cf58-46d7-8da2-d8f447a87a8e",
+          "Active": true,
+          "Name": "IP - ADF Card",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "28",
+          "Value": "28",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b5ecf716-8e61-4886-9097-1bdb4ddc6436",
+              "Value": "(A:ADF RADIAL:1,Degrees)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ADF Needle",
+            "Address": "ADF Needle",
+            "InputRev": 360,
+            "TestValue": 500,
+            "OutputRev": 2040,
+            "CompassMode": true,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "ADF Needle",
+          "GUID": "aa3f20f2-86e8-4600-9416-dc035bb652e2",
+          "Active": true,
+          "Name": "IP- ADF Needle",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "90",
+          "Value": "90",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:ADF_CARD_DEC)",
+              "PresetId": "7c7f3203-86c4-49de-8930-376e03c3e2bd"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:ADF_CARD_INC)",
+              "PresetId": "4e6b16de-089f-4f25-9c37-15e3120ea423"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 4",
+          "GUID": "883343d4-c5d2-489f-921c-ebcc34be9c6d",
+          "Active": true,
+          "Name": "IP - ADF Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RIGHT",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:ATTITUDE_BARS_POSITION_DOWN)",
+              "PresetId": "a16fb978-0149-424d-8ed1-ebc538a1d258"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:ATTITUDE_BARS_POSITION_UP)",
+              "PresetId": "652dd0ef-d649-4d77-8d1a-60a6e9ca0280"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 1",
+          "GUID": "caf3d952-9081-4eb7-9595-e229fb04167c",
+          "Active": true,
+          "Name": "IP - Attitude Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RIGHT",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:KOHLSMAN_DEC)",
+              "PresetId": "d3828258-b00c-4dad-b59d-4fb0d4f18a2a"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:KOHLSMAN_INC)",
+              "PresetId": "63a0157d-4060-4ee1-a28b-5c7964898b88"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder",
+          "GUID": "d1a47f5a-4c34-4835-9500-aaa763aa5662",
+          "Active": true,
+          "Name": "IP - Altimeter Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "LEFT",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:HEADING_BUG_DEC)",
+              "PresetId": "cab52499-c789-4249-bc21-31f920d4e604"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:HEADING_BUG_INC)",
+              "PresetId": "debca2cf-3a15-40f0-b839-3e1e153cd0f4"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 3",
+          "GUID": "4d89d263-b40e-4250-891a-c9faed5e6714",
+          "Active": true,
+          "Name": "IP - Heading Bug Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RIGHT",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:GYRO_DRIFT_DEC)",
+              "PresetId": "170d189d-d9cd-4f8e-938e-a673668d60c8"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:GYRO_DRIFT_INC)",
+              "PresetId": "-"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 2",
+          "GUID": "82ce32e6-250f-4f70-ab6a-470213e7cef8",
+          "Active": true,
+          "Name": "IP - Heading Gyro Drift Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RIGHT",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:GYRO_DRIFT_SET)",
+              "PresetId": "5eca83a5-d375-4aa6-ad85-3a6cf160a38c"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Heading Push",
+          "GUID": "47d94a33-e2ce-47b7-963e-36730a17025c",
+          "Active": true,
+          "Name": "IP - Heading Gyro Drift Push",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:VOR1_OBI_DEC)",
+              "PresetId": "-"
+            },
+            "onLeftFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:NAV OBS:1, Degrees) 10 - dnor (>K:VOR1_SET)",
+              "PresetId": "-"
+            },
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:VOR1_OBI_INC)",
+              "PresetId": "-"
+            },
+            "onRightFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:NAV OBS:1, Degrees) 10 + dnor (>K:VOR1_SET)",
+              "PresetId": "-"
+            }
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 6",
+          "GUID": "f444a18f-4542-4236-b0ee-6d6b5008824a",
+          "Active": true,
+          "Name": "IP - VOR1 Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:VOR2_OBI_DEC)",
+              "PresetId": "-"
+            },
+            "onLeftFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:NAV OBS:2, Degrees) 10 - dnor (>K:VOR2_SET)",
+              "PresetId": "-"
+            },
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:VOR2_OBI_INC)",
+              "PresetId": "-"
+            },
+            "onRightFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:NAV OBS:2, Degrees) 10 + dnor (>K:VOR2_SET)",
+              "PresetId": "-"
+            }
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 5",
+          "GUID": "34e652a4-fc16-4289-b92d-05f24b58df91",
+          "Active": true,
+          "Name": "IP - VOR2 Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
           "Status": {}
         }
       ]
