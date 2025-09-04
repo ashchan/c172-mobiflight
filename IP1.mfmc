@@ -9,7 +9,10 @@
   <Encoder Name="Encoder 3" PinLeft="8" PinRight="9" EncoderType="0" />
   <Button Name="Heading Push" Pin="10" />
   <Button Name="NAV GPS" Pin="11" />
-  <Encoder Name="Encoder 4" PinLeft="12" PinRight="13" EncoderType="0" />
   <Encoder Name="Encoder 5" PinLeft="14" PinRight="15" EncoderType="0" />
   <Encoder Name="Encoder 6" PinLeft="16" PinRight="17" EncoderType="0" />
+  <Encoder Name="Encoder 4" PinLeft="18" PinRight="19" EncoderType="0" />
+  <Stepper Name="Engine RPM" Pin1="29" Pin2="28" Pin3="31" Pin4="30" BtnPin="0" Mode="0" Backlash="3" Deactivate="false" Profile="0" />
+  <Stepper Name="ADF Needle" Pin1="25" Pin2="24" Pin3="27" Pin4="26" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="0" />
+  <Stepper Name="ADF Card" Pin1="22" Pin2="23" Pin3="20" Pin4="21" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="0" />
 </Config>
