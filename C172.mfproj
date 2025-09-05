@@ -758,8 +758,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "2282.03271484375",
-          "Value": "2282.03271484375",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -810,8 +810,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "28",
-          "Value": "28",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -862,8 +862,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "90",
-          "Value": "90",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -904,8 +904,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "RIGHT",
-          "Value": " ",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -946,8 +946,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "RIGHT",
-          "Value": " ",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -988,8 +988,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "LEFT",
-          "Value": " ",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -1030,8 +1030,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "RIGHT",
-          "Value": " ",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -1072,8 +1072,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "RIGHT",
-          "Value": " ",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -1113,8 +1113,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "RELEASE",
-          "Value": " ",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -1163,6 +1163,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -1195,6 +1197,221 @@
           "Name": "IP - VOR2 Knob",
           "Type": "InputConfigItem",
           "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "ed4dadea-ef31-4b44-83a7-3d9d4a2f9bdd",
+              "Value": "(A:GENERAL ENG OIL TEMPERATURE:1,Fahrenheit)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 0,
+            "Float64": 0.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Oil Temp",
+            "Address": "Oil Temp",
+            "InputRev": 170,
+            "TestValue": 500,
+            "OutputRev": 460,
+            "CompassMode": false,
+            "Acceleration": 3600,
+            "Speed": 1800,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Oil Temp",
+          "GUID": "a1c86b1e-22af-4429-a03f-823084a703ea",
+          "Active": true,
+          "Name": "ENGINE - Oil Temp",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "75",
+                "IfValue": "$-75",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "3e29099f-7650-4e8b-a02b-f75742322fc2",
+              "Value": "(A:ENG OIL PRESSURE:1,psi)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Oil Pressure",
+            "Address": "Oil Pressure",
+            "InputRev": 115,
+            "TestValue": 500,
+            "OutputRev": 460,
+            "CompassMode": false,
+            "Acceleration": 3600,
+            "Speed": 1800,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Oil Pressure",
+          "GUID": "495b79e1-63af-446d-adef-a30010218ac4",
+          "Active": true,
+          "Name": "ENGINE - Oil Pressure",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Fuel QTY Left",
+            "Address": "Fuel QTY Left",
+            "InputRev": 1000,
+            "TestValue": 500,
+            "OutputRev": 1100,
+            "CompassMode": false,
+            "Acceleration": 3600,
+            "Speed": 1800,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Fuel QTY Left",
+          "GUID": "6874555f-0bb7-4ae3-8201-a1fe04aa04f7",
+          "Active": true,
+          "Name": "ENGINE - Fuel QTY Left",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Fuel QTY Right",
+            "Address": "Fuel QTY Right",
+            "InputRev": 1000,
+            "TestValue": 500,
+            "OutputRev": 1100,
+            "CompassMode": false,
+            "Acceleration": 3600,
+            "Speed": 1800,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Fuel QTY Right",
+          "GUID": "439473e8-a95a-4bf0-b7f1-9a516e914b18",
+          "Active": true,
+          "Name": "ENGINE - Fuel QTY Right",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
           "Preconditions": [
             {
               "PreconditionType": "none",

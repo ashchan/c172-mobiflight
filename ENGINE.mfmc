@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>ENGINE</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Stepper Name="Oil Temp" Pin1="53" Pin2="51" Pin3="52" Pin4="50" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
+  <Stepper Name="Oil Pressure" Pin1="49" Pin2="47" Pin3="48" Pin4="46" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
+  <Stepper Name="Fuel QTY Left" Pin1="45" Pin2="43" Pin3="44" Pin4="42" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
+  <Stepper Name="Fuel QTY Right" Pin1="41" Pin2="39" Pin3="40" Pin4="38" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
+</Config>
