@@ -1333,23 +1333,23 @@
         {
           "Source": {
             "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
+              "UUID": "ff414a28-a987-4c7f-a373-41789b6bb16a",
+              "Value": "(A:FUEL TANK LEFT MAIN LEVEL,Percent Over 100)",
               "VarType": 2
             },
             "Type": "SimConnectSource"
           },
           "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
+            "type": 0,
+            "Float64": 0.0,
             "String": null
           },
           "Device": {
             "Name": "Fuel QTY Left",
             "Address": "Fuel QTY Left",
-            "InputRev": 1000,
+            "InputRev": 100,
             "TestValue": 500,
-            "OutputRev": 1100,
+            "OutputRev": 420,
             "CompassMode": false,
             "Acceleration": 3600,
             "Speed": 1800,
@@ -1375,31 +1375,53 @@
             }
           ],
           "Modifiers": {
-            "Items": []
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$ * 100",
+                "Active": true
+              },
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "0": 0.0,
+                  "38": 25.0,
+                  "58": 50.0,
+                  "78": 75.0,
+                  "100": 100.0
+                },
+                "Count": 5,
+                "Max": 100.0,
+                "Min": 0.0,
+                "Active": true
+              }
+            ]
           },
           "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
           "Source": {
             "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
+              "UUID": "e5c902db-35cb-4629-8104-6712b325b4e2",
+              "Value": "(A:FUEL TANK RIGHT MAIN LEVEL,Percent Over 100)",
               "VarType": 2
             },
             "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 0.0,
             "String": null
           },
           "Device": {
             "Name": "Fuel QTY Right",
             "Address": "Fuel QTY Right",
-            "InputRev": 1000,
+            "InputRev": 100,
             "TestValue": 500,
-            "OutputRev": 1100,
+            "OutputRev": 420,
             "CompassMode": false,
             "Acceleration": 3600,
             "Speed": 1800,
@@ -1425,9 +1447,266 @@
             }
           ],
           "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$ * 100",
+                "Active": true
+              },
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "0": 0.0,
+                  "38": 25.0,
+                  "58": 50.0,
+                  "78": 75.0,
+                  "100": 100.0
+                },
+                "Count": 5,
+                "Max": 100.0,
+                "Min": 0.0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "abb6b098-ba0b-44a4-a696-0cc21a44c9e6",
+              "Value": "(A:ELECTRICAL AVIONICS BUS AMPS,Amperes)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Engine AMP",
+            "Address": "Engine AMP",
+            "InputRev": 140,
+            "TestValue": 500,
+            "OutputRev": 400,
+            "CompassMode": false,
+            "Acceleration": 3600,
+            "Speed": 1800,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Engine AMP",
+          "GUID": "e2f80f64-5b89-46d9-8005-0bde5c44ce88",
+          "Active": true,
+          "Name": "ENGINE - AMP",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "d3e2934d-05ec-4d0d-95e3-01162e80f3b9",
+              "Value": "(A:SUCTION PRESSURE,Inches of Mercury, inHg)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Engine VAC",
+            "Address": "Engine VAC",
+            "InputRev": 8,
+            "TestValue": 500,
+            "OutputRev": 380,
+            "CompassMode": false,
+            "Acceleration": 3600,
+            "Speed": 1800,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Engine VAC",
+          "GUID": "9b17eb0b-87a6-449d-b364-7a2fbd854ef2",
+          "Active": true,
+          "Name": "ENGINE - VAC",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "3": -4.0,
+                  "4": -2.0,
+                  "5": 0.0,
+                  "6": 2.0,
+                  "7": 4.0
+                },
+                "Count": 5,
+                "Max": 4.0,
+                "Min": -4.0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "ba0284a0-a0be-4d71-8b1e-981e2634ef7d",
+              "Value": "(A:GENERAL ENG EXHAUST GAS TEMPERATURE:1,Rankine)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 0,
+            "Float64": 0.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Engine EGT",
+            "Address": "Engine EGT",
+            "InputRev": 400,
+            "TestValue": 500,
+            "OutputRev": 460,
+            "CompassMode": false,
+            "Acceleration": 3600,
+            "Speed": 1800,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Engine EGT",
+          "GUID": "7e32a133-1049-41f8-a9eb-a2aacf969d60",
+          "Active": true,
+          "Name": "ENGINE - EGT",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$-459.67-1000-290",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b08657c3-f140-41ea-a1e8-00dbe6e79fe8",
+              "Value": "(A:ENG FUEL FLOW GPH:1,Gallons per hour)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Engine Fuel Flow",
+            "Address": "Engine Fuel Flow",
+            "InputRev": 20,
+            "TestValue": 500,
+            "OutputRev": 460,
+            "CompassMode": false,
+            "Acceleration": 3600,
+            "Speed": 1800,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Engine Fuel Flow",
+          "GUID": "4ee5a7f7-608e-43a0-b161-eabc75003c32",
+          "Active": true,
+          "Name": "ENGINE - Fuel Flow",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$-11",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         }
       ]
