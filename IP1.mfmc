@@ -14,7 +14,7 @@
   <Encoder Name="Encoder 4" PinLeft="18" PinRight="19" EncoderType="0" />
   <Stepper Name="Engine RPM" Pin1="29" Pin2="28" Pin3="31" Pin4="30" BtnPin="0" Mode="0" Backlash="3" Deactivate="false" Profile="0" />
   <Stepper Name="ADF Needle" Pin1="25" Pin2="24" Pin3="27" Pin4="26" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="0" />
-  <Stepper Name="ADF Card" Pin1="22" Pin2="23" Pin3="20" Pin4="21" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="0" />
+  <Stepper Name="ADF Card" Pin1="22" Pin2="23" Pin3="34" Pin4="35" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="0" />
   <Stepper Name="Engine VAC" Pin1="53" Pin2="51" Pin3="52" Pin4="50" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
   <Stepper Name="Engine AMP" Pin1="46" Pin2="48" Pin3="47" Pin4="49" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
   <Stepper Name="Engine EGT" Pin1="45" Pin2="43" Pin3="44" Pin4="42" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
