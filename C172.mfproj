@@ -2,7 +2,7 @@
   "Name": "C172",
   "ConfigFiles": [
     {
-      "Label": "Dashboard",
+      "Label": "Main",
       "FileName": null,
       "ReferenceOnly": false,
       "EmbedContent": true,
@@ -1779,7 +1779,7 @@
                 "TYPE": "number",
                 "Name": "FT",
                 "Number": 0.0,
-                "Text": "",
+                "Text": "0",
                 "Expression": "0*$"
               }
             },
@@ -1789,7 +1789,7 @@
                 "TYPE": "number",
                 "Name": "FT",
                 "Number": 0.0,
-                "Text": "",
+                "Text": "0",
                 "Expression": "0*$"
               }
             },
@@ -3065,7 +3065,7 @@
                 "TYPE": "number",
                 "Name": "ET",
                 "Number": 0.0,
-                "Text": "",
+                "Text": "0",
                 "Expression": "$*0"
               }
             },
@@ -3115,7 +3115,7 @@
                   500
                 ],
                 "OffDurationInMs": 500,
-                "FirstExecutionTime": 0,
+                "FirstExecutionTime": 638929217274675741,
                 "Active": true
               }
             ]
@@ -3143,8 +3143,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "ET",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 4.0,
+                "Text": "4",
                 "Expression": "$+1"
               }
             },
@@ -3194,7 +3194,7 @@
                   500
                 ],
                 "OffDurationInMs": 500,
-                "FirstExecutionTime": 0,
+                "FirstExecutionTime": 638929217274675741,
                 "Active": true
               }
             ]
@@ -3222,8 +3222,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "FT",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 343.0,
+                "Text": "343",
                 "Expression": "$+1"
               }
             },
@@ -3252,7 +3252,7 @@
                   500
                 ],
                 "OffDurationInMs": 500,
-                "FirstExecutionTime": 0,
+                "FirstExecutionTime": 638929217274675741,
                 "Active": true
               }
             ]
@@ -3377,7 +3377,7 @@
                 "TYPE": "number",
                 "Name": "FT",
                 "Number": 0.0,
-                "Text": "",
+                "Text": "0",
                 "Expression": "0"
               }
             },
@@ -3537,8 +3537,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "ButtonPresses",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 17.0,
+                "Text": "17",
                 "Expression": "$+1"
               }
             },
@@ -3584,8 +3584,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "SelectPress",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 11.0,
+                "Text": "11",
                 "Expression": "$+1"
               }
             },
@@ -3629,8 +3629,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "ControlPress",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 6.0,
+                "Text": "6",
                 "Expression": "$+1"
               }
             },
@@ -3677,7 +3677,7 @@
                 "TYPE": "number",
                 "Name": "SelectTest",
                 "Number": 0.0,
-                "Text": "",
+                "Text": "0",
                 "Expression": "0"
               }
             },
@@ -3732,7 +3732,7 @@
                 "TYPE": "number",
                 "Name": "ControlHold",
                 "Number": 0.0,
-                "Text": "",
+                "Text": "0",
                 "Expression": "0"
               }
             },
@@ -3779,6 +3779,13 @@
           "Status": {}
         }
       ]
+    },
+    {
+      "Label": "GNS",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": []
     }
   ]
 }
