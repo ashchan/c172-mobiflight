@@ -1005,47 +1005,6 @@
           "RawValue": "",
           "Value": "",
           "Status": {}
-        },
-        {
-          "button": {
-            "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:TOGGLE_GPS_DRIVES_NAV1)",
-              "PresetId": "e20b5a20-4a49-4909-8cea-cb26a06c0793"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "DeviceType": "Button",
-          "DeviceName": "NAV GPS",
-          "GUID": "6ab60ff8-7425-418c-8a7c-0754a8fced75",
-          "Active": true,
-          "Name": "NAV GPS",
-          "Type": "InputConfigItem",
-          "ModuleSerial": "IP1/ SN-63C-8CC",
-          "Preconditions": [
-            {
-              "PreconditionType": "none",
-              "PreconditionRef": null,
-              "PreconditionSerial": null,
-              "PreconditionPin": null,
-              "PreconditionOperand": "=",
-              "PreconditionValue": null,
-              "PreconditionLogic": "and",
-              "PreconditionActive": true
-            }
-          ],
-          "Modifiers": {
-            "Items": []
-          },
-          "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
-          "Status": {}
         }
       ]
     },
@@ -3786,6 +3745,48 @@
           "Value": "",
           "Status": {}
         },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:TOGGLE_GPS_DRIVES_NAV1)",
+              "PresetId": "e20b5a20-4a49-4909-8cea-cb26a06c0793"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "NAV GPS",
+          "GUID": "6ab60ff8-7425-418c-8a7c-0754a8fced75",
+          "Active": true,
+          "Name": "NAV GPS",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        }
       ]
     }
+  ]
 }
