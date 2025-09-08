@@ -2,7 +2,7 @@
   "Name": "C172",
   "ConfigFiles": [
     {
-      "Label": "New file",
+      "Label": "Dashboard",
       "FileName": null,
       "ReferenceOnly": false,
       "EmbedContent": true,
@@ -772,7 +772,7 @@
             "Type": "SimConnectSource"
           },
           "TestValue": {
-            "type": 1,
+            "type": 0,
             "Float64": 0.0,
             "String": null
           },
@@ -1703,6 +1703,2075 @@
                 "Active": true
               }
             ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:TOGGLE_GPS_DRIVES_NAV1)",
+              "PresetId": "e20b5a20-4a49-4909-8cea-cb26a06c0793"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "NAV GPS",
+          "GUID": "6ab60ff8-7425-418c-8a7c-0754a8fced75",
+          "Active": true,
+          "Name": "NAV GPS",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        }
+      ]
+    },
+    {
+      "Label": "OAT Clock",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "e48e8dce-5b66-4959-9aa0-af2839b9b849",
+              "Value": "(A:ELECTRICAL MASTER BATTERY,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "FT",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "0*$"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "FT",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "0*$"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "4427fc9a-6949-4a37-a368-d42e8f0f46c6",
+          "Active": true,
+          "Name": "Read if Engine on",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "1",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "5d998d1b-32d7-4e17-aac1-3ee6601f136a",
+              "Value": "(A:AMBIENT TEMPERATURE,Celsius)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 30.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "2321ecf0-b9e4-4587-a3b3-c1a19baac76f",
+          "Active": true,
+          "Name": "Deg F",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor((($* (9/5))+32))",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "''+$+' F'",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "c989f6c0-4d0c-4505-9354-1254051eb17a",
+              "Value": "(A:ELECTRICAL MAIN BUS VOLTAGE,Volts)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 28.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "71ce2d23-9ab5-4761-8df6-e0e1375f7745",
+          "Active": true,
+          "Name": "Voltage",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "0",
+              "PreconditionLogic": "and",
+              "PreconditionActive": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Round($,1)+.00001",
+                "Active": true
+              },
+              {
+                "Type": "Padding",
+                "Character": "0",
+                "Length": 4,
+                "Direction": 0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "5d998d1b-32d7-4e17-aac1-3ee6601f136a",
+              "Value": "(A:AMBIENT TEMPERATURE,Celsius)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "e60bddce-51e0-4142-aa36-70838d3b36de",
+          "Active": true,
+          "Name": "Deg C",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "2",
+              "PreconditionLogic": "and",
+              "PreconditionActive": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor($)",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "''+$+' C'",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ButtonPresses",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+          "Active": true,
+          "Name": "OAT Status - \nVolt, F, C",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$%3",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "''+!+' E'",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "@",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "^",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if($=1, 5)",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "71ce2d23-9ab5-4761-8df6-e0e1375f7745",
+              "Placeholder": "!",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "2321ecf0-b9e4-4587-a3b3-c1a19baac76f",
+              "Placeholder": "@",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "e60bddce-51e0-4142-aa36-70838d3b36de",
+              "Placeholder": "^",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "SelectPress",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+          "Active": true,
+          "Name": "Select Status -\n 1:UT \n2:LT\n 3:FT \n4:ET",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$%4+1",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "'UT'",
+                "ElseValue": "",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "LT",
+                "ElseValue": "",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "3",
+                "IfValue": "'FT'",
+                "ElseValue": "",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "4",
+                "IfValue": "ET",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ControlPress",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "d0f07365-71b4-45d0-843f-c407a86b4cb4",
+          "Active": true,
+          "Name": "Control Status -\n 1: Zero\n2: Start\n3: Stop",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "!=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": false
+            },
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "4",
+              "PreconditionLogic": "and",
+              "PreconditionActive": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "($%3)+1",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b406ff1f-7d3f-4b7e-872a-a2e2a2a2b760",
+              "Value": "(E:ZULU TIME,second)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 650651.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "OAT_CLK_Display",
+            "Address": "OAT_CLK_Display",
+            "Lines": [
+              "         ####",
+              "      UT  $$:!!"
+            ],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "OAT_CLK_Display",
+          "GUID": "73d39e30-e3d1-4fec-9b4c-578fc7b10dd8",
+          "Active": true,
+          "Name": "1 Display - UT Universal Time",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            },
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "4427fc9a-6949-4a37-a368-d42e8f0f46c6",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            },
+            {
+              "PreconditionType": "variable",
+              "PreconditionRef": "SelectTest",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "0",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor(($/3600))",
+                "Active": true
+              },
+              {
+                "Type": "Padding",
+                "Character": "0",
+                "Length": 2,
+                "Direction": 0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "c535b4ae-2214-4d2f-a687-189f17e5eb62",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "8ec35809-cb7e-47b9-a562-3b81f5fcd429",
+              "Value": "(E:LOCAL TIME,second)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "OAT_CLK_Display",
+            "Address": "OAT_CLK_Display",
+            "Lines": [
+              "         ####",
+              "      LT  $$:!!",
+              "1234567890123456",
+              "******Test******"
+            ],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "OAT_CLK_Display",
+          "GUID": "963f7003-7e72-4bba-aca3-8f6678f7c998",
+          "Active": true,
+          "Name": "2 Display - LT Local Time",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "2",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            },
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "4427fc9a-6949-4a37-a368-d42e8f0f46c6",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            },
+            {
+              "PreconditionType": "variable",
+              "PreconditionRef": "SelectTest",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "0",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor(($/3600))",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "c535b4ae-2214-4d2f-a687-189f17e5eb62",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "FT",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 2,
+            "Float64": 0.0,
+            "String": "1"
+          },
+          "Device": {
+            "Name": "OAT_CLK_Display",
+            "Address": "OAT_CLK_Display",
+            "Lines": [
+              "         ####",
+              "      FT  !!:$$",
+              "******Test******"
+            ],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "OAT_CLK_Display",
+          "GUID": "bda9820f-3540-47ba-96c0-37caee1c5b12",
+          "Active": true,
+          "Name": "3 Display - FT Flight Time",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "3",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            },
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "4427fc9a-6949-4a37-a368-d42e8f0f46c6",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            },
+            {
+              "PreconditionType": "variable",
+              "PreconditionRef": "SelectTest",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "0",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor(($/60)%60)",
+                "Active": true
+              },
+              {
+                "Type": "Padding",
+                "Character": "0",
+                "Length": 2,
+                "Direction": 0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "63080b31-d1b1-4018-87ea-83afefed7efa",
+              "Placeholder": "?",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "a623f422-6317-4099-aba0-3c49289fbdae",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 2,
+            "Float64": 0.0,
+            "String": "1"
+          },
+          "Device": {
+            "Name": "OAT_CLK_Display",
+            "Address": "OAT_CLK_Display",
+            "Lines": [
+              "         ####",
+              "      ET  !!:??",
+              "******Test******"
+            ],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "OAT_CLK_Display",
+          "GUID": "15d0b976-03a5-4323-9d0c-0987269d5794",
+          "Active": true,
+          "Name": "4 Display - ET Flight Time",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "4",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            },
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "4427fc9a-6949-4a37-a368-d42e8f0f46c6",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            },
+            {
+              "PreconditionType": "variable",
+              "PreconditionRef": "SelectTest",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "0",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor($%60)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "63080b31-d1b1-4018-87ea-83afefed7efa",
+              "Placeholder": "?",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "23a857bf-5c98-4af9-a0c6-68ca9279f7d3",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 2,
+            "Float64": 0.0,
+            "String": "1"
+          },
+          "Device": {
+            "Name": "OAT_CLK_Display",
+            "Address": "OAT_CLK_Display",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "OAT_CLK_Display",
+          "GUID": "75f2e7db-72d5-40c8-8825-c0f61f1b7208",
+          "Active": true,
+          "Name": "Empty",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "4427fc9a-6949-4a37-a368-d42e8f0f46c6",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "0",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            },
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "601e157a-2c29-4a4f-8452-c26a6264290d",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "0",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor($%60)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "63080b31-d1b1-4018-87ea-83afefed7efa",
+              "Placeholder": "?",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "23a857bf-5c98-4af9-a0c6-68ca9279f7d3",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "SelectTest",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 2,
+            "Float64": 0.0,
+            "String": "1"
+          },
+          "Device": {
+            "Name": "OAT_CLK_Display",
+            "Address": "OAT_CLK_Display",
+            "Lines": [
+              "        88.88",
+              "      <>  88:88"
+            ],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "OAT_CLK_Display",
+          "GUID": "5657756d-74e4-4893-8974-08afd2d7d1b4",
+          "Active": true,
+          "Name": "Display TEST (If Select is on for 3 seconds)",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "4427fc9a-6949-4a37-a368-d42e8f0f46c6",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            },
+            {
+              "PreconditionType": "variable",
+              "PreconditionRef": "SelectTest",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor($%60)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "63080b31-d1b1-4018-87ea-83afefed7efa",
+              "Placeholder": "?",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "23a857bf-5c98-4af9-a0c6-68ca9279f7d3",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "2fbe83ba-ddf5-4ab9-af3f-ea0ce42ac0c7",
+          "Active": true,
+          "Name": "---------------------------------",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "-",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b406ff1f-7d3f-4b7e-872a-a2e2a2a2b760",
+              "Value": "(E:ZULU TIME,second)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "c535b4ae-2214-4d2f-a687-189f17e5eb62",
+          "Active": true,
+          "Name": "1 & 2 - Time Minutes",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor(($/60)%60)",
+                "Active": true
+              },
+              {
+                "Type": "Padding",
+                "Character": "0",
+                "Length": 2,
+                "Direction": 0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b2a8c4e1-c772-40e6-b97e-1c3c7d865c35",
+              "Value": "(A:GENERAL ENG HOBBS ELAPSED TIME:1, Seconds)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "997ee6db-5de9-475c-b517-16ee417f4511",
+          "Active": true,
+          "Name": "3- FT Flight Time Raw Seconds",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ET",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "e47232a8-b06a-48dc-83b8-009dc0fb2037",
+          "Active": true,
+          "Name": "4- Elapsed Time Raw Seconds (read)",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "4",
+              "PreconditionLogic": "and",
+              "PreconditionActive": false
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ET",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 3805.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "63080b31-d1b1-4018-87ea-83afefed7efa",
+          "Active": true,
+          "Name": "4- Elapsed Time Small Value",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "-",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "4",
+              "PreconditionLogic": "and",
+              "PreconditionActive": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if(#=4,'',$)",
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if($<3600,Floor($%60),$)",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if($>3600,Floor(($/60)%60),$)",
+                "Active": true
+              },
+              {
+                "Type": "Padding",
+                "Character": "0",
+                "Length": 2,
+                "Direction": 0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+              "Placeholder": "#",
+              "TestValue": "4"
+            }
+          ],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ET",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "23a857bf-5c98-4af9-a0c6-68ca9279f7d3",
+          "Active": true,
+          "Name": "4- Elapsed Time Large Value",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if($<3600,Floor(($/60)%60),$)",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if($>3600,Floor(($/3600)%60),$)",
+                "Active": true
+              },
+              {
+                "Type": "Padding",
+                "Character": "0",
+                "Length": 2,
+                "Direction": 0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "e47232a8-b06a-48dc-83b8-009dc0fb2037",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ET",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "$*0"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "8f57cba8-12f0-43d0-b43e-0aa02024cdf9",
+          "Active": true,
+          "Name": "4 - ET Time Blinker Clear Var if Control =1",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "d0f07365-71b4-45d0-843f-c407a86b4cb4",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            },
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "4",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Blink",
+                "BlinkValue": "1",
+                "OnOffSequence": [
+                  500,
+                  500
+                ],
+                "OffDurationInMs": 500,
+                "FirstExecutionTime": 0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ET",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "49263c5b-2a27-4c9d-b919-8c3be4fdf990",
+          "Active": true,
+          "Name": "4 - ET Time Counter Blinker Var if Control =2",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "4",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            },
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "d0f07365-71b4-45d0-843f-c407a86b4cb4",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "2",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Blink",
+                "BlinkValue": "1",
+                "OnOffSequence": [
+                  500,
+                  500
+                ],
+                "OffDurationInMs": 500,
+                "FirstExecutionTime": 0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "FT",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "be9e4bbb-21fa-4c25-a9c7-fbf525e757dd",
+          "Active": true,
+          "Name": "FT Blinker",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Blink",
+                "BlinkValue": "1",
+                "OnOffSequence": [
+                  500,
+                  500
+                ],
+                "OffDurationInMs": 500,
+                "FirstExecutionTime": 0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "FT",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "a623f422-6317-4099-aba0-3c49289fbdae",
+          "Active": true,
+          "Name": "FT Flight Time Hours",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor(($/3600)%60)",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "1",
+                "Active": false
+              },
+              {
+                "Type": "Padding",
+                "Character": "0",
+                "Length": 2,
+                "Direction": 0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "SelectTest",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "601e157a-2c29-4a4f-8452-c26a6264290d",
+          "Active": true,
+          "Name": "TestSelect",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "P1/ SN-63C-8CC",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ControlHold",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "FT",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "0"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "FT",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "986d7d38-7492-499f-83f1-51bf22c4af65",
+          "Active": true,
+          "Name": "FT Reset for Hold CTRL",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "",
+          "Preconditions": [],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:oclock_oat)",
+              "PresetId": "247e7d65-67d5-4e07-9302-43618137aa5d"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "OAT_TOP",
+          "GUID": "514980c9-b273-4425-8327-ea1bfde46922",
+          "Active": true,
+          "Name": "Volts Button OAT",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:oclock_select)",
+              "PresetId": "21726e14-9593-4df5-80b4-907e759cc8a3"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SELECT_LEFT",
+          "GUID": "18f15088-8b5b-4f6d-a2a8-90c507ed80f1",
+          "Active": true,
+          "Name": "Select Button OAT",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:oclock_control)",
+              "PresetId": "685e319c-5e9d-437b-90f5-41d2078dca78"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:oclock_control_long)",
+              "PresetId": "f1d50de2-053a-4b1e-aecd-2da1f8fd05f5"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 1000,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "CONTROL_RIGHT",
+          "GUID": "0f5202d6-e796-4ff6-8308-07e20b51acdf",
+          "Active": true,
+          "Name": "Control Button OAT",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "4427fc9a-6949-4a37-a368-d42e8f0f46c6",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ButtonPresses",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "OAT_TOP",
+          "GUID": "db3dd3aa-22c6-4b3b-9579-6c1cca557d7b",
+          "Active": true,
+          "Name": "Button Variable",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "SelectPress",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "$+1"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SELECT_LEFT",
+          "GUID": "91eb7711-5935-46e0-b512-bea2889278ee",
+          "Active": true,
+          "Name": "Select Variable",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "4427fc9a-6949-4a37-a368-d42e8f0f46c6",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ControlPress",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "CONTROL_RIGHT",
+          "GUID": "d236b007-03e3-44c6-99a9-499a21a496dc",
+          "Active": true,
+          "Name": "Control Variable",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "4427fc9a-6949-4a37-a368-d42e8f0f46c6",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "SelectTest",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "SelectTest",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "1"
+              }
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 3000,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SELECT_LEFT",
+          "GUID": "97711a89-0d5e-4af6-8631-b20d32a7de2d",
+          "Active": true,
+          "Name": "Select Test for 3 seconds true",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "4427fc9a-6949-4a37-a368-d42e8f0f46c6",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ControlHold",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ControlHold",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "1"
+              }
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 3000,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "CONTROL_RIGHT",
+          "GUID": "c1f7fdcb-db61-49d9-8de6-c35605b45d92",
+          "Active": true,
+          "Name": "Control Hold for 3 Seconds ",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
+          "Preconditions": [
+            {
+              "PreconditionType": "config",
+              "PreconditionRef": "4427fc9a-6949-4a37-a368-d42e8f0f46c6",
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": "1",
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
           },
           "ConfigRefs": [],
           "RawValue": "",
