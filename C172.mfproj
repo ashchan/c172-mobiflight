@@ -524,7 +524,7 @@
             "Type": "SimConnectSource"
           },
           "TestValue": {
-            "type": 0,
+            "type": 1,
             "Float64": 0.0,
             "String": null
           },
@@ -637,8 +637,8 @@
             "Type": "SimConnectSource"
           },
           "TestValue": {
-            "type": 0,
-            "Float64": 0.0,
+            "type": 1,
+            "Float64": 0.47,
             "String": null
           },
           "Device": {
@@ -900,7 +900,7 @@
             "Type": "SimConnectSource"
           },
           "TestValue": {
-            "type": 0,
+            "type": 1,
             "Float64": 0.0,
             "String": null
           },
@@ -1295,8 +1295,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "17.535852432250977",
-          "Value": "63 F",
+          "RawValue": "21.205957412719727",
+          "Value": "70 F",
           "Status": {}
         },
         {
@@ -1401,8 +1401,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "17.535852432250977",
-          "Value": "17 C",
+          "RawValue": "21.205957412719727",
+          "Value": "21 C",
           "Status": {}
         },
         {
@@ -1712,7 +1712,7 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "83324.046875",
+          "RawValue": "84129.6171875",
           "Value": "23",
           "Status": {
             "Precondition": "not satisfied"
@@ -1805,7 +1805,7 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "29324.044921875",
+          "RawValue": "30129.615234375",
           "Value": "8",
           "Status": {}
         },
@@ -1910,7 +1910,7 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "4",
+          "RawValue": "12",
           "Value": "00",
           "Status": {
             "Precondition": "not satisfied"
@@ -2263,8 +2263,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "83324.046875",
-          "Value": "08",
+          "RawValue": "84129.6171875",
+          "Value": "22",
           "Status": {}
         },
         {
@@ -2293,8 +2293,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "283860.84375",
-          "Value": "283860.84375",
+          "RawValue": "284459.40625",
+          "Value": "284459.40625",
           "Status": {}
         },
         {
@@ -2546,7 +2546,7 @@
           },
           "ConfigRefs": [],
           "RawValue": "0",
-          "Value": "1",
+          "Value": "0",
           "Status": {
             "Precondition": "not satisfied"
           }
@@ -2627,7 +2627,7 @@
           },
           "ConfigRefs": [],
           "RawValue": "0",
-          "Value": "1",
+          "Value": "0",
           "Status": {
             "Precondition": "not satisfied"
           }
@@ -2650,8 +2650,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "FT",
-                "Number": 4.0,
-                "Text": "4",
+                "Number": 12.0,
+                "Text": "12",
                 "Expression": "$+1"
               }
             },
@@ -2687,7 +2687,7 @@
           },
           "ConfigRefs": [],
           "RawValue": "0",
-          "Value": "1",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -2736,7 +2736,7 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "4",
+          "RawValue": "12",
           "Value": "00",
           "Status": {}
         },
