@@ -44,6 +44,6 @@
   <Button Name="BUTTON_EXT_15" Pin="28" />
   <Encoder Name="ENCODER_EXT_1" PinLeft="4" PinRight="5" EncoderType="2" />
   <Encoder Name="ENCODER_EXT_2" PinLeft="16" PinRight="17" EncoderType="2" />
-  <Encoder Name="ENCODER_EXT_3" PinLeft="6" PinRight="7" EncoderType="2" />
-  <Encoder Name="ENCODER_EXT_4" PinLeft="8" PinRight="9" EncoderType="2" />
+  <Encoder Name="ENCODER_EXT_3" PinLeft="6" PinRight="8" EncoderType="2" />
+  <Encoder Name="ENCODER_EXT_4" PinLeft="7" PinRight="9" EncoderType="2" />
 </Config>

@@ -3057,12 +3057,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 3",
+          "DeviceName": "COM_SWAP",
           "GUID": "5eda45bd-5e22-40e3-af1e-9ed7d631a530",
           "Active": true,
           "Name": "AS530 - COM Swap",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3098,53 +3098,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 4",
+          "DeviceName": "NAV_SWAP",
           "GUID": "93ae2370-08f4-4afb-8d54-103eb80267fb",
           "Active": true,
           "Name": "AS530 - NAV Swap",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
-          "Preconditions": [
-            {
-              "PreconditionType": "none",
-              "PreconditionRef": null,
-              "PreconditionSerial": null,
-              "PreconditionPin": null,
-              "PreconditionOperand": "=",
-              "PreconditionValue": null,
-              "PreconditionLogic": "and",
-              "PreconditionActive": true
-            }
-          ],
-          "Modifiers": {
-            "Items": []
-          },
-          "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
-          "Status": {}
-        },
-        {
-          "button": {
-            "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>H:AS530_LeftSmallKnob_Push)",
-              "PresetId": "f0260cd1-9089-4595-893d-a2b8686f2fa1"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "DeviceType": "Button",
-          "DeviceName": "Button 5",
-          "GUID": "3b3e46ca-09e7-4f7d-b964-a0c8706586ca",
-          "Active": true,
-          "Name": "AS530 - Push CV",
-          "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3181,12 +3140,12 @@
             "onRightFast": null
           },
           "DeviceType": "Encoder",
-          "DeviceName": "Encoder 4",
+          "DeviceName": "Left Rough",
           "GUID": "9f12699f-ba60-4319-b21e-3db425fdf163",
           "Active": true,
           "Name": "AS530 - Left Large Knob",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3223,12 +3182,53 @@
             "onRightFast": null
           },
           "DeviceType": "Encoder",
-          "DeviceName": "Encoder 5",
+          "DeviceName": "Left Fine",
           "GUID": "26343575-6f4d-4217-8400-e88b66b0821b",
           "Active": true,
           "Name": "AS530 - Left Small Knob",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_LeftSmallKnob_Push)",
+              "PresetId": "f0260cd1-9089-4595-893d-a2b8686f2fa1"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "L_PRESS",
+          "GUID": "3b3e46ca-09e7-4f7d-b964-a0c8706586ca",
+          "Active": true,
+          "Name": "AS530 - Push CV",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3264,12 +3264,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 6",
+          "DeviceName": "CDI",
           "GUID": "31c60d4a-c087-448b-8a94-39aaf7ee9853",
           "Active": true,
           "Name": "AS530 - CDI",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3305,12 +3305,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 19",
+          "DeviceName": "OBS",
           "GUID": "78581f44-6785-410c-8272-44d5ed20be44",
           "Active": true,
           "Name": "AS530 - OBS",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3346,12 +3346,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 20",
+          "DeviceName": "MSG",
           "GUID": "16b6d5f3-674b-4d11-a93f-0a2e00b27dbf",
           "Active": true,
           "Name": "AS530 - MSG",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3387,12 +3387,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 21",
+          "DeviceName": "FPL",
           "GUID": "55c153c4-8ce5-4ffc-b6a4-b6736afe0c9a",
           "Active": true,
           "Name": "AS530 - FPL",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3428,12 +3428,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 22",
+          "DeviceName": "VNAV",
           "GUID": "75f9931e-9094-48a4-85ac-c29f9bce4c30",
           "Active": true,
           "Name": "AS530 - VNAV",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3469,12 +3469,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 23",
+          "DeviceName": "PROC",
           "GUID": "b857249e-f81b-470b-af4d-36d7b79b786b",
           "Active": true,
           "Name": "AS530 - PROC",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3510,12 +3510,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 24",
+          "DeviceName": "RNG_UP",
           "GUID": "975f9f8b-c4bf-4ea8-ac7f-d7b219d1cd53",
           "Active": true,
           "Name": " AS530 - Range Zoom",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3551,12 +3551,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 25",
+          "DeviceName": "RNG_DN",
           "GUID": "a0ee911f-d4a5-408d-8627-de15a1f6aafd",
           "Active": true,
           "Name": "AS530 - Range Dezoom",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3592,12 +3592,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 26",
+          "DeviceName": "DIRECT",
           "GUID": "ad2798db-ed6b-41cd-958f-1e48e21f7ac7",
           "Active": true,
           "Name": "AS530 - Direct To",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3633,12 +3633,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 27",
+          "DeviceName": "MENU",
           "GUID": "7f0fbb68-8659-45ba-8045-9b7a8e17b11c",
           "Active": true,
           "Name": "AS530 - Menu",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3678,12 +3678,12 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 28",
+          "DeviceName": "CLR",
           "GUID": "d9ee75e3-ecf8-46ad-ba7a-7dbd4bf59787",
           "Active": true,
           "Name": "AS530 - CLR",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3719,12 +3719,137 @@
             "RepeatDelay": 0
           },
           "DeviceType": "Button",
-          "DeviceName": "Button 29",
+          "DeviceName": "ENT",
           "GUID": "2b77cf83-2be9-4ad2-9e78-48d6748b437a",
           "Active": true,
           "Name": "AS530 - ENT",
           "Type": "InputConfigItem",
-          "ModuleSerial": "MF GPS 430-530/ SN-346-13A",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_RightLargeKnob_Left)",
+              "PresetId": "cc371db9-05b3-45e9-8700-7841ddae3f2a"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_RightLargeKnob_Right)",
+              "PresetId": "ce4dd394-2599-4602-a42c-1f09271b8825"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Right Rough",
+          "GUID": "c6f0168d-9bb0-49b4-a76c-4ff4c2966202",
+          "Active": true,
+          "Name": "AS530 - Right Large Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_RightSmallKnob_Left)",
+              "PresetId": "115b2bd4-5c2e-43a5-ad0c-0297e8023454"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_RightSmallKnob_Right)",
+              "PresetId": "c3962792-4a50-487a-aaba-c8b5ba16f354"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Right Fine",
+          "GUID": "50d933df-d042-40ab-a8b0-8284f0384446",
+          "Active": true,
+          "Name": "AS530 - Right Small Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS530_RightSmallKnob_Push)",
+              "PresetId": "07ff4423-26c6-4612-a9c9-c4068b2b1c21"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "R_PRESS",
+          "GUID": "2a89990e-c4f9-45b4-872b-bb00281effea",
+          "Active": true,
+          "Name": "AS530 - Push CRSR",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
           "Preconditions": [
             {
               "PreconditionType": "none",
@@ -3784,6 +3909,759 @@
           "ConfigRefs": [],
           "RawValue": "",
           "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_COMSWAP_Push)",
+              "PresetId": "6c751e63-382f-4fb9-bbfd-2ca219fdc9dd"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_11",
+          "GUID": "85a24899-b226-44d7-84a1-426a44eec6ce",
+          "Active": true,
+          "Name": "AS430 - COM Swap",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_NAVSWAP_Push)",
+              "PresetId": "2856cad2-e99f-4c29-9167-026edaaa6ec2"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_13",
+          "GUID": "f739675a-94d5-45e9-8dfc-d8618c624a87",
+          "Active": true,
+          "Name": "AS430 - NAV Swap",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_LeftLargeKnob_Left)",
+              "PresetId": "faada33d-46c4-4431-b50e-cd5c60c9e0c6"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_LeftLargeKnob_Right)",
+              "PresetId": "0d90bd9b-eb7d-49d6-8c53-594bc9428d2c"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENCODER_EXT_3",
+          "GUID": "e34368c0-7624-4601-8dc5-8dd9d072b2ab",
+          "Active": true,
+          "Name": "AS430 - Left Large Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_LeftSmallKnob_Left)",
+              "PresetId": "0434ceaf-025c-409d-8b64-7f2798dadc86"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_LeftSmallKnob_Right)",
+              "PresetId": "60010378-de7e-4518-a50b-d5edc2258e65"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENCODER_EXT_4",
+          "GUID": "f74b5a47-6387-4f04-ac91-181ec494f383",
+          "Active": true,
+          "Name": "AS430 - Left Small Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_LeftSmallKnob_Push)",
+              "PresetId": "d4cfac5e-b1b2-4c82-be82-8e3a977c1724"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_14",
+          "GUID": "3e8cd93f-5ab2-439f-afa8-09ee3635af03",
+          "Active": true,
+          "Name": "AS430 - Push CV",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_CDI_Push)",
+              "PresetId": "34b8a1df-8586-450e-8dcf-e5ecd1bc822b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_15",
+          "GUID": "d6d12340-e8fe-447f-9e0c-c49955b12cc0",
+          "Active": true,
+          "Name": "AS430 - CDI",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_OBS_Push)",
+              "PresetId": "b08a9184-9c16-4404-9ae5-e894e9e8ec17"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_12",
+          "GUID": "fb564cd4-3eb7-431d-a18b-e5b8558b870a",
+          "Active": true,
+          "Name": "AS430 - OBS",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_MSG_Push)",
+              "PresetId": "efe59f1f-1267-4809-a00d-73d125ebb9ea"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_10",
+          "GUID": "87649577-a128-42b4-b77e-e63521aaed09",
+          "Active": true,
+          "Name": "AS430 - MSG",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_FPL_Push)",
+              "PresetId": "b77171d9-0a54-44c3-a7e8-6db807f4fed4"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_9",
+          "GUID": "42913ed7-813a-4f27-a18e-203f8d53a065",
+          "Active": true,
+          "Name": "AS430 - FPL",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_PROC_Push)",
+              "PresetId": "8944e46e-8139-49ca-904a-5be0a09e644a"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_8",
+          "GUID": "b3bac26f-e350-452f-a4dd-fa278ab5685e",
+          "Active": true,
+          "Name": "AS430 - PROC",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_RNG_Zoom)",
+              "PresetId": "f1267eba-d875-4a15-89c6-fc5082f53735"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_1",
+          "GUID": "acf4bfb4-6b4a-46d5-91b2-b6fbc53c0f76",
+          "Active": true,
+          "Name": "AS430 - Range Zoom",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_RNG_Dezoom)",
+              "PresetId": "f30011f3-b3a6-49ac-a8da-b1d75ae2e054"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_2",
+          "GUID": "7abe470f-7521-4019-85d4-580c6ef3206f",
+          "Active": true,
+          "Name": "AS430 - Range Dezoom",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_DirectTo_Push)",
+              "PresetId": "a5309e62-d49e-4cf5-beed-766310a11f4d"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_5",
+          "GUID": "e7c394e0-4d19-4f01-bd3a-8a76d1f55d65",
+          "Active": true,
+          "Name": "AS430 - Direct To",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_MENU_Push)",
+              "PresetId": "09eb8aeb-e6f8-4844-a302-b938167c0400"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_3",
+          "GUID": "e46e34f9-dcd4-40c8-87cf-25e4f1b435cc",
+          "Active": true,
+          "Name": "AS430 - Menu",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_CLR_Push)",
+              "PresetId": "e85fa675-cf15-4269-8f7e-398f161417ee"
+            },
+            "onRelease": null,
+            "onLongRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_CLR_Push_Long)",
+              "PresetId": "4a79de15-5185-48d4-972f-0bb3ef3f98f7"
+            },
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_7",
+          "GUID": "28169b83-8453-4709-a468-699f76951806",
+          "Active": true,
+          "Name": "AS430 - CLR",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_ENT_Push)",
+              "PresetId": "b40e333b-3c84-4a45-bdc6-06e746153885"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_6",
+          "GUID": "34b7e338-c511-48eb-ada8-dabe556c3496",
+          "Active": true,
+          "Name": "AS430 - ENT",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_RightLargeKnob_Left)",
+              "PresetId": "4d43af5c-7d8b-4849-a03f-93a6b6fbeb39"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_RightLargeKnob_Right)",
+              "PresetId": "4e92d309-e2f7-487c-991c-f6ee5532ac20"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENCODER_EXT_1",
+          "GUID": "ff6679db-0fc7-4d4f-9d28-2b3584f321e5",
+          "Active": true,
+          "Name": "AS430 - Right Large Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_RightSmallKnob_Left)",
+              "PresetId": "24411cb4-4c7d-4092-91d1-b0f162bf2889"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_RightSmallKnob_Right)",
+              "PresetId": "8978043f-c3ba-48b3-9009-c0c276c3cd1c"
+            },
+            "onRightFast": null
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENCODER_EXT_2",
+          "GUID": "68921606-125e-4e9c-ab9e-31243a388c1a",
+          "Active": true,
+          "Name": "AS430 - Right Small Knob",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS430_RightSmallKnob_Push)",
+              "PresetId": "e831393e-d469-46ee-8ba5-89aa91524808"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BUTTON_EXT_4",
+          "GUID": "295aa693-4414-40ff-b4cc-288bb43ea470",
+          "Active": true,
+          "Name": "AS430 - Push CRSR",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "GNS/ SN-F83-546",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
           "Status": {}
         }
       ]
