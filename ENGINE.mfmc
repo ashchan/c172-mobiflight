@@ -7,4 +7,6 @@
   <Stepper Name="Oil Pressure" Pin1="49" Pin2="47" Pin3="48" Pin4="46" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
   <Stepper Name="Fuel QTY Left" Pin1="42" Pin2="44" Pin3="43" Pin4="45" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
   <Stepper Name="Fuel QTY Right" Pin1="38" Pin2="40" Pin3="39" Pin4="41" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
+  <Servo Name="Flap Indicator" DataPin="37" />
+  <AnalogInput Name="Flap Axis" Pin="55" Sensitivity="5" />
 </Config>

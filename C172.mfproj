@@ -1005,6 +1005,164 @@
           "RawValue": "",
           "Value": "",
           "Status": {}
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "c19b9300-13da-46f5-8489-56bceb192f64",
+              "Value": "(A:TRAILING EDGE FLAPS LEFT PERCENT,Percent Over 100)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Flap Indicator",
+            "Address": "Flap Indicator",
+            "Min": "0",
+            "Max": "100",
+            "MaxRotationPercent": "28",
+            "Type": "Servo"
+          },
+          "DeviceType": "Servo",
+          "DeviceName": "Flap Indicator",
+          "GUID": "434017de-87f2-4184-87d2-1b1d07f89b65",
+          "Active": true,
+          "Name": "Flaps Indicator",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$ * 100",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "analog": {
+            "onChange": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "Flap_Pots",
+                "Number": 834.0,
+                "Text": "834",
+                "Expression": "@"
+              }
+            }
+          },
+          "DeviceType": "AnalogInput",
+          "DeviceName": "Flap Axis",
+          "GUID": "ef1d84a6-123e-49c6-9708-4efcf8d726a5",
+          "Active": true,
+          "Name": "Flap Pots Input",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "Flap_Pots",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "AnalogInputConfig": {
+            "onChange": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "@ 16.0147 * 0 max 16383 min (>K:FLAPS_SET)",
+              "PresetId": "e3388f22-2d1f-475d-88fc-d93676b15e2c"
+            }
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "0b46a937-6c0c-4877-bdc6-af1921b24c9f",
+          "Active": true,
+          "Name": "Flap Set",
+          "Type": "OutputConfigItem",
+          "ModuleSerial": "",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "835": 0.0,
+                  "926": 256.0,
+                  "1007": 1024.0
+                },
+                "Count": 3,
+                "Max": 1024.0,
+                "Min": 0.0,
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
+          "Status": {}
         }
       ]
     },
@@ -1078,8 +1236,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "1",
+          "Value": "1",
           "Status": {}
         },
         {
@@ -1137,8 +1295,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "17.535852432250977",
+          "Value": "63 F",
           "Status": {}
         },
         {
@@ -1191,8 +1349,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "1E-0",
           "Status": {}
         },
         {
@@ -1243,8 +1401,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "17.535852432250977",
+          "Value": "17 C",
           "Status": {}
         },
         {
@@ -1329,8 +1487,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "1 E",
           "Status": {}
         },
         {
@@ -1399,8 +1557,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "1",
+          "Value": "2",
           "Status": {}
         },
         {
@@ -1458,8 +1616,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "1",
           "Status": {}
         },
         {
@@ -1554,9 +1712,11 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
-          "Status": {}
+          "RawValue": "83324.046875",
+          "Value": "23",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
         },
         {
           "Source": {
@@ -1645,8 +1805,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "29324.044921875",
+          "Value": "8",
           "Status": {}
         },
         {
@@ -1750,9 +1910,11 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
-          "Status": {}
+          "RawValue": "4",
+          "Value": "00",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
         },
         {
           "Source": {
@@ -1846,9 +2008,11 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
-          "Status": {}
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
         },
         {
           "Source": {
@@ -1928,9 +2092,11 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
-          "Status": {}
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
         },
         {
           "Source": {
@@ -2015,9 +2181,11 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
-          "Status": {}
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
         },
         {
           "Source": {
@@ -2052,8 +2220,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -2095,8 +2263,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "83324.046875",
+          "Value": "08",
           "Status": {}
         },
         {
@@ -2125,8 +2293,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "283860.84375",
+          "Value": "283860.84375",
           "Status": {}
         },
         {
@@ -2168,8 +2336,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -2241,8 +2409,8 @@
               "TestValue": "4"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "00",
           "Status": {}
         },
         {
@@ -2298,8 +2466,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "00",
           "Status": {}
         },
         {
@@ -2377,9 +2545,11 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
-          "Status": {}
+          "RawValue": "0",
+          "Value": "1",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
         },
         {
           "Source": {
@@ -2456,9 +2626,11 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
-          "Status": {}
+          "RawValue": "0",
+          "Value": "1",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
         },
         {
           "Source": {
@@ -2478,8 +2650,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "FT",
-                "Number": 343.0,
-                "Text": "343",
+                "Number": 4.0,
+                "Text": "4",
                 "Expression": "$+1"
               }
             },
@@ -2514,8 +2686,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "1",
           "Status": {}
         },
         {
@@ -2564,8 +2736,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "4",
+          "Value": "00",
           "Status": {}
         },
         {
@@ -2596,8 +2768,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -2655,8 +2827,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -2696,8 +2868,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -2737,8 +2909,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -2782,8 +2954,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -2828,8 +3000,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -2840,8 +3012,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "SelectPress",
-                "Number": 11.0,
-                "Text": "11",
+                "Number": 1.0,
+                "Text": "1",
                 "Expression": "$+1"
               }
             },
@@ -2874,8 +3046,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -2920,8 +3092,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -2975,8 +3147,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3030,8 +3202,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         }
       ]
@@ -3079,8 +3251,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3120,8 +3292,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3162,8 +3334,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "LEFT",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3204,8 +3376,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "LEFT",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3245,8 +3417,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3286,8 +3458,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3327,8 +3499,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3368,8 +3540,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3409,8 +3581,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3450,8 +3622,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3491,8 +3663,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3532,8 +3704,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3573,8 +3745,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3614,8 +3786,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3655,8 +3827,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3700,8 +3872,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3741,8 +3913,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3866,8 +4038,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3907,8 +4079,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3948,8 +4120,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3989,8 +4161,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4031,6 +4203,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -4071,6 +4245,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -4110,6 +4286,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4149,6 +4327,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4188,6 +4368,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4227,6 +4409,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4266,6 +4450,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4305,6 +4491,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4344,6 +4532,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4383,6 +4573,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4422,6 +4614,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4461,6 +4655,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4504,6 +4700,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4543,6 +4741,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4583,6 +4783,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -4623,6 +4825,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -4662,6 +4866,8 @@
             "Items": []
           },
           "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         }
       ]
