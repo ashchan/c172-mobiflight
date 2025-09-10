@@ -1061,7 +1061,7 @@
           "Active": true,
           "Name": "Read if Engine on",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [],
           "Modifiers": {
             "Items": [
@@ -1102,7 +1102,7 @@
           "Active": true,
           "Name": "Deg F",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [
             {
               "PreconditionType": "config",
@@ -1161,7 +1161,7 @@
           "Active": true,
           "Name": "Voltage",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [
             {
               "PreconditionType": "config",
@@ -1215,7 +1215,7 @@
           "Active": true,
           "Name": "Deg C",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [
             {
               "PreconditionType": "config",
@@ -1269,7 +1269,7 @@
           "Active": true,
           "Name": "OAT Status - \nVolt, F, C",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [],
           "Modifiers": {
             "Items": [
@@ -1355,7 +1355,7 @@
           "Active": true,
           "Name": "Select Status -\n 1:UT \n2:LT\n 3:FT \n4:ET",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [],
           "Modifiers": {
             "Items": [
@@ -1425,7 +1425,7 @@
           "Active": true,
           "Name": "Control Status -\n 1: Zero\n2: Start\n3: Stop",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [
             {
               "PreconditionType": "config",
@@ -2076,7 +2076,7 @@
           "Active": true,
           "Name": "1 & 2 - Time Minutes",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [],
           "Modifiers": {
             "Items": [
@@ -2119,7 +2119,7 @@
           "Active": true,
           "Name": "3- FT Flight Time Raw Seconds",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [],
           "Modifiers": {
             "Items": []
@@ -2151,7 +2151,7 @@
           "Active": true,
           "Name": "4- Elapsed Time Raw Seconds (read)",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [
             {
               "PreconditionType": "config",
@@ -2267,7 +2267,7 @@
           "Active": true,
           "Name": "4- Elapsed Time Large Value",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [],
           "Modifiers": {
             "Items": [
@@ -2338,7 +2338,7 @@
           "Active": true,
           "Name": "4 - ET Time Blinker Clear Var if Control =1",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [
             {
               "PreconditionType": "config",
@@ -2417,7 +2417,7 @@
           "Active": true,
           "Name": "4 - ET Time Counter Blinker Var if Control =2",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [
             {
               "PreconditionType": "config",
@@ -2540,7 +2540,7 @@
           "Active": true,
           "Name": "FT Flight Time Hours",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [],
           "Modifiers": {
             "Items": [
@@ -2590,7 +2590,7 @@
           "Active": true,
           "Name": "TestSelect",
           "Type": "OutputConfigItem",
-          "ModuleSerial": "P1/ SN-63C-8CC",
+          "ModuleSerial": "IP1/ SN-63C-8CC",
           "Preconditions": [],
           "Modifiers": {
             "Items": []
