@@ -9,4 +9,6 @@
   <Stepper Name="Fuel QTY Right" Pin1="38" Pin2="40" Pin3="39" Pin4="41" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
   <Servo Name="Flap Indicator" DataPin="37" />
   <AnalogInput Name="Flap Axis" Pin="55" Sensitivity="5" />
+  <AnalogInput Name="Throttle Axis" Pin="56" Sensitivity="5" />
+  <AnalogInput Name="Mixture Axis" Pin="57" Sensitivity="5" />
 </Config>
