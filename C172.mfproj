@@ -55,8 +55,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "2352.9990234375",
-          "Value": "2352.9990234375",
+          "RawValue": "2525.57421875",
+          "Value": "2525.57421875",
           "Status": {}
         },
         {
@@ -571,8 +571,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "197.17875671386719",
-          "Value": "122.178756713867",
+          "RawValue": "202.01181030273438",
+          "Value": "127.011810302734",
           "Status": {}
         },
         {
@@ -623,8 +623,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "77.231430053710938",
-          "Value": "77.231430053710938",
+          "RawValue": "77.1302719116211",
+          "Value": "77.1302719116211",
           "Status": {}
         },
         {
@@ -695,8 +695,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "0.42590126395225525",
-          "Value": "31",
+          "RawValue": "0.472731351852417",
+          "Value": "37",
           "Status": {}
         },
         {
@@ -767,8 +767,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "0.42590123414993286",
-          "Value": "31",
+          "RawValue": "0.472731351852417",
+          "Value": "37",
           "Status": {}
         },
         {
@@ -944,8 +944,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "1947.3193359375",
-          "Value": "197.6493359375",
+          "RawValue": "1876.09326171875",
+          "Value": "126.42326171875",
           "Status": {}
         },
         {
@@ -1002,8 +1002,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "8.9917211532592773",
-          "Value": "-2.00827884674072",
+          "RawValue": "11.106969833374023",
+          "Value": "0.106969833374",
           "Status": {}
         },
         {
@@ -1167,21 +1167,16 @@
         {
           "analog": {
             "onChange": {
-              "Type": "VariableInputAction",
-              "Variable": {
-                "TYPE": "number",
-                "Name": "Throttle_Pots",
-                "Number": 521.0,
-                "Text": "521",
-                "Expression": "@"
-              }
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "@ 396 - -30.1158 * 16383 + 0 max 16383 min (>K:THROTTLE1_SET)",
+              "PresetId": "ce277763-24ec-4cf5-bff1-09b412f3a565"
             }
           },
           "DeviceType": "AnalogInput",
           "DeviceName": "Throttle Axis",
           "GUID": "ec979489-23d0-4d53-83e5-310357ee4060",
           "Active": true,
-          "Name": "Throttle Pots Input",
+          "Name": "Throttle",
           "Type": "InputConfigItem",
           "ModuleSerial": "ENGINE/ SN-346-13A",
           "Preconditions": [
@@ -1200,90 +1195,23 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "CHANGE => 521",
+          "RawValue": "CHANGE => 496",
           "Value": " ",
-          "Status": {}
-        },
-        {
-          "Source": {
-            "MobiFlightVariable": {
-              "TYPE": "number",
-              "Name": "Throttle_Pots",
-              "Number": 0.0,
-              "Text": "",
-              "Expression": "$"
-            },
-            "Type": "VariableSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "AnalogInputConfig": {
-            "onChange": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "@ 16.0147 * 0 max 16383 min (>K:THROTTLE1_SET)",
-              "PresetId": "ce277763-24ec-4cf5-bff1-09b412f3a565"
-            }
-          },
-          "DeviceType": "InputAction",
-          "DeviceName": null,
-          "GUID": "f68244e6-f668-4bf2-a5dc-877196eb48b6",
-          "Active": true,
-          "Name": "Throttle Set",
-          "Type": "OutputConfigItem",
-          "ModuleSerial": "",
-          "Preconditions": [
-            {
-              "PreconditionType": "none",
-              "PreconditionRef": null,
-              "PreconditionSerial": null,
-              "PreconditionPin": null,
-              "PreconditionOperand": "=",
-              "PreconditionValue": null,
-              "PreconditionLogic": "and",
-              "PreconditionActive": true
-            }
-          ],
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Interpolation",
-                "Values": {
-                  "396": 1024.0,
-                  "937": 0.0
-                },
-                "Count": 2,
-                "Max": 1024.0,
-                "Min": 0.0,
-                "Active": true
-              }
-            ]
-          },
-          "ConfigRefs": [],
-          "RawValue": "521",
-          "Value": "787",
           "Status": {}
         },
         {
           "analog": {
             "onChange": {
-              "Type": "VariableInputAction",
-              "Variable": {
-                "TYPE": "number",
-                "Name": "Mixture_Pots",
-                "Number": 812.0,
-                "Text": "812",
-                "Expression": "@"
-              }
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "@ 292 - 22.5041 * 0 max 16383 min (>K:MIXTURE1_SET)",
+              "PresetId": "dc3ff47c-b2a4-4c2f-ad95-eff004a82199"
             }
           },
           "DeviceType": "AnalogInput",
           "DeviceName": "Mixture Axis",
           "GUID": "0c8bab7c-32eb-4fdf-9c55-9e76e8450e62",
           "Active": true,
-          "Name": "Mixture Pots Input",
+          "Name": "Mixture",
           "Type": "InputConfigItem",
           "ModuleSerial": "ENGINE/ SN-346-13A",
           "Preconditions": [
@@ -1302,70 +1230,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "CHANGE => 812",
+          "RawValue": "CHANGE => 1018",
           "Value": " ",
-          "Status": {}
-        },
-        {
-          "Source": {
-            "MobiFlightVariable": {
-              "TYPE": "number",
-              "Name": "Mixture_Pots",
-              "Number": 0.0,
-              "Text": "",
-              "Expression": "$"
-            },
-            "Type": "VariableSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "AnalogInputConfig": {
-            "onChange": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "@ 32.0293 * 16383 - -16383 max 16383 min (>K:MIXTURE1_SET)",
-              "PresetId": "dc3ff47c-b2a4-4c2f-ad95-eff004a82199"
-            }
-          },
-          "DeviceType": "InputAction",
-          "DeviceName": null,
-          "GUID": "959f113c-a5e8-4e40-80ec-354259a34618",
-          "Active": true,
-          "Name": "Mixture Set",
-          "Type": "OutputConfigItem",
-          "ModuleSerial": "",
-          "Preconditions": [
-            {
-              "PreconditionType": "none",
-              "PreconditionRef": null,
-              "PreconditionSerial": null,
-              "PreconditionPin": null,
-              "PreconditionOperand": "=",
-              "PreconditionValue": null,
-              "PreconditionLogic": "and",
-              "PreconditionActive": true
-            }
-          ],
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Interpolation",
-                "Values": {
-                  "294": 0.0,
-                  "1022": 1024.0
-                },
-                "Count": 2,
-                "Max": 1024.0,
-                "Min": 0.0,
-                "Active": true
-              }
-            ]
-          },
-          "ConfigRefs": [],
-          "RawValue": "812",
-          "Value": "729",
           "Status": {}
         }
       ]
@@ -1499,8 +1365,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "25.262109756469727",
-          "Value": "77 F",
+          "RawValue": "31.933771133422852",
+          "Value": "89 F",
           "Status": {}
         },
         {
@@ -1605,8 +1471,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "25.262109756469727",
-          "Value": "25 C",
+          "RawValue": "31.933771133422852",
+          "Value": "31 C",
           "Status": {}
         },
         {
@@ -1916,8 +1782,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "29560.201171875",
-          "Value": "08",
+          "RawValue": "32923.51953125",
+          "Value": "09",
           "Status": {
             "Precondition": "not satisfied"
           }
@@ -2009,8 +1875,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "54760.203125",
-          "Value": "15",
+          "RawValue": "61723.51953125",
+          "Value": "17",
           "Status": {}
         },
         {
@@ -2114,7 +1980,7 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "216",
+          "RawValue": "211",
           "Value": "03",
           "Status": {
             "Precondition": "not satisfied"
@@ -2467,8 +2333,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "29560.201171875",
-          "Value": "12",
+          "RawValue": "32923.51953125",
+          "Value": "08",
           "Status": {}
         },
         {
@@ -2497,8 +2363,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "285763.65625",
-          "Value": "285763.65625",
+          "RawValue": "288868.84375",
+          "Value": "288868.84375",
           "Status": {}
         },
         {
@@ -2750,7 +2616,7 @@
           },
           "ConfigRefs": [],
           "RawValue": "0",
-          "Value": "1",
+          "Value": "0",
           "Status": {
             "Precondition": "not satisfied"
           }
@@ -2831,7 +2697,7 @@
           },
           "ConfigRefs": [],
           "RawValue": "0",
-          "Value": "1",
+          "Value": "0",
           "Status": {
             "Precondition": "not satisfied"
           }
@@ -2854,8 +2720,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "FT",
-                "Number": 216.0,
-                "Text": "216",
+                "Number": 211.0,
+                "Text": "211",
                 "Expression": "$+1"
               }
             },
@@ -2891,7 +2757,7 @@
           },
           "ConfigRefs": [],
           "RawValue": "0",
-          "Value": "1",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -2940,7 +2806,7 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "216",
+          "RawValue": "211",
           "Value": "00",
           "Status": {}
         },
