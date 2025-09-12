@@ -55,8 +55,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "2525.57421875",
-          "Value": "2525.57421875",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -107,8 +107,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "0",
-          "Value": "0",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -159,8 +159,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "90",
-          "Value": "90",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -410,8 +410,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "RELEASE",
-          "Value": " ",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -571,8 +571,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "202.01181030273438",
-          "Value": "127.011810302734",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -623,8 +623,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "77.1302719116211",
-          "Value": "77.1302719116211",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -695,8 +695,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "0.472731351852417",
-          "Value": "37",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -767,8 +767,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "0.472731351852417",
-          "Value": "37",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -819,8 +819,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "0",
-          "Value": "0",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -886,8 +886,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "0",
-          "Value": "-4",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -944,8 +944,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "1876.09326171875",
-          "Value": "126.42326171875",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -1002,8 +1002,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "11.106969833374023",
-          "Value": "0.106969833374",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -1057,8 +1057,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "0",
-          "Value": "0",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -1097,8 +1097,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "CHANGE => 834",
-          "Value": " ",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -1160,8 +1160,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "834",
-          "Value": "0",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -1195,8 +1195,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "CHANGE => 496",
-          "Value": " ",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         },
         {
@@ -1230,8 +1230,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "CHANGE => 1018",
-          "Value": " ",
+          "RawValue": "",
+          "Value": "",
           "Status": {}
         }
       ]
@@ -4941,6 +4941,13 @@
           "Status": {}
         }
       ]
+    },
+    {
+      "Label": "New file",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": []
     }
   ]
 }
