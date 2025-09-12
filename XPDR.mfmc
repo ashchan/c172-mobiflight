@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>XPDR</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="IDT" Pin="40" />
+  <Button Name="0" Pin="41" />
+  <Button Name="1" Pin="42" />
+  <Button Name="2" Pin="43" />
+  <Button Name="3" Pin="44" />
+  <Button Name="4" Pin="45" />
+  <Button Name="5" Pin="46" />
+  <Button Name="6" Pin="47" />
+  <Button Name="7" Pin="48" />
+  <Button Name="CLR" Pin="49" />
+  <Button Name="VFR" Pin="50" />
+  <Button Name="RS_OFF" Pin="51" />
+  <Button Name="RS_SBY" Pin="52" />
+  <Button Name="RS_TST" Pin="53" />
+  <Button Name="RS_ON" Pin="A0" />
+  <Button Name="RS_ALT" Pin="A1" />
+  <LedModule Name="KT-76" ModelType="0" DinPin="A2" ClsPin="A3" ClkPin="A4" Brightness="15" NumModules="1" />
+</Config>
