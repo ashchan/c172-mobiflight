@@ -17,7 +17,7 @@
   <Button Name="RS_OFF" Pin="51" />
   <Button Name="RS_SBY" Pin="52" />
   <Button Name="RS_TST" Pin="53" />
-  <Button Name="RS_ON" Pin="A0" />
-  <Button Name="RS_ALT" Pin="A1" />
-  <LedModule Name="KT-76" ModelType="0" DinPin="A2" ClsPin="A3" ClkPin="A4" Brightness="15" NumModules="1" />
+  <Button Name="RS_ON" Pin="54" />
+  <Button Name="RS_ALT" Pin="55" />
+  <LedModule Name="KT-76" ModelType="0" DinPin="56" ClsPin="57" ClkPin="58" Brightness="5" NumModules="1" />
 </Config>
