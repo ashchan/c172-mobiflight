@@ -11,4 +11,21 @@
   <AnalogInput Name="Flap Axis" Pin="55" Sensitivity="5" />
   <AnalogInput Name="Throttle Axis" Pin="56" Sensitivity="5" />
   <AnalogInput Name="Mixture Axis" Pin="57" Sensitivity="5" />
+  <Button Name="Button" Pin="2" />
+  <Button Name="Button 1" Pin="3" />
+  <Button Name="Button 2" Pin="4" />
+  <Button Name="Button 3" Pin="5" />
+  <Button Name="Button 4" Pin="6" />
+  <Button Name="Button 5" Pin="7" />
+  <Button Name="Button 6" Pin="8" />
+  <Button Name="Button 7" Pin="9" />
+  <Button Name="Button 8" Pin="10" />
+  <Button Name="Button 9" Pin="11" />
+  <Button Name="Button 10" Pin="12" />
+  <Button Name="Button 11" Pin="13" />
+  <Button Name="Button 12" Pin="14" />
+  <Button Name="Button 13" Pin="15" />
+  <Button Name="Button 14" Pin="16" />
+  <Button Name="Button 15" Pin="17" />
+  <Button Name="Button 16" Pin="21" />
 </Config>

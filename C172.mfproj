@@ -55,8 +55,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "2512.31787109375",
+          "Value": "2512.31787109375",
           "Status": {}
         },
         {
@@ -107,8 +107,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -159,8 +159,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "90",
+          "Value": "90",
           "Status": {}
         },
         {
@@ -410,8 +410,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -571,8 +571,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "207.36036682128906",
+          "Value": "132.360366821289",
           "Status": {}
         },
         {
@@ -623,8 +623,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "77.019073486328125",
+          "Value": "77.019073486328125",
           "Status": {}
         },
         {
@@ -695,8 +695,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0.41064906120300293",
+          "Value": "29",
           "Status": {}
         },
         {
@@ -767,8 +767,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0.41064906120300293",
+          "Value": "29",
           "Status": {}
         },
         {
@@ -819,8 +819,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -886,8 +886,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "-4",
           "Status": {}
         },
         {
@@ -944,8 +944,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "1951.1083984375",
+          "Value": "201.4383984375",
           "Status": {}
         },
         {
@@ -1002,8 +1002,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "12.557076454162598",
+          "Value": "1.5570764541626",
           "Status": {}
         },
         {
@@ -1057,8 +1057,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -1068,8 +1068,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "Flap_Pots",
-                "Number": 834.0,
-                "Text": "834",
+                "Number": 895.0,
+                "Text": "895",
                 "Expression": "@"
               }
             }
@@ -1097,8 +1097,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "CHANGE => 895",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -1160,8 +1160,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "895",
+          "Value": "169",
           "Status": {}
         },
         {
@@ -1195,8 +1195,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "CHANGE => 606",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -1230,8 +1230,753 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "CHANGE => 1022",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
+              "PresetId": "1bf98193-ce2d-4277-991f-fd4bcdaba3bd"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 7",
+          "GUID": "9df28849-14ce-4173-b043-24025a542291",
+          "Active": true,
+          "Name": "MAGNETOS Off",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
+              "PresetId": "3a6c52e4-f892-4b02-b9e6-2d546220fc18"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 8",
+          "GUID": "32faccf1-a1d6-48ab-9de2-7d2ae4de3757",
+          "Active": true,
+          "Name": "MAGNETOS Right",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "2 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
+              "PresetId": "3ef21d47-315b-4274-9748-6f2155548580"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 9",
+          "GUID": "5d39ce4b-a028-4eae-b5a8-cb8bd57d4667",
+          "Active": true,
+          "Name": "MAGNETOS Left",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "3 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
+              "PresetId": "22fffb5f-b7d6-49f2-9eee-04985a3c0299"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 10",
+          "GUID": "5a5c9062-79af-4d13-81b4-d5e45e7dbdb8",
+          "Active": true,
+          "Name": "MAGNETOS Both",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "PRESS",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "3 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) ! if{ 1 (>K:SET_STARTER1_HELD) }",
+              "PresetId": "669d178f-b1f4-4005-841f-944a19764e6b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 11",
+          "GUID": "15354558-44f6-4540-be30-8108f4623bb1",
+          "Active": true,
+          "Name": "MAGNETOS Start",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (A:GENERAL ENG MASTER ALTERNATOR:1, Bool) != if{ 1 1 (>K:2:ALTERNATOR_SET) } ",
+              "PresetId": "c40a0f2f-29fe-42f0-ae63-fd2d6c9105f8"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (A:GENERAL ENG MASTER ALTERNATOR:1, Bool) != if{ 1 0 (>K:2:ALTERNATOR_SET) } ",
+              "PresetId": "8743b905-cea8-4307-8b9b-f675b7c92fdb"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 6",
+          "GUID": "b6bea959-9f75-44e9-a2f5-86417a67f8d2",
+          "Active": true,
+          "Name": "Master ALT",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "PRESS",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:ELECTRICAL MASTER BATTERY:1, Bool) 0 == if{ 1 (>K:TOGGLE_MASTER_BATTERY) }",
+              "PresetId": "7b873312-5889-408b-9ca2-cdcdd3f97b25"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:ELECTRICAL MASTER BATTERY:1, Bool) 1 == if{ 1 (>K:TOGGLE_MASTER_BATTERY) }",
+              "PresetId": "d88e0d10-dcc2-4760-8f7e-f5fb5d4c6a48"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 5",
+          "GUID": "421fc2c1-7865-40ea-ac65-900e3cacea2c",
+          "Active": true,
+          "Name": "Master BAT",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "PRESS",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>B:FUEL_PUMP_1_Set)",
+              "PresetId": "7c45a675-4c98-46e7-bb91-98feec3c1cf6"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:FUEL_PUMP_1_Set)",
+              "PresetId": "9051bacf-3940-485a-b07c-53568e95997b"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 4",
+          "GUID": "4e62b37f-b0d5-45c2-9882-a949b738e65d",
+          "Active": true,
+          "Name": "Fuel Pump",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "PRESS",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>K:PARKING_BRAKE_SET)",
+              "PresetId": "bfa5f4f9-0f44-49d0-9382-929b6e96c4ef"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:PARKING_BRAKE_SET)",
+              "PresetId": "3556ab94-09b7-43be-a226-b37ea20d9df1"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 16",
+          "GUID": "6250e525-ea35-4dd3-84d3-7381be514535",
+          "Active": true,
+          "Name": "Parking Brake",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:BEACON_LIGHTS_SET)",
+              "PresetId": "8999e9f0-503b-4013-9d55-2d12338ccbab"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>K:BEACON_LIGHTS_SET)",
+              "PresetId": "871efb4f-08fe-464b-855b-33fefad893fa"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 3",
+          "GUID": "d3e8cf1e-78df-4360-816b-332d2988c668",
+          "Active": true,
+          "Name": "Lights - BCN",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "PRESS",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 0 (>K:2:LANDING_LIGHTS_SET) 0 (>L:LIGHTING_LANDING_1)",
+              "PresetId": "453ea54e-8b38-4186-9755-d4f57e3d9df8"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 1 (>K:2:LANDING_LIGHTS_SET) 1 (>L:LIGHTING_LANDING_1)",
+              "PresetId": "af7fdf6b-1681-4921-b9cb-9a9ec96e539b"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 2",
+          "GUID": "c6be048a-6598-491f-8647-36c7719ac257",
+          "Active": true,
+          "Name": "Lights - LAND",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "PRESS",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:TAXI_LIGHTS_ON)",
+              "PresetId": "de6a10e9-de1b-41ca-90bc-77b5faf9f660"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:TAXI_LIGHTS_OFF)",
+              "PresetId": "d4c024a6-e293-441d-84f8-e26c3ec13f7f"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 1",
+          "GUID": "fd240847-1e0c-4f72-a753-eca84a583e4b",
+          "Active": true,
+          "Name": "Lights - TAXI",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:NAV_LIGHTS_ON)",
+              "PresetId": "01af2f5f-c01b-4951-9918-5d3735c6daac"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:NAV_LIGHTS_OFF)",
+              "PresetId": "463f5719-cb1f-488f-bd48-a0fb94744dcb"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button",
+          "GUID": "5d4834bf-b3af-409e-86fc-c932ea20f375",
+          "Active": true,
+          "Name": "Lights - NAV",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:STROBES_ON)",
+              "PresetId": "1b89a2d8-6ffc-41bc-abd3-9bcff681e8a2"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:STROBES_OFF)",
+              "PresetId": "1b89a2d8-6ffc-41bc-abd3-9bcff681e8a2"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 12",
+          "GUID": "decb92a6-e046-4181-9187-5428f82251ec",
+          "Active": true,
+          "Name": "Lights - STROBE",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:PITOT_HEAT_ON)",
+              "PresetId": "-"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:PITOT_HEAT_OFF)",
+              "PresetId": "-"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 13",
+          "GUID": "43755ec9-1661-422d-8732-7b0f854e541a",
+          "Active": true,
+          "Name": "PITOT HEAT",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "RELEASE",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:ELECTRICAL_LINE_BUS_1_TO_AVIONICS_BUS_1_ON)",
+              "PresetId": "360cff24-e5c0-4f0e-9dc8-7f49e1aecad1"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:ELECTRICAL_LINE_BUS_1_TO_AVIONICS_BUS_1_OFF)",
+              "PresetId": "-"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 15",
+          "GUID": "21f2e02a-ad60-4233-8f20-753c8ae7cc8d",
+          "Active": true,
+          "Name": "Avionics Master Bus 1",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "PRESS",
+          "Value": " ",
+          "Status": {}
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:ELECTRICAL_LINE_BUS_2_TO_AVIONICS_BUS_2_ON)",
+              "PresetId": "a8a9bc25-1cfb-48ed-9c04-164bcd9659b7"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:ELECTRICAL_LINE_BUS_2_TO_AVIONICS_BUS_2_OFF)",
+              "PresetId": "-"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 14",
+          "GUID": "d3471aef-527d-4560-bec5-dfa603fcbf8f",
+          "Active": true,
+          "Name": "Avionics Master Bus 2",
+          "Type": "InputConfigItem",
+          "ModuleSerial": "ENGINE/ SN-346-13A",
+          "Preconditions": [
+            {
+              "PreconditionType": "none",
+              "PreconditionRef": null,
+              "PreconditionSerial": null,
+              "PreconditionPin": null,
+              "PreconditionOperand": "=",
+              "PreconditionValue": null,
+              "PreconditionLogic": "and",
+              "PreconditionActive": true
+            }
+          ],
+          "Modifiers": {
+            "Items": []
+          },
+          "ConfigRefs": [],
+          "RawValue": "PRESS",
+          "Value": " ",
           "Status": {}
         }
       ]
@@ -1365,8 +2110,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "31.933771133422852",
-          "Value": "89 F",
+          "RawValue": "24.586389541625977",
+          "Value": "76 F",
           "Status": {}
         },
         {
@@ -1471,8 +2216,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "31.933771133422852",
-          "Value": "31 C",
+          "RawValue": "24.586389541625977",
+          "Value": "24 C",
           "Status": {}
         },
         {
@@ -1782,8 +2527,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "32923.51953125",
-          "Value": "09",
+          "RawValue": "4979.875",
+          "Value": "01",
           "Status": {
             "Precondition": "not satisfied"
           }
@@ -1875,8 +2620,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "61723.51953125",
-          "Value": "17",
+          "RawValue": "24779.875",
+          "Value": "6",
           "Status": {}
         },
         {
@@ -1980,8 +2725,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "211",
-          "Value": "03",
+          "RawValue": "1113",
+          "Value": "18",
           "Status": {
             "Precondition": "not satisfied"
           }
@@ -2078,8 +2823,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "0",
-          "Value": "0",
+          "RawValue": "24779.875",
+          "Value": "59",
           "Status": {
             "Precondition": "not satisfied"
           }
@@ -2162,8 +2907,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "0",
-          "Value": "0",
+          "RawValue": "24779.875",
+          "Value": "59",
           "Status": {
             "Precondition": "not satisfied"
           }
@@ -2333,8 +3078,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "32923.51953125",
-          "Value": "08",
+          "RawValue": "4979.875",
+          "Value": "22",
           "Status": {}
         },
         {
@@ -2363,8 +3108,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "288868.84375",
-          "Value": "288868.84375",
+          "RawValue": "293917.6875",
+          "Value": "293917.6875",
           "Status": {}
         },
         {
@@ -2720,8 +3465,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "FT",
-                "Number": 211.0,
-                "Text": "211",
+                "Number": 1113.0,
+                "Text": "1113",
                 "Expression": "$+1"
               }
             },
@@ -2806,7 +3551,7 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "211",
+          "RawValue": "1113",
           "Value": "00",
           "Status": {}
         },
@@ -3321,8 +4066,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3362,8 +4107,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3404,8 +4149,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RIGHT",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3446,8 +4191,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RIGHT",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3487,8 +4232,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3528,8 +4273,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3569,8 +4314,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3610,8 +4355,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3651,8 +4396,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3692,8 +4437,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3733,8 +4478,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3774,8 +4519,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3815,8 +4560,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3856,8 +4601,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3897,8 +4642,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3942,8 +4687,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -3983,8 +4728,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4025,8 +4770,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "LEFT",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4067,8 +4812,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RIGHT",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4108,8 +4853,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4149,8 +4894,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4190,8 +4935,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4231,8 +4976,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4356,8 +5101,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4397,8 +5142,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4438,8 +5183,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4479,8 +5224,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4520,8 +5265,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4561,8 +5306,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4602,8 +5347,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4643,8 +5388,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4684,8 +5429,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4725,8 +5470,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4770,8 +5515,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4811,8 +5556,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -4936,8 +5681,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         }
       ]
@@ -5021,9 +5766,11 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
-          "Status": {}
+          "RawValue": "77",
+          "Value": "77",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
         },
         {
           "Source": {
@@ -5098,9 +5845,11 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
-          "Status": {}
+          "RawValue": "77",
+          "Value": "77",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
         },
         {
           "Source": {
@@ -5263,8 +6012,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "4",
+          "Value": "O21",
           "Status": {}
         },
         {
@@ -5347,7 +6096,7 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
+          "RawValue": "0",
           "Value": "",
           "Status": {}
         },
@@ -5393,7 +6142,7 @@
                   500
                 ],
                 "OffDurationInMs": 500,
-                "FirstExecutionTime": 0,
+                "FirstExecutionTime": 638938688570923252,
                 "Active": true
               },
               {
@@ -5404,8 +6153,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "15",
           "Status": {}
         },
         {
@@ -5482,8 +6231,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "4",
+          "Value": "4",
           "Status": {}
         },
         {
@@ -5530,8 +6279,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "3060.827880859375",
+          "Value": "O31",
           "Status": {}
         },
         {
@@ -5578,8 +6327,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "1",
+          "Value": "15",
           "Status": {}
         },
         {
@@ -5614,8 +6363,8 @@
             ]
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "1205.0986328125",
+          "Value": "1205.0986328125",
           "Status": {}
         },
         {
@@ -5672,8 +6421,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "3092.67065429688",
+          "Value": "-1887.57",
           "Status": {}
         },
         {
@@ -5750,8 +6499,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "1",
           "Status": {}
         },
         {
@@ -5834,7 +6583,7 @@
             }
           ],
           "RawValue": "",
-          "Value": "",
+          "Value": "-",
           "Status": {}
         },
         {
@@ -5944,8 +6693,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -6121,8 +6870,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -6298,8 +7047,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -6325,7 +7074,7 @@
                 "TYPE": "number",
                 "Name": "vfr",
                 "Number": 0.0,
-                "Text": "",
+                "Text": "0",
                 "Expression": "@"
               }
             },
@@ -6361,8 +7110,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "1",
           "Status": {}
         },
         {
@@ -6389,7 +7138,7 @@
                 "TYPE": "number",
                 "Name": "typeLength",
                 "Number": 0.0,
-                "Text": "",
+                "Text": "0",
                 "Expression": "$*#"
               }
             },
@@ -6418,8 +7167,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "0",
+          "Value": "0",
           "Status": {}
         },
         {
@@ -6481,8 +7230,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "3092.67065429688",
+          "Value": "1",
           "Status": {}
         },
         {
@@ -6641,8 +7390,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -6671,8 +7420,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -6701,8 +7450,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -6731,8 +7480,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -6761,8 +7510,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -6791,8 +7540,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -6821,8 +7570,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -6851,8 +7600,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -6881,8 +7630,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -6911,8 +7660,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -6941,8 +7690,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -6971,8 +7720,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "PRESS",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7001,8 +7750,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7031,8 +7780,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7061,8 +7810,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7091,8 +7840,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7112,8 +7861,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 3096.67065429688,
+                "Text": "3096.67065429688",
                 "Expression": "#"
               }
             },
@@ -7142,8 +7891,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7184,8 +7933,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7226,8 +7975,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7247,8 +7996,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 3096.67065429688,
+                "Text": "3096.67065429688",
                 "Expression": "#"
               }
             },
@@ -7277,8 +8026,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7319,8 +8068,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7340,8 +8089,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 3096.67065429688,
+                "Text": "3096.67065429688",
                 "Expression": "#"
               }
             },
@@ -7370,8 +8119,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7391,8 +8140,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 3096.67065429688,
+                "Text": "3096.67065429688",
                 "Expression": "#"
               }
             },
@@ -7421,8 +8170,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7442,8 +8191,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 3096.67065429688,
+                "Text": "3096.67065429688",
                 "Expression": "#"
               }
             },
@@ -7472,8 +8221,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7493,8 +8242,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 3096.67065429688,
+                "Text": "3096.67065429688",
                 "Expression": "#"
               }
             },
@@ -7523,8 +8272,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7544,8 +8293,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 3096.67065429688,
+                "Text": "3096.67065429688",
                 "Expression": "#"
               }
             },
@@ -7574,8 +8323,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7587,7 +8336,7 @@
                 "TYPE": "number",
                 "Name": "timefreeze",
                 "Number": 0.0,
-                "Text": "",
+                "Text": "#",
                 "Expression": "#"
               }
             },
@@ -7627,8 +8376,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7639,8 +8388,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 3092.67065429688,
+                "Text": "3092.67065429688",
                 "Expression": "#-4"
               }
             },
@@ -7669,8 +8418,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7691,7 +8440,7 @@
                 "TYPE": "number",
                 "Name": "clearVar",
                 "Number": 0.0,
-                "Text": "",
+                "Text": "0",
                 "Expression": "0"
               }
             },
@@ -7713,8 +8462,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7748,8 +8497,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7783,8 +8532,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7818,8 +8567,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7853,8 +8602,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7888,8 +8637,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7923,8 +8672,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7958,8 +8707,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -7993,8 +8742,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -8028,8 +8777,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -8063,8 +8812,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -8098,8 +8847,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         },
         {
@@ -8133,8 +8882,8 @@
             "Items": []
           },
           "ConfigRefs": [],
-          "RawValue": "",
-          "Value": "",
+          "RawValue": "RELEASE",
+          "Value": " ",
           "Status": {}
         }
       ]
