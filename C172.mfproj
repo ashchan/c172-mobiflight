@@ -1264,7 +1264,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1231.0,
+            "Float64": 1231,
             "String": null
           },
           "Device": {
@@ -1288,11 +1288,11 @@
           "DeviceType": "Display Module",
           "DeviceName": "KT-76",
           "GUID": "20f07699-e6c5-4ad6-ab4b-529271493909",
-          "Active": true,
-          "Name": "##### TRANSPONDER CONFIGURATION UPDATED 2024-08-28",
+          "Active": false,
+          "Name": "// TRANSPONDER CONFIGURATION UPDATED 2026-04-25",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -1333,6 +1333,99 @@
         {
           "Source": {
             "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "0ddfe5d3-0fcd-437c-847f-a9f55c065422",
+          "Active": false,
+          "Name": "// Known issue: initialization problem.",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "IP-XPDR",
+            "Serial": "SN-1FD-E25"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "ac702d07-ab2a-4663-9414-008157da1a82",
+          "Active": false,
+          "Name": "// Known issue: pressing and holding the VFR for 2 sec shows last active code to be displayed.",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "IP-XPDR",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "0a23a5a1-afde-4411-ab09-593e5780be52",
+          "Active": false,
+          "Name": "// Known issue: Clear \"Backspace\" function is limited.",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "IP-XPDR",
+            "Serial": "SN-1FD-E25"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
               "UUID": "db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70",
               "Value": "(A:TRANSPONDER CODE:1,number)",
               "VarType": 2
@@ -1341,7 +1434,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1231.0,
+            "Float64": 12345678,
             "String": null
           },
           "Device": {
@@ -1369,7 +1462,7 @@
           "Name": "XPNDR",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -1405,14 +1498,16 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "1200",
+          "Value": "1200"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "string",
               "Name": "xpndrcode",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -1420,12 +1515,12 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1234,
             "String": null
           },
           "Device": {
-            "Name": "KT76 Display",
-            "DisplayLedAddress": "KT76 Display",
+            "Name": "KT-76",
+            "DisplayLedAddress": "KT-76",
             "DisplayLedConnector": 1,
             "DisplayLedModuleSize": 8,
             "DisplayLedPadding": false,
@@ -1442,13 +1537,13 @@
             "Type": "LedModule"
           },
           "DeviceType": "Display Module",
-          "DeviceName": "KT76 Display",
+          "DeviceName": "KT-76",
           "GUID": "6d6e42c8-16c9-4ec7-9f3f-33acd64ac5c0",
-          "Active": false,
+          "Active": true,
           "Name": "xpndrcode display",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -1473,6 +1568,10 @@
                 "Active": true
               }
             ]
+          },
+          "Value": "----",
+          "Status": {
+            "Precondition": "not satisfied"
           }
         },
         {
@@ -1486,7 +1585,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "Device": {
@@ -1514,7 +1613,7 @@
           "Name": "Mode",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -1568,7 +1667,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "4",
+          "Value": "OO0"
         },
         {
           "Source": {
@@ -1581,7 +1682,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "Device": {
@@ -1608,7 +1709,7 @@
           "Name": "Flashing Ident Dot (need both)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -1651,6 +1752,10 @@
                 "Active": true
               }
             ]
+          },
+          "RawValue": "0",
+          "Status": {
+            "Precondition": "not satisfied"
           }
         },
         {
@@ -1664,17 +1769,17 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
           "DeviceName": null,
           "GUID": "f46fe026-50d0-4c11-850b-f37690b3f48d",
           "Active": true,
-          "Name": "ident data  flash (need both)",
+          "Name": "Ident data  flash (need both)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -1697,7 +1802,7 @@
                   500
                 ],
                 "OffDurationInMs": 500,
-                "FirstExecutionTime": 638938688570923252,
+                "FirstExecutionTime": 639127392596239900,
                 "Active": true
               },
               {
@@ -1706,7 +1811,9 @@
                 "Active": true
               }
             ]
-          }
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -1719,18 +1826,18 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
           "DeviceName": null,
           "GUID": "a77a2c8e-02e2-4221-a8a4-aff8d382cdc1",
           "Active": true,
-          "Name": "Mode Raw",
+          "Name": "Mode Raw (for reading)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "",
-            "Serial": "-"
+            "Name": "IP-XPDR",
+            "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
             "Items": [
@@ -1783,7 +1890,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "4",
+          "Value": "4"
         },
         {
           "Source": {
@@ -1796,7 +1905,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 5200.0,
+            "Float64": 5200,
             "String": null
           },
           "DeviceType": "-",
@@ -1806,8 +1915,8 @@
           "Name": "Flight Level Text",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "",
-            "Serial": "-"
+            "Name": "IP-XPDR",
+            "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
             "Items": [
@@ -1829,7 +1938,9 @@
                 "Active": false
               }
             ]
-          }
+          },
+          "RawValue": "4214.4501953125",
+          "Value": "O42"
         },
         {
           "Source": {
@@ -1842,7 +1953,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -1852,8 +1963,8 @@
           "Name": "Display Brightness Raw - Avionics Master & Power",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "",
-            "Serial": "-"
+            "Name": "IP-XPDR",
+            "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
             "Items": [
@@ -1876,7 +1987,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "1",
+          "Value": "15"
         },
         {
           "Source": {
@@ -1889,7 +2002,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -1899,7 +2012,7 @@
           "Name": "raw sim time",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -1910,14 +2023,16 @@
                 "Active": false
               }
             ]
-          }
+          },
+          "RawValue": "48.234539031982422",
+          "Value": "48.234539031982422"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "timefreeze",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -1925,7 +2040,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -1935,7 +2050,7 @@
           "Name": "timefreeze",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -1967,7 +2082,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "48.23"
         },
         {
           "Source": {
@@ -1978,7 +2095,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -1988,7 +2105,7 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "xpndrcode",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "",
                 "Expression": "''"
               }
@@ -2003,10 +2120,10 @@
           "DeviceName": null,
           "GUID": "e695abcc-1977-4ea7-b014-4ea9ae58f8ea",
           "Active": true,
-          "Name": "time bomb active (This just reads timefreeze)",
+          "Name": "\"Time Bomb\" 1 for 4 seconds then back to 0",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -2044,14 +2161,16 @@
               "Placeholder": "a",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "string",
               "Name": "xpndrcode",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2059,7 +2178,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -2069,7 +2188,7 @@
           "Name": "-Backspace if 1 char (to 0)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -2127,14 +2246,15 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "Value": "-"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "clearVar",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2142,7 +2262,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2151,8 +2271,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 0,
+                "Text": "-",
                 "Expression": "b"
               }
             },
@@ -2170,7 +2290,7 @@
           "Name": "-ACTIVATE Backspace if 2 char (to 1)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -2238,14 +2358,16 @@
               "Placeholder": "b",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "string",
               "Name": "xpndrcode",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2253,7 +2375,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -2263,7 +2385,7 @@
           "Name": "Backspace if 2 char (to 1)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -2315,7 +2437,7 @@
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "clearVar",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2323,7 +2445,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2332,8 +2454,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 1,
+                "Text": "1",
                 "Expression": "b"
               }
             },
@@ -2351,7 +2473,7 @@
           "Name": "ACTIVATE Backspace if 2 char (to 1)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -2414,14 +2536,16 @@
               "Placeholder": "b",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "string",
               "Name": "xpndrcode",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2429,7 +2553,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -2439,8 +2563,8 @@
           "Name": "Backspace if 3 char (to 2)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "",
-            "Serial": "-"
+            "Name": "IP-XPDR",
+            "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
             {
@@ -2491,7 +2615,7 @@
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "clearVar",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2499,7 +2623,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2508,8 +2632,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 12,
+                "Text": "12",
                 "Expression": "b"
               }
             },
@@ -2527,7 +2651,7 @@
           "Name": "ACTIVATE Backspace if 3 char (to 2)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -2590,14 +2714,16 @@
               "Placeholder": "b",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "vfr",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2605,7 +2731,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2614,7 +2740,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "vfr",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "0",
                 "Expression": "@"
               }
@@ -2633,7 +2759,7 @@
           "Name": "VFR Inverse Raw rewrite depend then remove?",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -2652,14 +2778,16 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "typeLength",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2667,7 +2795,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2677,7 +2805,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "0",
                 "Expression": "$*#"
               }
@@ -2695,7 +2823,7 @@
           "Name": "Length of Code (Being Typed)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -2705,14 +2833,16 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "timefreeze",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2720,7 +2850,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2730,8 +2860,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 637.369262695313,
+                "Text": "637.369262695313",
                 "Expression": "$-4"
               }
             },
@@ -2747,7 +2877,10 @@
           "Active": true,
           "Name": "timefreeze -4 for if len = 4",
           "Type": "OutputConfigItem",
-          "Controller": null,
+          "Controller": {
+            "Name": "IP-XPDR",
+            "Serial": "SN-1FD-E25"
+          },
           "Modifiers": {
             "Items": [
               {
@@ -2764,117 +2897,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "VarType": 0
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "DeviceType": "",
-          "DeviceName": null,
-          "GUID": "daf2c727-011e-47f1-bc0a-985e4ccc803d",
-          "Active": false,
-          "Name": "//FL091 not 091",
-          "Type": "OutputConfigItem",
-          "Controller": null
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "VarType": 0
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "DeviceType": "",
-          "DeviceName": null,
-          "GUID": "0ddfe5d3-0fcd-437c-847f-a9f55c065422",
-          "Active": false,
-          "Name": "// now there's an initialization problem",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "",
-            "Serial": "-"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "",
-                "IfValue": "1",
-                "ElseValue": "0",
-                "Active": true
-              }
-            ]
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "VarType": 0
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "DeviceType": "",
-          "DeviceName": null,
-          "GUID": "ac702d07-ab2a-4663-9414-008157da1a82",
-          "Active": false,
-          "Name": "//Pressing and holding the VFR for 2 sec shows last active code to be displayed",
-          "Type": "OutputConfigItem",
-          "Controller": null
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "VarType": 0
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "DeviceType": "",
-          "DeviceName": null,
-          "GUID": "0a23a5a1-afde-4411-ab09-593e5780be52",
-          "Active": false,
-          "Name": "// NEED BACKSPACE FUNCTION",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "",
-            "Serial": "-"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "",
-                "IfValue": "1",
-                "ElseValue": "0",
-                "Active": true
-              }
-            ]
-          }
+          ],
+          "RawValue": "0",
+          "Value": "1"
         },
         {
           "button": {
@@ -2901,7 +2926,7 @@
           "Name": "XPNDR 0",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -2930,7 +2955,7 @@
           "Name": "XPNDR 1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -2959,7 +2984,7 @@
           "Name": "XPNDR 2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -2988,7 +3013,7 @@
           "Name": "XPNDR 3",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3017,7 +3042,7 @@
           "Name": "XPNDR 4",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3046,7 +3071,7 @@
           "Name": "XPNDR 5",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3075,7 +3100,7 @@
           "Name": "XPNDR 6",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3104,7 +3129,7 @@
           "Name": "XPNDR 7",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3133,7 +3158,7 @@
           "Name": "OFF",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3162,7 +3187,7 @@
           "Name": "STBY",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3191,7 +3216,7 @@
           "Name": "TST",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3220,7 +3245,7 @@
           "Name": "ON",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3249,7 +3274,7 @@
           "Name": "ALT",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3278,7 +3303,7 @@
           "Name": "CLR",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3307,7 +3332,7 @@
           "Name": "VFR",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3336,7 +3361,7 @@
           "Name": "IDENT",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3347,8 +3372,8 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "xpndrcode",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 0,
+                "Text": "OOOO",
                 "Expression": "$O"
               }
             },
@@ -3357,8 +3382,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 172.957092285156,
-                "Text": "#",
+                "Number": 617.09326171875,
+                "Text": "617.09326171875",
                 "Expression": "#"
               }
             },
@@ -3379,7 +3404,7 @@
           "Name": "Var0",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3398,8 +3423,8 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "xpndrcode",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 0,
+                "Text": "1",
                 "Expression": "$1"
               }
             },
@@ -3421,7 +3446,7 @@
           "Name": "Var1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3440,8 +3465,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 640.61669921875,
+                "Text": "640.61669921875",
                 "Expression": "#"
               }
             },
@@ -3463,7 +3488,7 @@
           "Name": "Var1 clear time",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3482,8 +3507,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 12,
+                "Text": "12",
                 "Expression": "$2"
               }
             },
@@ -3492,8 +3517,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 172.957092285156,
-                "Text": "#",
+                "Number": 641.046264648438,
+                "Text": "641.046264648438",
                 "Expression": "#"
               }
             },
@@ -3514,7 +3539,7 @@
           "Name": "Var2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3533,8 +3558,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 640.925964355469,
+                "Text": "640.925964355469",
                 "Expression": "#"
               }
             },
@@ -3556,7 +3581,7 @@
           "Name": "Var2 clear time",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3575,8 +3600,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 123,
+                "Text": "123",
                 "Expression": "$3"
               }
             },
@@ -3585,8 +3610,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 172.957092285156,
-                "Text": "#",
+                "Number": 641.369262695313,
+                "Text": "641.369262695313",
                 "Expression": "#"
               }
             },
@@ -3607,7 +3632,7 @@
           "Name": "Var3",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3626,8 +3651,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 1234,
+                "Text": "1234",
                 "Expression": "$4"
               }
             },
@@ -3636,8 +3661,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 172.957092285156,
-                "Text": "#",
+                "Number": 641.627136230469,
+                "Text": "641.627136230469",
                 "Expression": "#"
               }
             },
@@ -3658,7 +3683,7 @@
           "Name": "Var4",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3677,8 +3702,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 5555,
+                "Text": "5555",
                 "Expression": "$5"
               }
             },
@@ -3687,7 +3712,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 172.957092285156,
+                "Number": 512.421752929688,
                 "Text": "#",
                 "Expression": "#"
               }
@@ -3709,7 +3734,7 @@
           "Name": "Var5",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3728,8 +3753,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 6666,
+                "Text": "6666",
                 "Expression": "$6"
               }
             },
@@ -3738,7 +3763,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 172.957092285156,
+                "Number": 487.446014404297,
                 "Text": "#",
                 "Expression": "#"
               }
@@ -3760,7 +3785,7 @@
           "Name": "Var6",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3779,8 +3804,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 7777,
+                "Text": "7777",
                 "Expression": "$7"
               }
             },
@@ -3789,7 +3814,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 172.957092285156,
+                "Number": 578.608581542969,
                 "Text": "#",
                 "Expression": "#"
               }
@@ -3811,7 +3836,7 @@
           "Name": "Var7",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3831,8 +3856,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 172.957092285156,
-                "Text": "#",
+                "Number": 644.393615722656,
+                "Text": "644.393615722656",
                 "Expression": "#"
               }
             },
@@ -3853,7 +3878,7 @@
           "Name": "CLR Reset the time until exit",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -3875,7 +3900,10 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
         },
         {
           "button": {
@@ -3885,7 +3913,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 168.957092285156,
+                "Number": 257.120452880859,
                 "Text": "#-4",
                 "Expression": "#-4"
               }
@@ -3907,7 +3935,7 @@
           "Name": "VFR Exit",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3926,8 +3954,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "clearVar",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 1,
+                "Text": "1",
                 "Expression": "1"
               }
             },
@@ -3936,7 +3964,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "clearVar",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "0",
                 "Expression": "0"
               }
@@ -3958,7 +3986,7 @@
           "Name": "Clear Variable (For BS)",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3969,8 +3997,8 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "lengthThing",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 0,
+                "Text": "0",
                 "Expression": "$"
               }
             },
@@ -3992,7 +4020,7 @@
           "Name": "Length initialize",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4003,7 +4031,7 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "lensub",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "0",
                 "Expression": "$"
               }
@@ -4026,7 +4054,7 @@
           "Name": "lensub init",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4037,8 +4065,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "vfr",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 1,
+                "Text": "1",
                 "Expression": "$+1"
               }
             },
@@ -4060,7 +4088,7 @@
           "Name": "vfr inverse var",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4071,8 +4099,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 1,
+                "Text": "1",
                 "Expression": "$-1"
               }
             },
@@ -4094,7 +4122,7 @@
           "Name": "Length -1 ",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4105,8 +4133,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 4,
+                "Text": "4",
                 "Expression": "$+1"
               }
             },
@@ -4128,7 +4156,7 @@
           "Name": "Var0 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4139,8 +4167,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 2,
+                "Text": "2",
                 "Expression": "$+1"
               }
             },
@@ -4162,7 +4190,7 @@
           "Name": "Var1 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4173,8 +4201,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 3,
+                "Text": "3",
                 "Expression": "$+1"
               }
             },
@@ -4196,7 +4224,7 @@
           "Name": "Var2 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4207,8 +4235,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 4,
+                "Text": "4",
                 "Expression": "$+1"
               }
             },
@@ -4230,7 +4258,7 @@
           "Name": "Var3 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4241,8 +4269,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 5,
+                "Text": "5",
                 "Expression": "$+1"
               }
             },
@@ -4264,7 +4292,7 @@
           "Name": "Var4 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4275,8 +4303,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 3,
+                "Text": "3",
                 "Expression": "$+1"
               }
             },
@@ -4298,7 +4326,7 @@
           "Name": "Var5 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4309,8 +4337,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 3,
+                "Text": "3",
                 "Expression": "$+1"
               }
             },
@@ -4332,7 +4360,7 @@
           "Name": "Var6 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4343,8 +4371,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 0.0,
-                "Text": "",
+                "Number": 4,
+                "Text": "4",
                 "Expression": "$+1"
               }
             },
@@ -4366,7 +4394,7 @@
           "Name": "Var7 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR",
+            "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
         }
