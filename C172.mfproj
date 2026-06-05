@@ -4397,6 +4397,72 @@
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
           }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 12345678,
+            "String": null
+          },
+          "Device": {
+            "Name": "KT-76",
+            "DisplayLedAddress": "KT-76",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "KT-76",
+          "GUID": "53c980ed-7956-4486-b605-c520bc159ae3",
+          "Active": true,
+          "Name": "TEST - KT-76 all digits",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "IP-XPDR",
+            "Serial": "SN-1FD-E25"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "xpdrAllDigitsTestEnabled",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "'12345678'",
+                "Active": true
+              }
+            ]
+          }
         }
       ]
     },
