@@ -1499,8 +1499,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "7544",
-          "Value": "7544"
+          "RawValue": "67",
+          "Value": "67"
         },
         {
           "Source": {
@@ -1939,8 +1939,8 @@
               }
             ]
           },
-          "RawValue": "2183.140625",
-          "Value": "O22"
+          "RawValue": "1208.497802734375",
+          "Value": "O12"
         },
         {
           "Source": {
@@ -2024,8 +2024,8 @@
               }
             ]
           },
-          "RawValue": "374.3431396484375",
-          "Value": "374.3431396484375"
+          "RawValue": "282.152099609375",
+          "Value": "282.152099609375"
         },
         {
           "Source": {
@@ -2083,8 +2083,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "57.5671844482422",
-          "Value": "316.78"
+          "RawValue": "146.313491821289",
+          "Value": "135.84"
         },
         {
           "Source": {
@@ -2898,7 +2898,7 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "57.5671844482422",
+          "RawValue": "146.313491821289",
           "Value": "1"
         },
         {
@@ -3414,8 +3414,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 61.5671844482422,
-                "Text": "61.5671844482422",
+                "Number": 150.313491821289,
+                "Text": "150.313491821289",
                 "Expression": "#"
               }
             },
@@ -3555,8 +3555,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 61.5671844482422,
-                "Text": "61.5671844482422",
+                "Number": 150.313491821289,
+                "Text": "150.313491821289",
                 "Expression": "#"
               }
             },
@@ -3652,8 +3652,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 61.5671844482422,
-                "Text": "61.5671844482422",
+                "Number": 150.313491821289,
+                "Text": "150.313491821289",
                 "Expression": "#"
               }
             },
@@ -3705,8 +3705,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 61.5671844482422,
-                "Text": "61.5671844482422",
+                "Number": 150.313491821289,
+                "Text": "150.313491821289",
                 "Expression": "#"
               }
             },
@@ -3758,8 +3758,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 61.5671844482422,
-                "Text": "61.5671844482422",
+                "Number": 150.313491821289,
+                "Text": "150.313491821289",
                 "Expression": "#"
               }
             },
@@ -3811,8 +3811,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 61.5671844482422,
-                "Text": "61.5671844482422",
+                "Number": 150.313491821289,
+                "Text": "150.313491821289",
                 "Expression": "#"
               }
             },
@@ -3864,8 +3864,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 61.5671844482422,
-                "Text": "61.5671844482422",
+                "Number": 150.313491821289,
+                "Text": "150.313491821289",
                 "Expression": "#"
               }
             },
@@ -3908,8 +3908,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 39.9670677185059,
-                "Text": "39.9670677185059",
+                "Number": 150.313491821289,
+                "Text": "150.313491821289",
                 "Expression": "#"
               }
             },
@@ -3964,8 +3964,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 57.5671844482422,
-                "Text": "57.5671844482422",
+                "Number": 146.313491821289,
+                "Text": "146.313491821289",
                 "Expression": "#-4"
               }
             },
@@ -4639,8 +4639,16 @@
             "Float64": 0.0,
             "String": null
           },
-          "DeviceType": "-",
-          "DeviceName": null,
+          "Device": {
+            "Name": "Flap Indicator",
+            "Address": "Flap Indicator",
+            "Min": "0",
+            "Max": "100",
+            "MaxRotationPercent": "28",
+            "Type": "Servo"
+          },
+          "DeviceType": "Servo",
+          "DeviceName": "Flap Indicator",
           "GUID": "434017de-87f2-4184-87d2-1b1d07f89b65",
           "Active": true,
           "Name": "Flaps Indicator",
@@ -4694,9 +4702,9 @@
               {
                 "Type": "Interpolation",
                 "Values": {
-                  "835": 0.0,
-                  "926": 256.0,
-                  "1007": 1024.0
+                  "861": 0.0,
+                  "954": 256.0,
+                  "1022": 1024.0
                 },
                 "Count": 3,
                 "Max": 1024.0,
@@ -4713,8 +4721,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "Flap_Pots",
-                "Number": 908.0,
-                "Text": "908",
+                "Number": 859.0,
+                "Text": "859",
                 "Expression": "@"
               }
             }

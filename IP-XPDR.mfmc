@@ -38,4 +38,5 @@
   <Encoder Name="Encoder 4" PinLeft="13" PinRight="11" EncoderType="2" />
   <Button Name="NAV GPS" Pin="15" />
   <Encoder Name="Encoder 5" PinLeft="5" PinRight="16" EncoderType="2" />
+  <Servo Name="Flap Indicator" DataPin="32" />
 </Config>
