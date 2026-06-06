@@ -2,6 +2,632 @@
   "Name": "C172",
   "ConfigFiles": [
     {
+      "Label": "Main",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "analog": {
+            "onChange": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "16383 @ 64 - 16383 * 664 64 - / - 0 max 16383 min (>K:THROTTLE1_SET)",
+              "PresetId": "ce277763-24ec-4cf5-bff1-09b412f3a565"
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "Throttle"
+          },
+          "DeviceType": "AnalogInput",
+          "DeviceName": "Throttle",
+          "GUID": "ec979489-23d0-4d53-83e5-310357ee4060",
+          "Active": true,
+          "Name": "Throttle",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "analog": {
+            "onChange": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "@ 352 - 16383 * 1022 352 - / 0 max 16383 min (>K:MIXTURE1_SET)",
+              "PresetId": "dc3ff47c-b2a4-4c2f-ad95-eff004a82199"
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "Lean"
+          },
+          "DeviceType": "AnalogInput",
+          "DeviceName": "Lean",
+          "GUID": "0c8bab7c-32eb-4fdf-9c55-9e76e8450e62",
+          "Active": true,
+          "Name": "Mixture",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "analog": {
+            "onChange": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "@ 430 - -74.1312 * 16383 + -16383 max 16383 min (>K:ELEVATOR_TRIM_SET)",
+              "PresetId": "c596966f-9d0d-4109-9278-09d0de5df536"
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "Trim"
+          },
+          "DeviceType": "AnalogInput",
+          "DeviceName": "Trim",
+          "GUID": "2cabd905-51c7-4dab-b34c-1a0d1c0abba7",
+          "Active": true,
+          "Name": "Trim Wheel",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "c19b9300-13da-46f5-8489-56bceb192f64",
+              "Value": "(A:TRAILING EDGE FLAPS LEFT PERCENT,Percent Over 100)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Flap Indicator",
+            "Address": "Flap Indicator",
+            "Min": "0",
+            "Max": "100",
+            "MaxRotationPercent": "28",
+            "Type": "Servo"
+          },
+          "DeviceType": "Servo",
+          "DeviceName": "Flap Indicator",
+          "GUID": "434017de-87f2-4184-87d2-1b1d07f89b65",
+          "Active": true,
+          "Name": "Flaps Indicator",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$ * 100",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "Flap_Pots",
+              "Number": 0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1,
+            "String": null
+          },
+          "AnalogInputConfig": {
+            "onChange": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "@ 16.0147 * 0 max 16383 min (>K:FLAPS_SET)",
+              "PresetId": "e3388f22-2d1f-475d-88fc-d93676b15e2c"
+            }
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "0b46a937-6c0c-4877-bdc6-af1921b24c9f",
+          "Active": true,
+          "Name": "Flap Set",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "861": 0,
+                  "954": 256,
+                  "1022": 1024
+                },
+                "Count": 3,
+                "Max": 1024,
+                "Min": 0,
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "analog": {
+            "onChange": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "Flap_Pots",
+                "Number": 859,
+                "Text": "859",
+                "Expression": "@"
+              }
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "Flap"
+          },
+          "DeviceType": "AnalogInput",
+          "DeviceName": "Flap",
+          "GUID": "ef1d84a6-123e-49c6-9708-4efcf8d726a5",
+          "Active": true,
+          "Name": "Flap Pots Input",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>K:PARKING_BRAKE_SET)",
+              "PresetId": "bfa5f4f9-0f44-49d0-9382-929b6e96c4ef"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:PARKING_BRAKE_SET)",
+              "PresetId": "3556ab94-09b7-43be-a226-b37ea20d9df1"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Parking Break"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Parking Break",
+          "GUID": "6250e525-ea35-4dd3-84d3-7381be514535",
+          "Active": true,
+          "Name": "Parking Brake",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:VOR2_OBI_DEC)",
+              "PresetId": "99057249-9a87-41af-b8ac-201018d65430"
+            },
+            "onLeftFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:NAV OBS:2, Degrees) 10 - dnor (>K:VOR2_SET)",
+              "PresetId": "0"
+            },
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:VOR2_OBI_INC)",
+              "PresetId": "42d2d62c-4b78-4fe6-8fc6-cb25272ddd8c"
+            },
+            "onRightFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:NAV OBS:2, Degrees) 10 + dnor (>K:VOR2_SET)",
+              "PresetId": "0"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "Encoder 2"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 2",
+          "GUID": "34e652a4-fc16-4289-b92d-05f24b58df91",
+          "Active": true,
+          "Name": "IP - VOR2 Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:VOR1_OBI_DEC)",
+              "PresetId": "520f3094-04fb-4786-93c9-e725a2e1598e"
+            },
+            "onLeftFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:NAV OBS:1, Degrees) 10 - dnor (>K:VOR1_SET)",
+              "PresetId": "0"
+            },
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:VOR1_OBI_INC)",
+              "PresetId": "5f8975d1-7a9d-4834-af07-946f36319453"
+            },
+            "onRightFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:NAV OBS:1, Degrees) 10 + dnor (>K:VOR1_SET)",
+              "PresetId": "0"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "Encoder 4"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 4",
+          "GUID": "f444a18f-4542-4236-b0ee-6d6b5008824a",
+          "Active": true,
+          "Name": "IP - VOR1 Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:KOHLSMAN_DEC)",
+              "PresetId": "d3828258-b00c-4dad-b59d-4fb0d4f18a2a"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:KOHLSMAN_INC)",
+              "PresetId": "63a0157d-4060-4ee1-a28b-5c7964898b88"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "Encoder 1"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 1",
+          "GUID": "d1a47f5a-4c34-4835-9500-aaa763aa5662",
+          "Active": true,
+          "Name": "IP - Altimeter Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:ATTITUDE_BARS_POSITION_DOWN)",
+              "PresetId": "a16fb978-0149-424d-8ed1-ebc538a1d258"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:ATTITUDE_BARS_POSITION_UP)",
+              "PresetId": "652dd0ef-d649-4d77-8d1a-60a6e9ca0280"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "Encoder"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder",
+          "GUID": "caf3d952-9081-4eb7-9595-e229fb04167c",
+          "Active": true,
+          "Name": "IP - Attitude Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:HEADING_BUG_DEC)",
+              "PresetId": "cab52499-c789-4249-bc21-31f920d4e604"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:HEADING_BUG_INC)",
+              "PresetId": "debca2cf-3a15-40f0-b839-3e1e153cd0f4"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "Encoder 3"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 3",
+          "GUID": "4d89d263-b40e-4250-891a-c9faed5e6714",
+          "Active": true,
+          "Name": "IP - Heading Bug Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:GYRO_DRIFT_DEC)",
+              "PresetId": "170d189d-d9cd-4f8e-938e-a673668d60c8"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:GYRO_DRIFT_INC)",
+              "PresetId": "4c3cde84-00e4-4a98-83f3-0e015dab0929"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "Encoder 5"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Encoder 5",
+          "GUID": "82ce32e6-250f-4f70-ab6a-470213e7cef8",
+          "Active": true,
+          "Name": "IP - Heading Gyro Drift Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:GYRO_DRIFT_SET)",
+              "PresetId": "5eca83a5-d375-4aa6-ad85-3a6cf160a38c"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Heading Push"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Heading Push",
+          "GUID": "47d94a33-e2ce-47b7-963e-36730a17025c",
+          "Active": true,
+          "Name": "IP - Heading Gyro Drift Push",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:TOGGLE_GPS_DRIVES_NAV1)",
+              "PresetId": "e20b5a20-4a49-4909-8cea-cb26a06c0793"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "NAV GPS"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "NAV GPS",
+          "GUID": "e4988955-6b20-4ee7-87ea-e4339fa00bff",
+          "Active": true,
+          "Name": "NAV GPS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
+              "PresetId": "1bf98193-ce2d-4277-991f-fd4bcdaba3bd"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Magnetos Off"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Magnetos Off",
+          "GUID": "9df28849-14ce-4173-b043-24025a542291",
+          "Active": true,
+          "Name": "MAGNETOS Off",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
+              "PresetId": "3a6c52e4-f892-4b02-b9e6-2d546220fc18"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Magnetos R"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Magnetos R",
+          "GUID": "32faccf1-a1d6-48ab-9de2-7d2ae4de3757",
+          "Active": true,
+          "Name": "MAGNETOS Right",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "2 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
+              "PresetId": "3ef21d47-315b-4274-9748-6f2155548580"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Magnetos L"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Magnetos L",
+          "GUID": "5d39ce4b-a028-4eae-b5a8-cb8bd57d4667",
+          "Active": true,
+          "Name": "MAGNETOS Left",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "3 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
+              "PresetId": "22fffb5f-b7d6-49f2-9eee-04985a3c0299"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Magnetos Both"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Magnetos Both",
+          "GUID": "5a5c9062-79af-4d13-81b4-d5e45e7dbdb8",
+          "Active": true,
+          "Name": "MAGNETOS Both",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "3 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) ! if{ 1 (>K:SET_STARTER1_HELD) }",
+              "PresetId": "669d178f-b1f4-4005-841f-944a19764e6b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Magnetos Start"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Magnetos Start",
+          "GUID": "15354558-44f6-4540-be30-8108f4623bb1",
+          "Active": true,
+          "Name": "MAGNETOS Start",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "IP-PRIMARY",
+            "Serial": "SN-1FD-E25"
+          }
+        }
+      ]
+    },
+    {
       "Label": "GNS",
       "FileName": null,
       "ReferenceOnly": false,
@@ -1202,7 +1828,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1231.0,
+            "Float64": 1231,
             "String": null
           },
           "Device": {
@@ -1276,7 +1902,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "",
@@ -1286,7 +1912,7 @@
           "Name": "// Known issue: initialization problem.",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -1311,7 +1937,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "",
@@ -1321,7 +1947,7 @@
           "Name": "// Known issue: pressing and holding the VFR for 2 sec shows last active code to be displayed.",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -1334,7 +1960,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "",
@@ -1344,7 +1970,7 @@
           "Name": "// Known issue: Clear \"Backspace\" function is limited.",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -1371,7 +1997,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 12345678.0,
+            "Float64": 12345678,
             "String": null
           },
           "Device": {
@@ -1399,7 +2025,7 @@
           "Name": "XPNDR",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -1442,7 +2068,7 @@
             "MobiFlightVariable": {
               "TYPE": "string",
               "Name": "xpndrcode",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -1450,7 +2076,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1234.0,
+            "Float64": 1234,
             "String": null
           },
           "Device": {
@@ -1478,7 +2104,7 @@
           "Name": "xpndrcode display",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -1516,7 +2142,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "Device": {
@@ -1544,7 +2170,7 @@
           "Name": "Mode",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -1611,7 +2237,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "Device": {
@@ -1638,7 +2264,7 @@
           "Name": "Flashing Ident Dot (need both)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -1694,7 +2320,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -1704,7 +2330,7 @@
           "Name": "Ident data  flash (need both)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -1749,7 +2375,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -1759,7 +2385,7 @@
           "Name": "Mode Raw (for reading)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -1826,7 +2452,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 5200.0,
+            "Float64": 5200,
             "String": null
           },
           "DeviceType": "-",
@@ -1836,7 +2462,7 @@
           "Name": "Flight Level Text",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -1872,7 +2498,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -1882,7 +2508,7 @@
           "Name": "Display Brightness Raw - Avionics Master & Power",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -1919,7 +2545,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -1929,7 +2555,7 @@
           "Name": "raw sim time",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -1947,7 +2573,7 @@
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "timefreeze",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -1955,7 +2581,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -1965,7 +2591,7 @@
           "Name": "timefreeze",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -2008,7 +2634,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2018,7 +2644,7 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "xpndrcode",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "",
                 "Expression": "''"
               }
@@ -2036,7 +2662,7 @@
           "Name": "\"Time Bomb\" 1 for 4 seconds then back to 0",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -2081,7 +2707,7 @@
             "MobiFlightVariable": {
               "TYPE": "string",
               "Name": "xpndrcode",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2089,7 +2715,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -2099,7 +2725,7 @@
           "Name": "-Backspace if 1 char (to 0)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -2164,7 +2790,7 @@
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "clearVar",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2172,7 +2798,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2181,7 +2807,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "-",
                 "Expression": "b"
               }
@@ -2200,7 +2826,7 @@
           "Name": "-ACTIVATE Backspace if 2 char (to 1)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -2275,7 +2901,7 @@
             "MobiFlightVariable": {
               "TYPE": "string",
               "Name": "xpndrcode",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2283,7 +2909,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -2293,7 +2919,7 @@
           "Name": "Backspace if 2 char (to 1)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -2345,7 +2971,7 @@
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "clearVar",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2353,7 +2979,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2362,7 +2988,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 1.0,
+                "Number": 1,
                 "Text": "1",
                 "Expression": "b"
               }
@@ -2381,7 +3007,7 @@
           "Name": "ACTIVATE Backspace if 2 char (to 1)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -2451,7 +3077,7 @@
             "MobiFlightVariable": {
               "TYPE": "string",
               "Name": "xpndrcode",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2459,7 +3085,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "DeviceType": "-",
@@ -2469,7 +3095,7 @@
           "Name": "Backspace if 3 char (to 2)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -2521,7 +3147,7 @@
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "clearVar",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2529,7 +3155,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2538,7 +3164,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 12.0,
+                "Number": 12,
                 "Text": "12",
                 "Expression": "b"
               }
@@ -2557,7 +3183,7 @@
           "Name": "ACTIVATE Backspace if 3 char (to 2)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -2627,7 +3253,7 @@
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "vfr",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2635,7 +3261,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2644,7 +3270,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "vfr",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "0",
                 "Expression": "@"
               }
@@ -2663,7 +3289,7 @@
           "Name": "VFR Inverse Raw rewrite depend then remove?",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -2689,7 +3315,7 @@
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "typeLength",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2697,7 +3323,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2707,7 +3333,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "0",
                 "Expression": "$*#"
               }
@@ -2725,7 +3351,7 @@
           "Name": "Length of Code (Being Typed)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -2742,7 +3368,7 @@
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "timefreeze",
-              "Number": 0.0,
+              "Number": 0,
               "Text": "",
               "Expression": "$"
             },
@@ -2750,7 +3376,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
+            "Float64": 1,
             "String": null
           },
           "ButtonInputConfig": {
@@ -2778,7 +3404,7 @@
           "Name": "timefreeze -4 for if len = 4",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Modifiers": {
@@ -2824,7 +3450,7 @@
           "Name": "XPNDR 0",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -2853,7 +3479,7 @@
           "Name": "XPNDR 1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -2882,7 +3508,7 @@
           "Name": "XPNDR 2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -2911,7 +3537,7 @@
           "Name": "XPNDR 3",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -2940,7 +3566,7 @@
           "Name": "XPNDR 4",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -2969,7 +3595,7 @@
           "Name": "XPNDR 5",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -2998,7 +3624,7 @@
           "Name": "XPNDR 6",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3027,7 +3653,7 @@
           "Name": "XPNDR 7",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3056,7 +3682,7 @@
           "Name": "OFF",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3085,7 +3711,7 @@
           "Name": "STBY",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3114,7 +3740,7 @@
           "Name": "TST",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3143,7 +3769,7 @@
           "Name": "ON",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3172,7 +3798,7 @@
           "Name": "ALT",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3201,7 +3827,7 @@
           "Name": "CLR",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3230,7 +3856,7 @@
           "Name": "VFR",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3259,7 +3885,7 @@
           "Name": "IDENT",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3270,7 +3896,7 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "xpndrcode",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "OOOO",
                 "Expression": "$O"
               }
@@ -3302,7 +3928,7 @@
           "Name": "Var0",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3321,7 +3947,7 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "xpndrcode",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "1",
                 "Expression": "$1"
               }
@@ -3344,7 +3970,7 @@
           "Name": "Var1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3386,7 +4012,7 @@
           "Name": "Var1 clear time",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3405,7 +4031,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 12.0,
+                "Number": 12,
                 "Text": "12",
                 "Expression": "$2"
               }
@@ -3437,7 +4063,7 @@
           "Name": "Var2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3479,7 +4105,7 @@
           "Name": "Var2 clear time",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3498,7 +4124,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 123.0,
+                "Number": 123,
                 "Text": "123",
                 "Expression": "$3"
               }
@@ -3530,7 +4156,7 @@
           "Name": "Var3",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3549,7 +4175,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 1234.0,
+                "Number": 1234,
                 "Text": "1234",
                 "Expression": "$4"
               }
@@ -3581,7 +4207,7 @@
           "Name": "Var4",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3600,7 +4226,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 5555.0,
+                "Number": 5555,
                 "Text": "5555",
                 "Expression": "$5"
               }
@@ -3632,7 +4258,7 @@
           "Name": "Var5",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3651,7 +4277,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 6666.0,
+                "Number": 6666,
                 "Text": "6666",
                 "Expression": "$6"
               }
@@ -3683,7 +4309,7 @@
           "Name": "Var6",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3702,7 +4328,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 7777.0,
+                "Number": 7777,
                 "Text": "7777",
                 "Expression": "$7"
               }
@@ -3734,7 +4360,7 @@
           "Name": "Var7",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3776,7 +4402,7 @@
           "Name": "CLR Reset the time until exit",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -3830,7 +4456,7 @@
           "Name": "VFR Exit",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "ConfigRefs": [
@@ -3849,7 +4475,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "clearVar",
-                "Number": 1.0,
+                "Number": 1,
                 "Text": "1",
                 "Expression": "1"
               }
@@ -3859,7 +4485,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "clearVar",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "0",
                 "Expression": "0"
               }
@@ -3881,7 +4507,7 @@
           "Name": "Clear Variable (For BS)",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3892,7 +4518,7 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "lengthThing",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "0",
                 "Expression": "$"
               }
@@ -3915,7 +4541,7 @@
           "Name": "Length initialize",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3926,7 +4552,7 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "lensub",
-                "Number": 0.0,
+                "Number": 0,
                 "Text": "0",
                 "Expression": "$"
               }
@@ -3949,7 +4575,7 @@
           "Name": "lensub init",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3960,7 +4586,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "vfr",
-                "Number": 1.0,
+                "Number": 1,
                 "Text": "1",
                 "Expression": "$+1"
               }
@@ -3983,7 +4609,7 @@
           "Name": "vfr inverse var",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -3994,7 +4620,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 1.0,
+                "Number": 1,
                 "Text": "1",
                 "Expression": "$-1"
               }
@@ -4017,7 +4643,7 @@
           "Name": "Length -1 ",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4028,7 +4654,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 4.0,
+                "Number": 4,
                 "Text": "4",
                 "Expression": "$+1"
               }
@@ -4051,7 +4677,7 @@
           "Name": "Var0 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4062,7 +4688,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 2.0,
+                "Number": 2,
                 "Text": "2",
                 "Expression": "$+1"
               }
@@ -4085,7 +4711,7 @@
           "Name": "Var1 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4096,7 +4722,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 3.0,
+                "Number": 3,
                 "Text": "3",
                 "Expression": "$+1"
               }
@@ -4119,7 +4745,7 @@
           "Name": "Var2 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4130,7 +4756,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 4.0,
+                "Number": 4,
                 "Text": "4",
                 "Expression": "$+1"
               }
@@ -4153,7 +4779,7 @@
           "Name": "Var3 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4164,7 +4790,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 5.0,
+                "Number": 5,
                 "Text": "5",
                 "Expression": "$+1"
               }
@@ -4187,7 +4813,7 @@
           "Name": "Var4 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4198,7 +4824,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 3.0,
+                "Number": 3,
                 "Text": "3",
                 "Expression": "$+1"
               }
@@ -4221,7 +4847,7 @@
           "Name": "Var5 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4232,7 +4858,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 3.0,
+                "Number": 3,
                 "Text": "3",
                 "Expression": "$+1"
               }
@@ -4255,7 +4881,7 @@
           "Name": "Var6 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4266,7 +4892,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 4.0,
+                "Number": 4,
                 "Text": "4",
                 "Expression": "$+1"
               }
@@ -4289,7 +4915,7 @@
           "Name": "Var7 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           }
         },
@@ -4302,7 +4928,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 12345678.0,
+            "Float64": 12345678,
             "String": null
           },
           "Device": {
@@ -4334,7 +4960,7 @@
           "Name": "TEST - KT-76 all digits",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-1FD-E25"
           },
           "Preconditions": [
@@ -4357,632 +4983,6 @@
                 "Active": true
               }
             ]
-          }
-        }
-      ]
-    },
-    {
-      "Label": "Main",
-      "FileName": null,
-      "ReferenceOnly": false,
-      "EmbedContent": true,
-      "ConfigItems": [
-        {
-          "analog": {
-            "onChange": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "16383 @ 64 - 16383 * 664 64 - / - 0 max 16383 min (>K:THROTTLE1_SET)",
-              "PresetId": "ce277763-24ec-4cf5-bff1-09b412f3a565"
-            }
-          },
-          "Device": {
-            "Type": "AnalogInput",
-            "Name": "Throttle"
-          },
-          "DeviceType": "AnalogInput",
-          "DeviceName": "Throttle",
-          "GUID": "ec979489-23d0-4d53-83e5-310357ee4060",
-          "Active": true,
-          "Name": "Throttle",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "analog": {
-            "onChange": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "@ 352 - 16383 * 1022 352 - / 0 max 16383 min (>K:MIXTURE1_SET)",
-              "PresetId": "dc3ff47c-b2a4-4c2f-ad95-eff004a82199"
-            }
-          },
-          "Device": {
-            "Type": "AnalogInput",
-            "Name": "Lean"
-          },
-          "DeviceType": "AnalogInput",
-          "DeviceName": "Lean",
-          "GUID": "0c8bab7c-32eb-4fdf-9c55-9e76e8450e62",
-          "Active": true,
-          "Name": "Mixture",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "analog": {
-            "onChange": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "@ 430 - -74.1312 * 16383 + -16383 max 16383 min (>K:ELEVATOR_TRIM_SET)",
-              "PresetId": "c596966f-9d0d-4109-9278-09d0de5df536"
-            }
-          },
-          "Device": {
-            "Type": "AnalogInput",
-            "Name": "Trim"
-          },
-          "DeviceType": "AnalogInput",
-          "DeviceName": "Trim",
-          "GUID": "2cabd905-51c7-4dab-b34c-1a0d1c0abba7",
-          "Active": true,
-          "Name": "Trim Wheel",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "c19b9300-13da-46f5-8489-56bceb192f64",
-              "Value": "(A:TRAILING EDGE FLAPS LEFT PERCENT,Percent Over 100)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 0.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "Flap Indicator",
-            "Address": "Flap Indicator",
-            "Min": "0",
-            "Max": "100",
-            "MaxRotationPercent": "28",
-            "Type": "Servo"
-          },
-          "DeviceType": "Servo",
-          "DeviceName": "Flap Indicator",
-          "GUID": "434017de-87f2-4184-87d2-1b1d07f89b65",
-          "Active": true,
-          "Name": "Flaps Indicator",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Transformation",
-                "Expression": "$ * 100",
-                "Active": true
-              }
-            ]
-          }
-        },
-        {
-          "Source": {
-            "MobiFlightVariable": {
-              "TYPE": "number",
-              "Name": "Flap_Pots",
-              "Number": 0.0,
-              "Text": "",
-              "Expression": "$"
-            },
-            "Type": "VariableSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "AnalogInputConfig": {
-            "onChange": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "@ 16.0147 * 0 max 16383 min (>K:FLAPS_SET)",
-              "PresetId": "e3388f22-2d1f-475d-88fc-d93676b15e2c"
-            }
-          },
-          "DeviceType": "InputAction",
-          "DeviceName": null,
-          "GUID": "0b46a937-6c0c-4877-bdc6-af1921b24c9f",
-          "Active": true,
-          "Name": "Flap Set",
-          "Type": "OutputConfigItem",
-          "Controller": null,
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Interpolation",
-                "Values": {
-                  "861": 0.0,
-                  "954": 256.0,
-                  "1022": 1024.0
-                },
-                "Count": 3,
-                "Max": 1024.0,
-                "Min": 0.0,
-                "Active": true
-              }
-            ]
-          }
-        },
-        {
-          "analog": {
-            "onChange": {
-              "Type": "VariableInputAction",
-              "Variable": {
-                "TYPE": "number",
-                "Name": "Flap_Pots",
-                "Number": 859.0,
-                "Text": "859",
-                "Expression": "@"
-              }
-            }
-          },
-          "Device": {
-            "Type": "AnalogInput",
-            "Name": "Flap"
-          },
-          "DeviceType": "AnalogInput",
-          "DeviceName": "Flap",
-          "GUID": "ef1d84a6-123e-49c6-9708-4efcf8d726a5",
-          "Active": true,
-          "Name": "Flap Pots Input",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "1 (>K:PARKING_BRAKE_SET)",
-              "PresetId": "bfa5f4f9-0f44-49d0-9382-929b6e96c4ef"
-            },
-            "onRelease": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "0 (>K:PARKING_BRAKE_SET)",
-              "PresetId": "3556ab94-09b7-43be-a226-b37ea20d9df1"
-            },
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Parking Break"
-          },
-          "DeviceType": "Button",
-          "DeviceName": "Parking Break",
-          "GUID": "6250e525-ea35-4dd3-84d3-7381be514535",
-          "Active": true,
-          "Name": "Parking Brake",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:VOR2_OBI_DEC)",
-              "PresetId": "99057249-9a87-41af-b8ac-201018d65430"
-            },
-            "onLeftFast": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(A:NAV OBS:2, Degrees) 10 - dnor (>K:VOR2_SET)",
-              "PresetId": "0"
-            },
-            "onRight": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:VOR2_OBI_INC)",
-              "PresetId": "42d2d62c-4b78-4fe6-8fc6-cb25272ddd8c"
-            },
-            "onRightFast": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(A:NAV OBS:2, Degrees) 10 + dnor (>K:VOR2_SET)",
-              "PresetId": "0"
-            }
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 2"
-          },
-          "DeviceType": "Encoder",
-          "DeviceName": "Encoder 2",
-          "GUID": "34e652a4-fc16-4289-b92d-05f24b58df91",
-          "Active": true,
-          "Name": "IP - VOR2 Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:VOR1_OBI_DEC)",
-              "PresetId": "520f3094-04fb-4786-93c9-e725a2e1598e"
-            },
-            "onLeftFast": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(A:NAV OBS:1, Degrees) 10 - dnor (>K:VOR1_SET)",
-              "PresetId": "0"
-            },
-            "onRight": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:VOR1_OBI_INC)",
-              "PresetId": "5f8975d1-7a9d-4834-af07-946f36319453"
-            },
-            "onRightFast": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(A:NAV OBS:1, Degrees) 10 + dnor (>K:VOR1_SET)",
-              "PresetId": "0"
-            }
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 4"
-          },
-          "DeviceType": "Encoder",
-          "DeviceName": "Encoder 4",
-          "GUID": "f444a18f-4542-4236-b0ee-6d6b5008824a",
-          "Active": true,
-          "Name": "IP - VOR1 Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:KOHLSMAN_DEC)",
-              "PresetId": "d3828258-b00c-4dad-b59d-4fb0d4f18a2a"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:KOHLSMAN_INC)",
-              "PresetId": "63a0157d-4060-4ee1-a28b-5c7964898b88"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 1"
-          },
-          "DeviceType": "Encoder",
-          "DeviceName": "Encoder 1",
-          "GUID": "d1a47f5a-4c34-4835-9500-aaa763aa5662",
-          "Active": true,
-          "Name": "IP - Altimeter Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:ATTITUDE_BARS_POSITION_DOWN)",
-              "PresetId": "a16fb978-0149-424d-8ed1-ebc538a1d258"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:ATTITUDE_BARS_POSITION_UP)",
-              "PresetId": "652dd0ef-d649-4d77-8d1a-60a6e9ca0280"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder"
-          },
-          "DeviceType": "Encoder",
-          "DeviceName": "Encoder",
-          "GUID": "caf3d952-9081-4eb7-9595-e229fb04167c",
-          "Active": true,
-          "Name": "IP - Attitude Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:HEADING_BUG_DEC)",
-              "PresetId": "cab52499-c789-4249-bc21-31f920d4e604"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:HEADING_BUG_INC)",
-              "PresetId": "debca2cf-3a15-40f0-b839-3e1e153cd0f4"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 3"
-          },
-          "DeviceType": "Encoder",
-          "DeviceName": "Encoder 3",
-          "GUID": "4d89d263-b40e-4250-891a-c9faed5e6714",
-          "Active": true,
-          "Name": "IP - Heading Bug Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:GYRO_DRIFT_DEC)",
-              "PresetId": "170d189d-d9cd-4f8e-938e-a673668d60c8"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:GYRO_DRIFT_INC)",
-              "PresetId": "4c3cde84-00e4-4a98-83f3-0e015dab0929"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 5"
-          },
-          "DeviceType": "Encoder",
-          "DeviceName": "Encoder 5",
-          "GUID": "82ce32e6-250f-4f70-ab6a-470213e7cef8",
-          "Active": true,
-          "Name": "IP - Heading Gyro Drift Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:GYRO_DRIFT_SET)",
-              "PresetId": "5eca83a5-d375-4aa6-ad85-3a6cf160a38c"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Heading Push"
-          },
-          "DeviceType": "Button",
-          "DeviceName": "Heading Push",
-          "GUID": "47d94a33-e2ce-47b7-963e-36730a17025c",
-          "Active": true,
-          "Name": "IP - Heading Gyro Drift Push",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:TOGGLE_GPS_DRIVES_NAV1)",
-              "PresetId": "e20b5a20-4a49-4909-8cea-cb26a06c0793"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "NAV GPS"
-          },
-          "DeviceType": "Button",
-          "DeviceName": "NAV GPS",
-          "GUID": "e4988955-6b20-4ee7-87ea-e4339fa00bff",
-          "Active": true,
-          "Name": "NAV GPS",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "0 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
-              "PresetId": "1bf98193-ce2d-4277-991f-fd4bcdaba3bd"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Magnetos Off"
-          },
-          "DeviceType": "Button",
-          "DeviceName": "Magnetos Off",
-          "GUID": "9df28849-14ce-4173-b043-24025a542291",
-          "Active": true,
-          "Name": "MAGNETOS Off",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "1 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
-              "PresetId": "3a6c52e4-f892-4b02-b9e6-2d546220fc18"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Magnetos R"
-          },
-          "DeviceType": "Button",
-          "DeviceName": "Magnetos R",
-          "GUID": "32faccf1-a1d6-48ab-9de2-7d2ae4de3757",
-          "Active": true,
-          "Name": "MAGNETOS Right",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "2 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
-              "PresetId": "3ef21d47-315b-4274-9748-6f2155548580"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Magnetos L"
-          },
-          "DeviceType": "Button",
-          "DeviceName": "Magnetos L",
-          "GUID": "5d39ce4b-a028-4eae-b5a8-cb8bd57d4667",
-          "Active": true,
-          "Name": "MAGNETOS Left",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "3 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
-              "PresetId": "22fffb5f-b7d6-49f2-9eee-04985a3c0299"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Magnetos Both"
-          },
-          "DeviceType": "Button",
-          "DeviceName": "Magnetos Both",
-          "GUID": "5a5c9062-79af-4d13-81b4-d5e45e7dbdb8",
-          "Active": true,
-          "Name": "MAGNETOS Both",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "3 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) ! if{ 1 (>K:SET_STARTER1_HELD) }",
-              "PresetId": "669d178f-b1f4-4005-841f-944a19764e6b"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Magnetos Start"
-          },
-          "DeviceType": "Button",
-          "DeviceName": "Magnetos Start",
-          "GUID": "15354558-44f6-4540-be30-8108f4623bb1",
-          "Active": true,
-          "Name": "MAGNETOS Start",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
           }
         }
       ]
