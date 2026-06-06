@@ -34,9 +34,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -65,9 +63,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "encoder": {
@@ -156,9 +152,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -187,9 +181,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -218,9 +210,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -249,9 +239,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -280,9 +268,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -311,9 +297,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -342,9 +326,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -373,9 +355,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -404,9 +384,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -435,9 +413,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -466,9 +442,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -501,9 +475,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -532,9 +504,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "encoder": {
@@ -623,9 +593,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -683,9 +651,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -714,9 +680,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "encoder": {
@@ -805,9 +769,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -836,9 +798,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -867,9 +827,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -898,9 +856,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -929,9 +885,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -960,9 +914,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -991,9 +943,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1022,9 +972,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1053,9 +1001,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1084,9 +1030,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1119,9 +1063,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1150,9 +1092,7 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "encoder": {
@@ -1241,14 +1181,12 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         }
       ]
     },
     {
-      "Label": "XPDR",
+      "Label": "XPDR-KT78C",
       "FileName": null,
       "ReferenceOnly": false,
       "EmbedContent": true,
@@ -1277,8 +1215,7 @@
             "DisplayLedDigits": [
               "0",
               "1",
-              "2",
-              "3"
+              "2"
             ],
             "DisplayLedDecimalPoints": [],
             "DisplayLedReverseDigits": false,
@@ -1292,8 +1229,8 @@
           "Name": "// TRANSPONDER CONFIGURATION UPDATED 2026-04-25",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
-            "Serial": "SN-1FD-E25"
+            "Name": "XPDR-AUDIO",
+            "Serial": "SN-63C-8CC"
           },
           "Preconditions": [
             {
@@ -1498,9 +1435,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "67",
-          "Value": "67"
+          ]
         },
         {
           "Source": {
@@ -1568,10 +1503,6 @@
                 "Active": true
               }
             ]
-          },
-          "Value": "----",
-          "Status": {
-            "Precondition": "not satisfied"
           }
         },
         {
@@ -1667,9 +1598,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "4",
-          "Value": "OO0"
+          ]
         },
         {
           "Source": {
@@ -1752,10 +1681,6 @@
                 "Active": true
               }
             ]
-          },
-          "RawValue": "0",
-          "Status": {
-            "Precondition": "not satisfied"
           }
         },
         {
@@ -1811,9 +1736,7 @@
                 "Active": true
               }
             ]
-          },
-          "RawValue": "0",
-          "Value": "0"
+          }
         },
         {
           "Source": {
@@ -1890,9 +1813,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "4",
-          "Value": "4"
+          ]
         },
         {
           "Source": {
@@ -1938,9 +1859,7 @@
                 "Active": false
               }
             ]
-          },
-          "RawValue": "1208.497802734375",
-          "Value": "O12"
+          }
         },
         {
           "Source": {
@@ -1987,9 +1906,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "1",
-          "Value": "15"
+          ]
         },
         {
           "Source": {
@@ -2023,9 +1940,7 @@
                 "Active": false
               }
             ]
-          },
-          "RawValue": "282.152099609375",
-          "Value": "282.152099609375"
+          }
         },
         {
           "Source": {
@@ -2082,9 +1997,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "146.313491821289",
-          "Value": "135.84"
+          ]
         },
         {
           "Source": {
@@ -2161,9 +2074,7 @@
               "Placeholder": "a",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "0",
-          "Value": "0"
+          ]
         },
         {
           "Source": {
@@ -2246,8 +2157,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "Value": "-"
+          ]
         },
         {
           "Source": {
@@ -2358,9 +2268,7 @@
               "Placeholder": "b",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "0",
-          "Value": "0"
+          ]
         },
         {
           "Source": {
@@ -2536,9 +2444,7 @@
               "Placeholder": "b",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "0",
-          "Value": "0"
+          ]
         },
         {
           "Source": {
@@ -2714,9 +2620,7 @@
               "Placeholder": "b",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "0",
-          "Value": "0"
+          ]
         },
         {
           "Source": {
@@ -2778,9 +2682,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "0",
-          "Value": "0"
+          ]
         },
         {
           "Source": {
@@ -2833,9 +2735,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "0",
-          "Value": "0"
+          ]
         },
         {
           "Source": {
@@ -2897,9 +2797,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "146.313491821289",
-          "Value": "1"
+          ]
         },
         {
           "button": {
@@ -2928,9 +2826,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -2959,9 +2855,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -2990,9 +2884,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3021,9 +2913,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3052,9 +2942,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3083,9 +2971,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3114,9 +3000,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3145,9 +3029,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3176,9 +3058,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3207,9 +3087,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "PRESS",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3238,9 +3116,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3269,9 +3145,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3300,9 +3174,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3331,9 +3203,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3362,9 +3232,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3393,9 +3261,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "PRESS",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -3446,9 +3312,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -3490,9 +3354,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -3534,9 +3396,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -3587,9 +3447,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -3631,9 +3489,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -3684,9 +3540,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -3737,9 +3591,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -3790,9 +3642,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -3843,9 +3693,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -3896,9 +3744,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -3952,9 +3798,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -3996,9 +3840,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -4041,9 +3883,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -4077,9 +3917,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -4113,9 +3951,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "PRESS",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -4149,9 +3985,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -4185,9 +4019,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -4221,9 +4053,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -4257,9 +4087,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -4293,9 +4121,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -4329,9 +4155,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -4365,9 +4189,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -4401,9 +4223,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -4437,9 +4257,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -4473,9 +4291,7 @@
           "Controller": {
             "Name": "IP-XPDR",
             "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "Source": {
@@ -4541,11 +4357,6 @@
                 "Active": true
               }
             ]
-          },
-          "RawValue": "0",
-          "Value": "12345678",
-          "Status": {
-            "Precondition": "not satisfied"
           }
         }
       ]
@@ -4575,7 +4386,7 @@
           "Name": "Throttle",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-XPDR",
+            "Name": "IP-PRIMARY",
             "Serial": "SN-1FD-E25"
           }
         },
