@@ -1913,7 +1913,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Modifiers": {
             "Items": [
@@ -1948,7 +1948,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -1971,7 +1971,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Modifiers": {
             "Items": [
@@ -2026,7 +2026,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Preconditions": [
             {
@@ -2105,7 +2105,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Preconditions": [
             {
@@ -2171,7 +2171,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Modifiers": {
             "Items": [
@@ -2265,7 +2265,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Preconditions": [
             {
@@ -2331,7 +2331,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Modifiers": {
             "Items": [
@@ -2386,7 +2386,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Modifiers": {
             "Items": [
@@ -2463,7 +2463,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Modifiers": {
             "Items": [
@@ -2509,7 +2509,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Modifiers": {
             "Items": [
@@ -2556,7 +2556,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Modifiers": {
             "Items": [
@@ -2592,7 +2592,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Modifiers": {
             "Items": [
@@ -2663,7 +2663,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Modifiers": {
             "Items": [
@@ -2726,7 +2726,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Preconditions": [
             {
@@ -2827,7 +2827,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Preconditions": [
             {
@@ -2920,7 +2920,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Preconditions": [
             {
@@ -3008,7 +3008,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Preconditions": [
             {
@@ -3096,7 +3096,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Preconditions": [
             {
@@ -3184,7 +3184,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Preconditions": [
             {
@@ -3290,7 +3290,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Modifiers": {
             "Items": [
@@ -3352,7 +3352,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "ConfigRefs": [
             {
@@ -3405,7 +3405,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Modifiers": {
             "Items": [
@@ -3451,7 +3451,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3480,7 +3480,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3509,7 +3509,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3538,7 +3538,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3567,7 +3567,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3596,7 +3596,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3625,7 +3625,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3654,7 +3654,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3683,7 +3683,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3712,7 +3712,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3741,7 +3741,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3770,7 +3770,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3799,7 +3799,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3828,7 +3828,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3857,7 +3857,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3886,7 +3886,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -3929,7 +3929,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "ConfigRefs": [
             {
@@ -3971,7 +3971,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "ConfigRefs": [
             {
@@ -4013,7 +4013,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "ConfigRefs": [
             {
@@ -4064,7 +4064,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "ConfigRefs": [
             {
@@ -4106,7 +4106,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "ConfigRefs": [
             {
@@ -4157,7 +4157,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "ConfigRefs": [
             {
@@ -4208,7 +4208,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "ConfigRefs": [
             {
@@ -4259,7 +4259,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "ConfigRefs": [
             {
@@ -4310,7 +4310,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "ConfigRefs": [
             {
@@ -4361,7 +4361,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "ConfigRefs": [
             {
@@ -4403,7 +4403,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Preconditions": [
             {
@@ -4457,7 +4457,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "ConfigRefs": [
             {
@@ -4508,7 +4508,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4542,7 +4542,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4576,7 +4576,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4610,7 +4610,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4644,7 +4644,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4678,7 +4678,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4712,7 +4712,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4746,7 +4746,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4780,7 +4780,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4814,7 +4814,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4848,7 +4848,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4882,7 +4882,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4916,7 +4916,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           }
         },
         {
@@ -4961,7 +4961,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "XPDR-AUDIO",
-            "Serial": "SN-1FD-E25"
+            "Serial": "SN-63C-8CC"
           },
           "Preconditions": [
             {
