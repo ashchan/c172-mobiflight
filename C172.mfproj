@@ -87,7 +87,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 0,
+            "Float64": 0.0,
             "String": null
           },
           "Device": {
@@ -123,7 +123,7 @@
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "Flap_Pots",
-              "Number": 0,
+              "Number": 0.0,
               "Text": "",
               "Expression": "$"
             },
@@ -131,7 +131,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "AnalogInputConfig": {
@@ -153,13 +153,13 @@
               {
                 "Type": "Interpolation",
                 "Values": {
-                  "861": 0,
-                  "954": 256,
-                  "1022": 1024
+                  "800": 0.0,
+                  "891": 256.0,
+                  "969": 1024.0
                 },
                 "Count": 3,
-                "Max": 1024,
-                "Min": 0,
+                "Max": 1024.0,
+                "Min": 0.0,
                 "Active": true
               }
             ]
@@ -172,8 +172,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "Flap_Pots",
-                "Number": 859,
-                "Text": "859",
+                "Number": 797.0,
+                "Text": "797",
                 "Expression": "@"
               }
             }
@@ -660,7 +660,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -689,7 +691,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "encoder": {
@@ -778,7 +782,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -807,7 +813,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -836,7 +844,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -865,7 +875,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -894,7 +906,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -923,7 +937,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -952,7 +968,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -981,7 +999,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1010,7 +1030,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1039,7 +1061,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1068,7 +1092,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1101,7 +1127,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1130,7 +1158,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "encoder": {
@@ -1219,7 +1249,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1246,7 +1278,7 @@
           "Name": "NAV GPS",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP1",
+            "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
           }
         },
@@ -1277,7 +1309,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1306,7 +1340,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "encoder": {
@@ -1395,7 +1431,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1424,7 +1462,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1453,7 +1493,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1482,7 +1524,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1511,7 +1555,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1540,7 +1586,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1569,7 +1617,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1598,7 +1648,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1627,7 +1679,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1656,7 +1710,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1689,7 +1745,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -1718,7 +1776,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "encoder": {
@@ -1807,7 +1867,9 @@
           "Controller": {
             "Name": "GNS",
             "Serial": "SN-F83-546"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         }
       ]
     },
@@ -2978,7 +3040,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1231,
+            "Float64": 1231.0,
             "String": null
           },
           "Device": {
@@ -3052,7 +3114,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "DeviceType": "",
@@ -3087,7 +3149,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "DeviceType": "",
@@ -3110,7 +3172,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "DeviceType": "",
@@ -3147,7 +3209,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 12345678,
+            "Float64": 12345678.0,
             "String": null
           },
           "Device": {
@@ -3211,14 +3273,16 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "123",
+          "Value": "123"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "string",
               "Name": "xpndrcode",
-              "Number": 0,
+              "Number": 0.0,
               "Text": "",
               "Expression": "$"
             },
@@ -3226,7 +3290,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1234,
+            "Float64": 1234.0,
             "String": null
           },
           "Device": {
@@ -3279,6 +3343,10 @@
                 "Active": true
               }
             ]
+          },
+          "Value": "----",
+          "Status": {
+            "Precondition": "not satisfied"
           }
         },
         {
@@ -3292,7 +3360,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "Device": {
@@ -3374,7 +3442,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "4",
+          "Value": "OO0"
         },
         {
           "Source": {
@@ -3387,7 +3457,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "Device": {
@@ -3457,7 +3527,8 @@
                 "Active": true
               }
             ]
-          }
+          },
+          "RawValue": "0"
         },
         {
           "Source": {
@@ -3470,7 +3541,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "DeviceType": "-",
@@ -3512,7 +3583,9 @@
                 "Active": true
               }
             ]
-          }
+          },
+          "RawValue": "0",
+          "Value": "15"
         },
         {
           "Source": {
@@ -3525,7 +3598,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "DeviceType": "-",
@@ -3589,7 +3662,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "4",
+          "Value": "4"
         },
         {
           "Source": {
@@ -3602,7 +3677,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 5200,
+            "Float64": 5200.0,
             "String": null
           },
           "DeviceType": "-",
@@ -3635,7 +3710,9 @@
                 "Active": false
               }
             ]
-          }
+          },
+          "RawValue": "1080.7528076171875",
+          "Value": "O11"
         },
         {
           "Source": {
@@ -3648,7 +3725,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "DeviceType": "-",
@@ -3682,7 +3759,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "1",
+          "Value": "15"
         },
         {
           "Source": {
@@ -3695,7 +3774,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "DeviceType": "-",
@@ -3716,14 +3795,16 @@
                 "Active": false
               }
             ]
-          }
+          },
+          "RawValue": "84.357940673828125",
+          "Value": "84.357940673828125"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "timefreeze",
-              "Number": 0,
+              "Number": 0.0,
               "Text": "",
               "Expression": "$"
             },
@@ -3731,7 +3812,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "DeviceType": "-",
@@ -3773,7 +3854,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "71.8362884521484",
+          "Value": "12.52"
         },
         {
           "Source": {
@@ -3784,7 +3867,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "ButtonInputConfig": {
@@ -3794,7 +3877,7 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "xpndrcode",
-                "Number": 0,
+                "Number": 0.0,
                 "Text": "",
                 "Expression": "''"
               }
@@ -3850,14 +3933,16 @@
               "Placeholder": "a",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "string",
               "Name": "xpndrcode",
-              "Number": 0,
+              "Number": 0.0,
               "Text": "",
               "Expression": "$"
             },
@@ -3865,7 +3950,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "DeviceType": "-",
@@ -3933,14 +4018,15 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "Value": "-"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "clearVar",
-              "Number": 0,
+              "Number": 0.0,
               "Text": "",
               "Expression": "$"
             },
@@ -3948,7 +4034,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "ButtonInputConfig": {
@@ -3957,7 +4043,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 0,
+                "Number": 0.0,
                 "Text": "-",
                 "Expression": "b"
               }
@@ -4044,14 +4130,16 @@
               "Placeholder": "b",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "string",
               "Name": "xpndrcode",
-              "Number": 0,
+              "Number": 0.0,
               "Text": "",
               "Expression": "$"
             },
@@ -4059,7 +4147,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "DeviceType": "-",
@@ -4121,7 +4209,7 @@
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "clearVar",
-              "Number": 0,
+              "Number": 0.0,
               "Text": "",
               "Expression": "$"
             },
@@ -4129,7 +4217,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "ButtonInputConfig": {
@@ -4138,7 +4226,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 1,
+                "Number": 1.0,
                 "Text": "1",
                 "Expression": "b"
               }
@@ -4220,14 +4308,16 @@
               "Placeholder": "b",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "string",
               "Name": "xpndrcode",
-              "Number": 0,
+              "Number": 0.0,
               "Text": "",
               "Expression": "$"
             },
@@ -4235,7 +4325,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "DeviceType": "-",
@@ -4297,7 +4387,7 @@
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "clearVar",
-              "Number": 0,
+              "Number": 0.0,
               "Text": "",
               "Expression": "$"
             },
@@ -4305,7 +4395,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "ButtonInputConfig": {
@@ -4314,7 +4404,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 12,
+                "Number": 12.0,
                 "Text": "12",
                 "Expression": "b"
               }
@@ -4396,14 +4486,16 @@
               "Placeholder": "b",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "vfr",
-              "Number": 0,
+              "Number": 0.0,
               "Text": "",
               "Expression": "$"
             },
@@ -4411,7 +4503,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "ButtonInputConfig": {
@@ -4420,7 +4512,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "vfr",
-                "Number": 0,
+                "Number": 0.0,
                 "Text": "0",
                 "Expression": "@"
               }
@@ -4458,14 +4550,16 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "typeLength",
-              "Number": 0,
+              "Number": 0.0,
               "Text": "",
               "Expression": "$"
             },
@@ -4473,7 +4567,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "ButtonInputConfig": {
@@ -4483,8 +4577,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 0,
-                "Text": "0",
+                "Number": 4.0,
+                "Text": "4",
                 "Expression": "$*#"
               }
             },
@@ -4511,14 +4605,16 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "4",
+          "Value": "4"
         },
         {
           "Source": {
             "MobiFlightVariable": {
               "TYPE": "number",
               "Name": "timefreeze",
-              "Number": 0,
+              "Number": 0.0,
               "Text": "",
               "Expression": "$"
             },
@@ -4526,7 +4622,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1,
+            "Float64": 1.0,
             "String": null
           },
           "ButtonInputConfig": {
@@ -4573,7 +4669,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "71.8362884521484",
+          "Value": "1"
         },
         {
           "button": {
@@ -4602,7 +4700,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -4631,7 +4731,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -4660,7 +4762,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -4689,7 +4793,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -4718,7 +4824,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -4747,7 +4855,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -4776,7 +4886,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -4805,7 +4917,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -4834,7 +4948,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -4863,7 +4979,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "PRESS",
+          "Value": " "
         },
         {
           "button": {
@@ -4892,7 +5010,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -4921,7 +5041,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -4950,7 +5072,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -4979,7 +5103,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5008,7 +5134,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5037,7 +5165,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5046,8 +5176,8 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "xpndrcode",
-                "Number": 0,
-                "Text": "OOOO",
+                "Number": 0.0,
+                "Text": "O",
                 "Expression": "$O"
               }
             },
@@ -5056,8 +5186,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 150.313491821289,
-                "Text": "150.313491821289",
+                "Number": 69.9473724365234,
+                "Text": "69.9473724365234",
                 "Expression": "#"
               }
             },
@@ -5088,7 +5218,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5097,8 +5229,8 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "xpndrcode",
-                "Number": 0,
-                "Text": "1",
+                "Number": 0.0,
+                "Text": "O1",
                 "Expression": "$1"
               }
             },
@@ -5130,7 +5262,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5139,8 +5273,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 640.61669921875,
-                "Text": "640.61669921875",
+                "Number": 70.5251693725586,
+                "Text": "70.5251693725586",
                 "Expression": "#"
               }
             },
@@ -5172,7 +5306,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5181,8 +5317,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 12,
-                "Text": "12",
+                "Number": 12.0,
+                "Text": "O12",
                 "Expression": "$2"
               }
             },
@@ -5191,8 +5327,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 150.313491821289,
-                "Text": "150.313491821289",
+                "Number": 71.3251724243164,
+                "Text": "71.3251724243164",
                 "Expression": "#"
               }
             },
@@ -5223,7 +5359,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5232,8 +5370,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 640.925964355469,
-                "Text": "640.925964355469",
+                "Number": 71.2140579223633,
+                "Text": "71.2140579223633",
                 "Expression": "#"
               }
             },
@@ -5265,7 +5403,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5274,7 +5414,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 123,
+                "Number": 123.0,
                 "Text": "123",
                 "Expression": "$3"
               }
@@ -5284,8 +5424,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 150.313491821289,
-                "Text": "150.313491821289",
+                "Number": 71.8362884521484,
+                "Text": "71.8362884521484",
                 "Expression": "#"
               }
             },
@@ -5316,7 +5456,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5325,7 +5467,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 1234,
+                "Number": 1234.0,
                 "Text": "1234",
                 "Expression": "$4"
               }
@@ -5335,8 +5477,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "timefreeze",
-                "Number": 150.313491821289,
-                "Text": "150.313491821289",
+                "Number": 108.054359436035,
+                "Text": "#",
                 "Expression": "#"
               }
             },
@@ -5367,7 +5509,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5376,7 +5520,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 5555,
+                "Number": 5555.0,
                 "Text": "5555",
                 "Expression": "$5"
               }
@@ -5387,7 +5531,7 @@
                 "TYPE": "number",
                 "Name": "timefreeze",
                 "Number": 150.313491821289,
-                "Text": "150.313491821289",
+                "Text": "#",
                 "Expression": "#"
               }
             },
@@ -5418,7 +5562,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5427,7 +5573,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 6666,
+                "Number": 6666.0,
                 "Text": "6666",
                 "Expression": "$6"
               }
@@ -5438,7 +5584,7 @@
                 "TYPE": "number",
                 "Name": "timefreeze",
                 "Number": 150.313491821289,
-                "Text": "150.313491821289",
+                "Text": "#",
                 "Expression": "#"
               }
             },
@@ -5469,7 +5615,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5478,7 +5626,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "xpndrcode",
-                "Number": 7777,
+                "Number": 7777.0,
                 "Text": "7777",
                 "Expression": "$7"
               }
@@ -5489,7 +5637,7 @@
                 "TYPE": "number",
                 "Name": "timefreeze",
                 "Number": 150.313491821289,
-                "Text": "150.313491821289",
+                "Text": "#",
                 "Expression": "#"
               }
             },
@@ -5520,7 +5668,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5531,7 +5681,7 @@
                 "TYPE": "number",
                 "Name": "timefreeze",
                 "Number": 150.313491821289,
-                "Text": "150.313491821289",
+                "Text": "#",
                 "Expression": "#"
               }
             },
@@ -5574,7 +5724,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5585,7 +5737,7 @@
                 "TYPE": "number",
                 "Name": "timefreeze",
                 "Number": 146.313491821289,
-                "Text": "146.313491821289",
+                "Text": "#-4",
                 "Expression": "#-4"
               }
             },
@@ -5616,7 +5768,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5625,7 +5779,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "clearVar",
-                "Number": 1,
+                "Number": 1.0,
                 "Text": "1",
                 "Expression": "1"
               }
@@ -5635,7 +5789,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "clearVar",
-                "Number": 0,
+                "Number": 0.0,
                 "Text": "0",
                 "Expression": "0"
               }
@@ -5659,7 +5813,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5668,7 +5824,7 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "lengthThing",
-                "Number": 0,
+                "Number": 0.0,
                 "Text": "0",
                 "Expression": "$"
               }
@@ -5693,7 +5849,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5702,7 +5860,7 @@
               "Variable": {
                 "TYPE": "string",
                 "Name": "lensub",
-                "Number": 0,
+                "Number": 0.0,
                 "Text": "0",
                 "Expression": "$"
               }
@@ -5727,7 +5885,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5736,7 +5896,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "vfr",
-                "Number": 1,
+                "Number": 1.0,
                 "Text": "1",
                 "Expression": "$+1"
               }
@@ -5761,7 +5921,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5770,7 +5932,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 1,
+                "Number": 1.0,
                 "Text": "1",
                 "Expression": "$-1"
               }
@@ -5795,7 +5957,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5804,8 +5968,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 4,
-                "Text": "4",
+                "Number": 1.0,
+                "Text": "1",
                 "Expression": "$+1"
               }
             },
@@ -5829,7 +5993,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5838,7 +6004,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 2,
+                "Number": 2.0,
                 "Text": "2",
                 "Expression": "$+1"
               }
@@ -5863,7 +6029,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5872,7 +6040,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 3,
+                "Number": 3.0,
                 "Text": "3",
                 "Expression": "$+1"
               }
@@ -5897,7 +6065,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5906,7 +6076,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 4,
+                "Number": 4.0,
                 "Text": "4",
                 "Expression": "$+1"
               }
@@ -5931,7 +6101,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5940,8 +6112,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 5,
-                "Text": "5",
+                "Number": 4.0,
+                "Text": "4",
                 "Expression": "$+1"
               }
             },
@@ -5965,7 +6137,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -5974,7 +6148,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 3,
+                "Number": 3.0,
                 "Text": "3",
                 "Expression": "$+1"
               }
@@ -5999,7 +6173,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -6008,7 +6184,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 3,
+                "Number": 3.0,
                 "Text": "3",
                 "Expression": "$+1"
               }
@@ -6033,7 +6209,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "button": {
@@ -6042,7 +6220,7 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 4,
+                "Number": 4.0,
                 "Text": "4",
                 "Expression": "$+1"
               }
@@ -6067,7 +6245,9 @@
           "Controller": {
             "Name": "XPDR-AUDIO",
             "Serial": "SN-63C-8CC"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "Source": {
@@ -6078,7 +6258,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 12345678,
+            "Float64": 12345678.0,
             "String": null
           },
           "Device": {
@@ -6133,6 +6313,11 @@
                 "Active": true
               }
             ]
+          },
+          "RawValue": "0",
+          "Value": "12345678",
+          "Status": {
+            "Precondition": "not satisfied"
           }
         }
       ]
