@@ -7,7 +7,6 @@
   <AnalogInput Name="Lean" Pin="65" Sensitivity="5" />
   <AnalogInput Name="Throttle" Pin="69" Sensitivity="5" />
   <AnalogInput Name="Flap" Pin="67" Sensitivity="5" />
-  <AnalogInput Name="Trim" Pin="68" Sensitivity="5" />
   <Button Name="Parking Break" Pin="34" />
   <Button Name="Magnetos L" Pin="35" />
   <Button Name="Magnetos R" Pin="36" />
@@ -22,4 +21,5 @@
   <Button Name="NAV GPS" Pin="15" />
   <Encoder Name="Encoder 5" PinLeft="5" PinRight="16" EncoderType="2" />
   <Servo Name="Flap Indicator" DataPin="32" />
+  <Encoder Name="Encoder 6" PinLeft="54" PinRight="55" EncoderType="4" />
 </Config>
