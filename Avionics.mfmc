@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>Avionics</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Button 5" Pin="5" />
+  <Button Name="Button 7" Pin="7" />
+  <Button Name="Button 8" Pin="8" />
+  <Button Name="Button 9" Pin="9" />
+  <Button Name="Button 10" Pin="10" />
+  <Button Name="Button 11" Pin="11" />
+  <Button Name="Button 12" Pin="12" />
+  <Button Name="Button 13" Pin="13" />
+  <Button Name="Button 14" Pin="14" />
+  <Button Name="Button 15" Pin="15" />
+  <Button Name="Button 16" Pin="16" />
+  <Button Name="Button 17" Pin="17" />
+  <Button Name="Button 18" Pin="18" />
+  <Button Name="Button 19" Pin="19" />
+  <Button Name="Button 20" Pin="20" />
+  <Button Name="Button 21" Pin="21" />
+  <Button Name="Button 22" Pin="22" />
+  <Button Name="Button 23" Pin="23" />
+  <Button Name="Button 24" Pin="24" />
+  <Button Name="Button 25" Pin="25" />
+  <Button Name="Button 26" Pin="26" />
+  <Button Name="Button 27" Pin="27" />
+  <Button Name="Button 28" Pin="28" />
+  <Button Name="Button 29" Pin="29" />
+  <Button Name="Button 30" Pin="30" />
+  <Button Name="Button 31" Pin="31" />
+  <Button Name="Button 32" Pin="32" />
+  <Button Name="Button 53" Pin="53" />
+  <Encoder Name="Encoder" PinLeft="3" PinRight="2" EncoderType="2" />
+  <Encoder Name="Encoder 1" PinLeft="6" PinRight="4" EncoderType="2" />
+</Config>
