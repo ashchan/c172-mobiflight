@@ -29,8 +29,42 @@
   <Button Name="Button 29" Pin="29" />
   <Button Name="Button 30" Pin="30" />
   <Button Name="Button 31" Pin="31" />
-  <Button Name="Button 32" Pin="32" />
   <Button Name="Button 53" Pin="53" />
   <Encoder Name="Encoder" PinLeft="3" PinRight="2" EncoderType="2" />
   <Encoder Name="Encoder 1" PinLeft="6" PinRight="4" EncoderType="2" />
+  <Output Name="LED 1" Pin="54" />
+  <Output Name="LED 2" Pin="56" />
+  <Output Name="LED 3" Pin="58" />
+  <Encoder Name="Encoder 2" PinLeft="34" PinRight="36" EncoderType="2" />
+  <Button Name="Button 52" Pin="52" />
+  <Button Name="Button 51" Pin="51" />
+  <Button Name="Button 50" Pin="50" />
+  <Button Name="Button 49" Pin="49" />
+  <Button Name="Button 48" Pin="48" />
+  <Output Name="LED TX" Pin="68" />
+  <Output Name="LED SWAP" Pin="32" />
+  <Button Name="Button" Pin="55" />
+  <Button Name="Button 1" Pin="57" />
+  <Button Name="Button 2" Pin="59" />
+  <Button Name="Button 3" Pin="61" />
+  <Button Name="Button 4" Pin="63" />
+  <Button Name="Button 6" Pin="65" />
+  <Output Name="Output" Pin="40" />
+  <Output Name="Output 1" Pin="41" />
+  <Output Name="Output 2" Pin="42" />
+  <Output Name="Output 3" Pin="43" />
+  <Output Name="Output 4" Pin="44" />
+  <Output Name="Output 5" Pin="45" />
+  <Output Name="Output 6" Pin="46" />
+  <Output Name="Output 7" Pin="47" />
+  <Button Name="Button 32" Pin="33" />
+  <Button Name="Button 33" Pin="35" />
+  <Button Name="Button 37" Pin="60" />
+  <Button Name="Button 38" Pin="62" />
+  <Button Name="Button 39" Pin="64" />
+  <Button Name="Button 40" Pin="66" />
+  <Button Name="Button 41" Pin="67" />
+  <Button Name="Button 42" Pin="69" />
+  <Output Name="Output 8" Pin="37" />
+  <Output Name="Output 10" Pin="39" />
 </Config>

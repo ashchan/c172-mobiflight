@@ -26,7 +26,9 @@
           "Controller": {
             "Name": "IP-PRIMARY",
             "Serial": "SN-1FD-E25"
-          }
+          },
+          "RawValue": "CHANGE => 150",
+          "Value": "150"
         },
         {
           "analog": {
@@ -47,7 +49,9 @@
           "Controller": {
             "Name": "IP-PRIMARY",
             "Serial": "SN-1FD-E25"
-          }
+          },
+          "RawValue": "CHANGE => 895",
+          "Value": "895"
         },
         {
           "encoder": {
@@ -124,7 +128,9 @@
                 "Active": true
               }
             ]
-          }
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -171,7 +177,9 @@
                 "Active": true
               }
             ]
-          }
+          },
+          "RawValue": "887",
+          "Value": "245"
         },
         {
           "analog": {
@@ -179,8 +187,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "Flap_Pots",
-                "Number": 794.0,
-                "Text": "794",
+                "Number": 887.0,
+                "Text": "887",
                 "Expression": "@"
               },
               "Type": "VariableInputAction"
@@ -197,7 +205,9 @@
           "Controller": {
             "Name": "IP-PRIMARY",
             "Serial": "SN-1FD-E25"
-          }
+          },
+          "RawValue": "CHANGE => 887",
+          "Value": "887"
         },
         {
           "button": {
@@ -228,7 +238,9 @@
           "Controller": {
             "Name": "IP-PRIMARY",
             "Serial": "SN-1FD-E25"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": "1"
         },
         {
           "encoder": {
@@ -439,7 +451,9 @@
           "Controller": {
             "Name": "IP-PRIMARY",
             "Serial": "SN-1FD-E25"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": "1"
         },
         {
           "button": {
@@ -466,7 +480,9 @@
           "Controller": {
             "Name": "IP-PRIMARY",
             "Serial": "SN-1FD-E25"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": "1"
         },
         {
           "button": {
@@ -493,7 +509,9 @@
           "Controller": {
             "Name": "IP-PRIMARY",
             "Serial": "SN-1FD-E25"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": "1"
         },
         {
           "button": {
@@ -520,7 +538,9 @@
           "Controller": {
             "Name": "IP-PRIMARY",
             "Serial": "SN-1FD-E25"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": "1"
         },
         {
           "button": {
@@ -547,7 +567,9 @@
           "Controller": {
             "Name": "IP-PRIMARY",
             "Serial": "SN-1FD-E25"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": "1"
         },
         {
           "button": {
@@ -574,7 +596,9 @@
           "Controller": {
             "Name": "IP-PRIMARY",
             "Serial": "SN-1FD-E25"
-          }
+          },
+          "RawValue": "PRESS",
+          "Value": "0"
         },
         {
           "button": {
@@ -601,7 +625,9 @@
           "Controller": {
             "Name": "IP-PRIMARY",
             "Serial": "SN-1FD-E25"
-          }
+          },
+          "RawValue": "RELEASE",
+          "Value": "1"
         }
       ]
     },
@@ -1216,24 +1242,25 @@
             "String": null
           },
           "Device": {
-            "Name": "LED_O",
-            "Pin": "LED_O",
+            "Name": "LED 1",
+            "Pin": "LED 1",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "LED_O",
+          "DeviceName": "LED 1",
           "GUID": "d4c00197-81c0-4379-9e9f-bb0aa2e261cc",
           "Active": true,
           "Name": "LED_O",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           },
-          "RawValue": "0",
-          "Value": "0"
+          "Status": {
+            "Test": "TEST_EXECUTION"
+          }
         },
         {
           "Source": {
@@ -1250,24 +1277,22 @@
             "String": null
           },
           "Device": {
-            "Name": "LED_M",
-            "Pin": "LED_M",
+            "Name": "LED 2",
+            "Pin": "LED 2",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "LED_M",
+          "DeviceName": "LED 2",
           "GUID": "f6d04e5c-1cc0-4176-8998-f13642f1793e",
           "Active": true,
           "Name": "LED_M",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
@@ -1284,24 +1309,22 @@
             "String": null
           },
           "Device": {
-            "Name": "LED_I",
-            "Pin": "LED_I",
+            "Name": "LED 3",
+            "Pin": "LED 3",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "LED_I",
+          "DeviceName": "LED 3",
           "GUID": "5565b47b-8bdd-429b-9ba4-cd01391301f5",
           "Active": true,
           "Name": "LED_I",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
@@ -1318,24 +1341,22 @@
             "String": null
           },
           "Device": {
-            "Name": "COM1_L",
-            "Pin": "COM1_L",
+            "Name": "Output 8",
+            "Pin": "Output 8",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "COM1_L",
+          "DeviceName": "Output 8",
           "GUID": "c181e775-f6a1-4d62-aec7-07996b5fe8f4",
           "Active": true,
           "Name": "COM1",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "1",
-          "Value": "1"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
@@ -1352,24 +1373,22 @@
             "String": null
           },
           "Device": {
-            "Name": "COM2_L",
-            "Pin": "COM2_L",
+            "Name": "Output 10",
+            "Pin": "Output 10",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "COM2_L",
+          "DeviceName": "Output 10",
           "GUID": "39124809-2ec9-4add-b2e5-d9f6a573d534",
           "Active": true,
           "Name": "COM2",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
@@ -1386,24 +1405,22 @@
             "String": null
           },
           "Device": {
-            "Name": "NAV1_L",
-            "Pin": "NAV1_L",
+            "Name": "Output",
+            "Pin": "Output",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "NAV1_L",
+          "DeviceName": "Output",
           "GUID": "7c7599e4-80d6-4a1f-a46f-aa802cd4f2b4",
           "Active": true,
           "Name": "NAV1",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
@@ -1420,24 +1437,22 @@
             "String": null
           },
           "Device": {
-            "Name": "NAV2_L",
-            "Pin": "NAV2_L",
+            "Name": "Output 2",
+            "Pin": "Output 2",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "NAV2_L",
+          "DeviceName": "Output 2",
           "GUID": "c2952821-abaf-4a79-8bc7-74c9070e27a8",
           "Active": true,
           "Name": "NAV2",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
@@ -1454,24 +1469,22 @@
             "String": null
           },
           "Device": {
-            "Name": "MKR_L",
-            "Pin": "MKR_L",
+            "Name": "Output 4",
+            "Pin": "Output 4",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "MKR_L",
+          "DeviceName": "Output 4",
           "GUID": "a36d0bb8-6b0a-4bce-bab6-d91ebae61e96",
           "Active": true,
           "Name": "MKR",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "1",
-          "Value": "1"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
@@ -1488,24 +1501,22 @@
             "String": null
           },
           "Device": {
-            "Name": "ICS_L",
-            "Pin": "ICS_L",
+            "Name": "Output 6",
+            "Pin": "Output 6",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "ICS_L",
+          "DeviceName": "Output 6",
           "GUID": "493f3946-9bc5-4406-b74e-2356a8f837c3",
           "Active": true,
           "Name": "ICS",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
@@ -1522,24 +1533,22 @@
             "String": null
           },
           "Device": {
-            "Name": "ADF_L",
-            "Pin": "ADF_L",
+            "Name": "Output 1",
+            "Pin": "Output 1",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "ADF_L",
+          "DeviceName": "Output 1",
           "GUID": "6db60099-ffde-40c7-9e8b-1ecb3d756ac7",
           "Active": true,
           "Name": "ADF",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
@@ -1558,24 +1567,22 @@
             "String": null
           },
           "Device": {
-            "Name": "AUX_L",
-            "Pin": "AUX_L",
+            "Name": "Output 3",
+            "Pin": "Output 3",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "AUX_L",
+          "DeviceName": "Output 3",
           "GUID": "2b090a2e-c4ec-4b96-a2d6-5eb2a03ed990",
           "Active": true,
           "Name": "AUX",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
@@ -1592,24 +1599,22 @@
             "String": null
           },
           "Device": {
-            "Name": "DME_L",
-            "Pin": "DME_L",
+            "Name": "Output 5",
+            "Pin": "Output 5",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "DME_L",
+          "DeviceName": "Output 5",
           "GUID": "1f06c3a8-bbff-471a-9d41-efffb49e39eb",
           "Active": true,
           "Name": "DME",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
@@ -1626,24 +1631,22 @@
             "String": null
           },
           "Device": {
-            "Name": "SPR_L",
-            "Pin": "SPR_L",
+            "Name": "Output 7",
+            "Pin": "Output 7",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "SPR_L",
+          "DeviceName": "Output 7",
           "GUID": "a7d1449c-121c-43a1-9261-02fdc7746765",
           "Active": true,
           "Name": "SPR",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
@@ -1660,29 +1663,29 @@
             "String": null
           },
           "Device": {
-            "Name": "Transmit",
-            "Pin": "Transmit",
+            "Name": "LED TX",
+            "Pin": "LED TX",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "Transmit",
+          "DeviceName": "LED TX",
           "GUID": "aaa8d3e5-fe37-43d0-a134-25c57fc85007",
           "Active": true,
           "Name": "TRANSMIT",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "1",
-          "Value": "1"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "Source": {
             "SimConnectValue": {
-              "VarType": 0
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
             },
             "Type": "SimConnectSource"
           },
@@ -1692,24 +1695,22 @@
             "String": null
           },
           "Device": {
-            "Name": "Swap",
-            "Pin": "Swap",
+            "Name": "LED SWAP",
+            "Pin": "LED SWAP",
             "Brightness": 255,
             "PwmMode": false,
             "Type": "Output"
           },
           "DeviceType": "Output",
-          "DeviceName": "Swap",
+          "DeviceName": "LED SWAP",
           "GUID": "66978400-bb6a-4344-bc70-4b8f9546d8cc",
           "Active": true,
           "Name": "SWAP",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
+          }
         },
         {
           "encoder": {
@@ -1728,15 +1729,15 @@
           },
           "Device": {
             "Type": "Encoder",
-            "Name": "VOL"
+            "Name": "Encoder 2"
           },
           "GUID": "1d604cda-cab0-4d17-9d67-ff98980a5501",
           "Active": true,
           "Name": "VOL Knob",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -1759,15 +1760,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "HI_SW"
+            "Name": "Button 41"
           },
           "GUID": "d81b3ac3-8530-4afb-b210-a9d46f493eeb",
           "Active": true,
           "Name": "HI/LO",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -1790,15 +1791,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "TM_SW"
+            "Name": "Button 42"
           },
           "GUID": "4ca49d5b-4d19-485b-a52c-bc5dc3da7cd7",
           "Active": true,
           "Name": "LO/TM",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -1821,15 +1822,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "ISO_SW"
+            "Name": "Button 32"
           },
           "GUID": "59a7d2bb-1b5d-45c5-a2db-6dec9edb2c72",
           "Active": true,
           "Name": "ISO/ALL",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -1852,15 +1853,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "CREW_SW"
+            "Name": "Button 33"
           },
           "GUID": "2d583205-cf3d-4a9e-a4ab-8db5bc4bf4c9",
           "Active": true,
           "Name": "ALL/CREW",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -1879,15 +1880,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "COM1_P"
+            "Name": "Button 37"
           },
           "GUID": "e25b3618-2d18-415f-9d31-43bc0fd8c27c",
           "Active": true,
           "Name": "Com1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -1906,15 +1907,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "COM2_P"
+            "Name": "Button 38"
           },
           "GUID": "a129dcaf-94a2-44ff-a384-736925f2c653",
           "Active": true,
           "Name": "Com2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -1933,15 +1934,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "NAV1_P"
+            "Name": "Button 39"
           },
           "GUID": "0529b439-5f5d-4de9-9bb9-f6138da39a3b",
           "Active": true,
           "Name": "Nav1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -1960,15 +1961,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "NAV2_P"
+            "Name": "Button"
           },
           "GUID": "78ed3dda-88e3-4bba-b509-0c33230162d9",
           "Active": true,
           "Name": "Nav2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -1987,15 +1988,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "MKR_P"
+            "Name": "Button 1"
           },
           "GUID": "18a28a33-c1bb-4ade-b159-14e60201e5c8",
           "Active": true,
           "Name": "MKR",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -2014,15 +2015,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "ICS_P"
+            "Name": "Button 2"
           },
           "GUID": "222792d3-eaf9-4ded-be85-cb9daf221f3f",
           "Active": true,
           "Name": "ICS",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -2041,15 +2042,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "ADF_P"
+            "Name": "Button 3"
           },
           "GUID": "17315a1b-250f-48db-93a5-b0982bbe7022",
           "Active": true,
           "Name": "ADF",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -2073,15 +2074,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "AUX_P"
+            "Name": "Button 4"
           },
           "GUID": "04dd3f32-16ad-4336-b830-2ee0bf46a54c",
           "Active": true,
           "Name": "AUX (Dummy)",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -2100,15 +2101,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "DME_P"
+            "Name": "Button 6"
           },
           "GUID": "06a11c10-80fa-4efb-8db4-0309fd541831",
           "Active": true,
           "Name": "DME",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -2127,15 +2128,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "SPR_P"
+            "Name": "Button 40"
           },
           "GUID": "b7952c20-6931-4020-9313-40b076c972ae",
           "Active": true,
           "Name": "SPR",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -2154,15 +2155,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "COM3"
+            "Name": "Button 48"
           },
           "GUID": "a97b202a-d4c3-44bb-88d6-213ddc35a7fc",
           "Active": true,
           "Name": "COM3",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -2181,15 +2182,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "COM2"
+            "Name": "Button 50"
           },
           "GUID": "2c8ab5df-7752-44f1-a220-073b873263ef",
           "Active": true,
           "Name": "COM2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -2208,15 +2209,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "COM1"
+            "Name": "Button 52"
           },
           "GUID": "ec5a8d3c-2f0c-416c-bbd5-d2c5eb576eec",
           "Active": true,
           "Name": "COM1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -2235,15 +2236,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "COM1/2"
+            "Name": "Button 49"
           },
           "GUID": "1359e6db-d880-46ed-b1ea-d2aacfc042bb",
           "Active": true,
           "Name": "COM1/2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -2262,15 +2263,15 @@
           },
           "Device": {
             "Type": "Button",
-            "Name": "COM2/1"
+            "Name": "Button 51"
           },
           "GUID": "9589e042-e60a-4e6b-849d-fc85c1e6bf23",
           "Active": true,
           "Name": "COM2/1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
+            "Name": "Avionics",
+            "Serial": "SN-4F6-017"
           }
         },
         {
@@ -2287,47 +2288,11 @@
             "HoldDelay": 350,
             "RepeatDelay": 0
           },
-          "Device": {
-            "Type": "Button",
-            "Name": "TEL"
-          },
           "GUID": "e2ab172b-bb0a-4d10-b737-55c26cd72510",
           "Active": true,
           "Name": "TEL",
           "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Code": null,
-              "Control": false,
-              "Alt": false,
-              "Shift": false,
-              "Type": "KeyInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "AUX_P"
-          },
-          "GUID": "584be05b-c1c9-4200-bc4d-bb536b774be2",
-          "Active": false,
-          "Name": "Keyboard",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "XPDR-AUDIO",
-            "Serial": "SN-63C-8CC"
-          }
+          "Controller": null
         }
       ]
     },
@@ -2362,9 +2327,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2391,9 +2354,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2420,9 +2381,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2449,9 +2408,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2478,9 +2435,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2507,9 +2462,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2536,9 +2489,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2565,9 +2516,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2594,9 +2543,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2623,9 +2570,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2652,9 +2597,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2681,9 +2624,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2710,9 +2651,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2739,9 +2678,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2768,9 +2705,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2797,9 +2732,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         }
       ]
     },
@@ -2834,9 +2767,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "encoder": {
@@ -2919,9 +2850,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2948,9 +2877,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -2977,9 +2904,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -3006,9 +2931,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -3035,9 +2958,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -3064,9 +2985,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -3093,9 +3012,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -3126,9 +3043,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         },
         {
           "button": {
@@ -3155,9 +3070,7 @@
           "Controller": {
             "Name": "Avionics",
             "Serial": "SN-4F6-017"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
+          }
         }
       ]
     },
