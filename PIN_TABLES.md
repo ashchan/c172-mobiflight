@@ -93,7 +93,7 @@ Generated from `C172.mfproj` and the current `.mfmc` board files after updating 
 | Input: COM2/1 | 51 |
 | Input: TEL | no board pin |
 
-## KT78C
+## KT76C
 
 | Input/Output | PIN |
 |---|---:|
