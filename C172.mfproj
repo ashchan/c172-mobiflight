@@ -1,1408 +1,79 @@
 {
-  "Name": "C172",
+  "Name": "C172 G1000",
   "ConfigFiles": [
     {
       "Label": "Main",
-      "FileName": null,
       "ReferenceOnly": false,
       "EmbedContent": true,
       "ConfigItems": [
         {
-          "analog": {
-            "onChange": {
-              "Command": "16383 @ 110 - 16383 * 692 110 - / - 0 max 16383 min (>K:THROTTLE1_SET)",
-              "PresetId": "",
-              "Type": "MSFS2020CustomInputAction"
-            }
-          },
           "Device": {
             "Type": "AnalogInput",
-            "Name": "Throttle"
+            "Name": "Analog Input"
           },
-          "GUID": "ec979489-23d0-4d53-83e5-310357ee4060",
+          "GUID": "f8bae960-d6a4-4383-9700-22ffe0bfca95",
           "Active": true,
-          "Name": "Throttle",
+          "Name": "SW/CB Knob",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "CHANGE => 150",
-          "Value": "150"
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
+          }
         },
         {
-          "analog": {
-            "onChange": {
-              "Command": "@ 352 - 16383 * 1022 352 - / 0 max 16383 min (>K:MIXTURE1_SET)",
-              "PresetId": "dc3ff47c-b2a4-4c2f-ad95-eff004a82199",
-              "Type": "MSFS2020CustomInputAction"
-            }
-          },
           "Device": {
             "Type": "AnalogInput",
-            "Name": "Lean"
+            "Name": "Analog Input 1"
           },
-          "GUID": "0c8bab7c-32eb-4fdf-9c55-9e76e8450e62",
+          "GUID": "ca41e88a-2b2f-4282-be0d-a32f232cc85d",
           "Active": true,
-          "Name": "Mixture",
+          "Name": "STBY IND Knob",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "CHANGE => 895",
-          "Value": "895"
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>K:ELEV_TRIM_UP)\n(>K:ELEV_TRIM_UP)\n(>K:ELEV_TRIM_UP)\n(>K:ELEV_TRIM_UP)\n(>K:ELEV_TRIM_UP)\n(>K:ELEV_TRIM_UP)\n(>K:ELEV_TRIM_UP)\n(>K:ELEV_TRIM_UP)",
-              "PresetId": "",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>K:ELEV_TRIM_DN)\n(>K:ELEV_TRIM_DN)\n(>K:ELEV_TRIM_DN)\n(>K:ELEV_TRIM_DN)\n(>K:ELEV_TRIM_DN)\n(>K:ELEV_TRIM_DN)\n(>K:ELEV_TRIM_DN)\n(>K:ELEV_TRIM_DN)",
-              "PresetId": "",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "analog": {
-            "onChange": {
-              "Command": "@ 430 - -74.1312 * 16383 + -16383 max 16383 min (>K:ELEVATOR_TRIM_SET)",
-              "PresetId": "c596966f-9d0d-4109-9278-09d0de5df536",
-              "Type": "MSFS2020CustomInputAction"
-            }
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 6"
-          },
-          "GUID": "2cabd905-51c7-4dab-b34c-1a0d1c0abba7",
-          "Active": true,
-          "Name": "Trim Wheel",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
           }
         },
         {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "c19b9300-13da-46f5-8489-56bceb192f64",
-              "Value": "(A:TRAILING EDGE FLAPS LEFT PERCENT,Percent Over 100)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 0.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "Flap Indicator",
-            "Address": "Flap Indicator",
-            "Min": "0",
-            "Max": "100",
-            "MaxRotationPercent": "28",
-            "Type": "Servo"
-          },
-          "DeviceType": "Servo",
-          "DeviceName": "Flap Indicator",
-          "GUID": "434017de-87f2-4184-87d2-1b1d07f89b65",
-          "Active": true,
-          "Name": "Flaps Indicator",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Transformation",
-                "Expression": "$ * 100",
-                "Active": true
-              }
-            ]
-          },
-          "RawValue": "0",
-          "Value": "0"
-        },
-        {
-          "Source": {
-            "MobiFlightVariable": {
-              "TYPE": "number",
-              "Name": "Flap_Pots",
-              "Number": 0.0,
-              "Text": "",
-              "Expression": "$"
-            },
-            "Type": "VariableSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "AnalogInputConfig": {
-            "onChange": {
-              "Command": "@ 16.0147 * 0 max 16383 min (>K:FLAPS_SET)",
-              "PresetId": "e3388f22-2d1f-475d-88fc-d93676b15e2c",
-              "Type": "MSFS2020CustomInputAction"
-            }
-          },
-          "DeviceType": "InputAction",
-          "DeviceName": null,
-          "GUID": "0b46a937-6c0c-4877-bdc6-af1921b24c9f",
-          "Active": true,
-          "Name": "Flap Set",
-          "Type": "OutputConfigItem",
-          "Controller": null,
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Interpolation",
-                "Values": {
-                  "800": 0.0,
-                  "891": 256.0,
-                  "969": 1024.0
-                },
-                "Count": 3,
-                "Max": 1024.0,
-                "Min": 0.0,
-                "Active": true
-              }
-            ]
-          },
-          "RawValue": "887",
-          "Value": "245"
-        },
-        {
-          "analog": {
-            "onChange": {
-              "Variable": {
-                "TYPE": "number",
-                "Name": "Flap_Pots",
-                "Number": 887.0,
-                "Text": "887",
-                "Expression": "@"
-              },
-              "Type": "VariableInputAction"
-            }
-          },
           "Device": {
             "Type": "AnalogInput",
-            "Name": "Flap"
+            "Name": "Analog Input 2"
           },
-          "GUID": "ef1d84a6-123e-49c6-9708-4efcf8d726a5",
+          "GUID": "620237af-9472-4f12-acbf-5d37a222882d",
           "Active": true,
-          "Name": "Flap Pots Input",
+          "Name": "PEDESTAL Knob",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "CHANGE => 887",
-          "Value": "887"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "1 (>K:PARKING_BRAKE_SET)",
-              "PresetId": "bfa5f4f9-0f44-49d0-9382-929b6e96c4ef",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": {
-              "Command": "0 (>K:PARKING_BRAKE_SET)",
-              "PresetId": "3556ab94-09b7-43be-a226-b37ea20d9df1",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Parking Break"
-          },
-          "GUID": "6250e525-ea35-4dd3-84d3-7381be514535",
-          "Active": true,
-          "Name": "Parking Brake",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>K:VOR2_OBI_DEC)",
-              "PresetId": "99057249-9a87-41af-b8ac-201018d65430",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": {
-              "Command": "(A:NAV OBS:2, Degrees) 10 - dnor (>K:VOR2_SET)",
-              "PresetId": "0",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRight": {
-              "Command": "(>K:VOR2_OBI_INC)",
-              "PresetId": "42d2d62c-4b78-4fe6-8fc6-cb25272ddd8c",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": {
-              "Command": "(A:NAV OBS:2, Degrees) 10 + dnor (>K:VOR2_SET)",
-              "PresetId": "0",
-              "Type": "MSFS2020CustomInputAction"
-            }
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 2"
-          },
-          "GUID": "34e652a4-fc16-4289-b92d-05f24b58df91",
-          "Active": true,
-          "Name": "IP - VOR2 Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
           }
         },
         {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>K:VOR1_OBI_DEC)",
-              "PresetId": "520f3094-04fb-4786-93c9-e725a2e1598e",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": {
-              "Command": "(A:NAV OBS:1, Degrees) 10 - dnor (>K:VOR1_SET)",
-              "PresetId": "0",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRight": {
-              "Command": "(>K:VOR1_OBI_INC)",
-              "PresetId": "5f8975d1-7a9d-4834-af07-946f36319453",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": {
-              "Command": "(A:NAV OBS:1, Degrees) 10 + dnor (>K:VOR1_SET)",
-              "PresetId": "0",
-              "Type": "MSFS2020CustomInputAction"
-            }
-          },
           "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 4"
+            "Type": "AnalogInput",
+            "Name": "Analog Input 3"
           },
-          "GUID": "f444a18f-4542-4236-b0ee-6d6b5008824a",
+          "GUID": "62e608cf-8936-4243-a843-bb2df3c53620",
           "Active": true,
-          "Name": "IP - VOR1 Knob",
+          "Name": "AVIONICS Knob",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
           }
         },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>K:KOHLSMAN_DEC)",
-              "PresetId": "d3828258-b00c-4dad-b59d-4fb0d4f18a2a",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>K:KOHLSMAN_INC)",
-              "PresetId": "63a0157d-4060-4ee1-a28b-5c7964898b88",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 1"
-          },
-          "GUID": "d1a47f5a-4c34-4835-9500-aaa763aa5662",
-          "Active": true,
-          "Name": "IP - Altimeter Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>K:ATTITUDE_BARS_POSITION_DOWN)",
-              "PresetId": "a16fb978-0149-424d-8ed1-ebc538a1d258",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>K:ATTITUDE_BARS_POSITION_UP)",
-              "PresetId": "652dd0ef-d649-4d77-8d1a-60a6e9ca0280",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder"
-          },
-          "GUID": "caf3d952-9081-4eb7-9595-e229fb04167c",
-          "Active": true,
-          "Name": "IP - Attitude Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>K:HEADING_BUG_DEC)",
-              "PresetId": "cab52499-c789-4249-bc21-31f920d4e604",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>K:HEADING_BUG_INC)",
-              "PresetId": "debca2cf-3a15-40f0-b839-3e1e153cd0f4",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 3"
-          },
-          "GUID": "4d89d263-b40e-4250-891a-c9faed5e6714",
-          "Active": true,
-          "Name": "IP - Heading Bug Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>K:GYRO_DRIFT_DEC)",
-              "PresetId": "170d189d-d9cd-4f8e-938e-a673668d60c8",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>K:GYRO_DRIFT_INC)",
-              "PresetId": "4c3cde84-00e4-4a98-83f3-0e015dab0929",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 5"
-          },
-          "GUID": "82ce32e6-250f-4f70-ab6a-470213e7cef8",
-          "Active": true,
-          "Name": "IP - Heading Gyro Drift Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>K:GYRO_DRIFT_SET)",
-              "PresetId": "5eca83a5-d375-4aa6-ad85-3a6cf160a38c",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Heading Push"
-          },
-          "GUID": "47d94a33-e2ce-47b7-963e-36730a17025c",
-          "Active": true,
-          "Name": "IP - Heading Gyro Drift Push",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>K:TOGGLE_GPS_DRIVES_NAV1)",
-              "PresetId": "e20b5a20-4a49-4909-8cea-cb26a06c0793",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "NAV GPS"
-          },
-          "GUID": "e4988955-6b20-4ee7-87ea-e4339fa00bff",
-          "Active": true,
-          "Name": "NAV GPS",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "0 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
-              "PresetId": "1bf98193-ce2d-4277-991f-fd4bcdaba3bd",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Magnetos Off"
-          },
-          "GUID": "9df28849-14ce-4173-b043-24025a542291",
-          "Active": true,
-          "Name": "MAGNETOS Off",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "1 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
-              "PresetId": "3a6c52e4-f892-4b02-b9e6-2d546220fc18",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Magnetos R"
-          },
-          "GUID": "32faccf1-a1d6-48ab-9de2-7d2ae4de3757",
-          "Active": true,
-          "Name": "MAGNETOS Right",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "2 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
-              "PresetId": "3ef21d47-315b-4274-9748-6f2155548580",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Magnetos L"
-          },
-          "GUID": "5d39ce4b-a028-4eae-b5a8-cb8bd57d4667",
-          "Active": true,
-          "Name": "MAGNETOS Left",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "3 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) if{ 0 (>K:SET_STARTER1_HELD) }",
-              "PresetId": "22fffb5f-b7d6-49f2-9eee-04985a3c0299",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Magnetos Both"
-          },
-          "GUID": "5a5c9062-79af-4d13-81b4-d5e45e7dbdb8",
-          "Active": true,
-          "Name": "MAGNETOS Both",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "PRESS",
-          "Value": "0"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "3 (>K:MAGNETO1_SET) (A:GENERAL ENG STARTER:1, Bool) ! if{ 1 (>K:SET_STARTER1_HELD) }",
-              "PresetId": "669d178f-b1f4-4005-841f-944a19764e6b",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Magnetos Start"
-          },
-          "GUID": "15354558-44f6-4540-be30-8108f4623bb1",
-          "Active": true,
-          "Name": "MAGNETOS Start",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "IP-PRIMARY",
-            "Serial": "SN-1FD-E25"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        }
-      ]
-    },
-    {
-      "Label": "GNS530",
-      "FileName": null,
-      "ReferenceOnly": false,
-      "EmbedContent": true,
-      "ConfigItems": [
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_COMSWAP_Push)",
-              "PresetId": "68675bb4-602b-4228-8866-1e0e24f46965",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "COM_SWAP"
-          },
-          "GUID": "5eda45bd-5e22-40e3-af1e-9ed7d631a530",
-          "Active": true,
-          "Name": "AS530 - COM Swap",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_NAVSWAP_Push)",
-              "PresetId": "9f0c963a-4940-4876-a8af-7cb60a1b9f51",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "NAV_SWAP"
-          },
-          "GUID": "93ae2370-08f4-4afb-8d54-103eb80267fb",
-          "Active": true,
-          "Name": "AS530 - NAV Swap",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>H:AS530_LeftLargeKnob_Left)",
-              "PresetId": "05518a2f-5e17-4bae-ac90-dc5517d26277",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>H:AS530_LeftLargeKnob_Right)",
-              "PresetId": "defaf8fa-8018-4e70-8a7d-86e533b253f7",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Left Rough"
-          },
-          "GUID": "9f12699f-ba60-4319-b21e-3db425fdf163",
-          "Active": true,
-          "Name": "AS530 - Left Large Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>H:AS530_LeftSmallKnob_Left)",
-              "PresetId": "54c9fbef-275b-4c8f-8357-c921d5c717b2",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>H:AS530_LeftSmallKnob_Right)",
-              "PresetId": "f27546e8-b061-464c-8509-f9e7e884e161",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Left Fine"
-          },
-          "GUID": "26343575-6f4d-4217-8400-e88b66b0821b",
-          "Active": true,
-          "Name": "AS530 - Left Small Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_LeftSmallKnob_Push)",
-              "PresetId": "f0260cd1-9089-4595-893d-a2b8686f2fa1",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "L_PRESS"
-          },
-          "GUID": "3b3e46ca-09e7-4f7d-b964-a0c8706586ca",
-          "Active": true,
-          "Name": "AS530 - Push CV",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_CDI_Push)",
-              "PresetId": "74d557fa-7e41-4cd4-ac0a-07054836557a",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "CDI"
-          },
-          "GUID": "31c60d4a-c087-448b-8a94-39aaf7ee9853",
-          "Active": true,
-          "Name": "AS530 - CDI",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_OBS_Push)",
-              "PresetId": "3d7ad856-adcc-4fc4-9c0c-c8c669439116",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "OBS"
-          },
-          "GUID": "78581f44-6785-410c-8272-44d5ed20be44",
-          "Active": true,
-          "Name": "AS530 - OBS",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_MSG_Push)",
-              "PresetId": "33f2e276-9327-49ee-87e5-fc6aac074656",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "MSG"
-          },
-          "GUID": "16b6d5f3-674b-4d11-a93f-0a2e00b27dbf",
-          "Active": true,
-          "Name": "AS530 - MSG",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_FPL_Push)",
-              "PresetId": "e2d52825-f506-4df6-a08f-ededf6320314",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "FPL"
-          },
-          "GUID": "55c153c4-8ce5-4ffc-b6a4-b6736afe0c9a",
-          "Active": true,
-          "Name": "AS530 - FPL",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_VNAV_Push)",
-              "PresetId": "05fef90a-d70d-4b7a-8b2c-0dddce861212",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "VNAV"
-          },
-          "GUID": "75f9931e-9094-48a4-85ac-c29f9bce4c30",
-          "Active": true,
-          "Name": "AS530 - VNAV",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_PROC_Push)",
-              "PresetId": "86fe165a-ddb9-4657-862f-d2b0fb3a6816",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "PROC"
-          },
-          "GUID": "b857249e-f81b-470b-af4d-36d7b79b786b",
-          "Active": true,
-          "Name": "AS530 - PROC",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_RNG_Zoom)",
-              "PresetId": "4bed29e5-ec89-472d-afa4-29d21431857e",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "RNG_UP"
-          },
-          "GUID": "975f9f8b-c4bf-4ea8-ac7f-d7b219d1cd53",
-          "Active": true,
-          "Name": " AS530 - Range Zoom",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_RNG_Dezoom)",
-              "PresetId": "98cce1bc-318d-4bd4-a378-919c875aa564",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "RNG_DN"
-          },
-          "GUID": "a0ee911f-d4a5-408d-8627-de15a1f6aafd",
-          "Active": true,
-          "Name": "AS530 - Range Dezoom",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_DirectTo_Push)",
-              "PresetId": "3ae5605a-c023-4b7a-bf8e-11312b6d1986",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "DIRECT"
-          },
-          "GUID": "ad2798db-ed6b-41cd-958f-1e48e21f7ac7",
-          "Active": true,
-          "Name": "AS530 - Direct To",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_MENU_Push)",
-              "PresetId": "6af12162-8455-4f53-ad22-8fd6bb82c8f2",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "MENU"
-          },
-          "GUID": "7f0fbb68-8659-45ba-8045-9b7a8e17b11c",
-          "Active": true,
-          "Name": "AS530 - Menu",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_CLR_Push)",
-              "PresetId": "96dec0cd-5aac-46a9-8def-741869273cfc",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": {
-              "Command": "(>H:AS530_CLR_Push_Long)",
-              "PresetId": "77b5d7aa-6f17-4d0a-a716-1f5918e76f25",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onHold": null,
-            "LongReleaseDelay": 2000,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "CLR"
-          },
-          "GUID": "d9ee75e3-ecf8-46ad-ba7a-7dbd4bf59787",
-          "Active": true,
-          "Name": "AS530 - CLR",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_ENT_Push)",
-              "PresetId": "307f9eed-94f8-41d0-b169-83d00d9a4f2f",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "ENT"
-          },
-          "GUID": "2b77cf83-2be9-4ad2-9e78-48d6748b437a",
-          "Active": true,
-          "Name": "AS530 - ENT",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>H:AS530_RightLargeKnob_Left)",
-              "PresetId": "cc371db9-05b3-45e9-8700-7841ddae3f2a",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>H:AS530_RightLargeKnob_Right)",
-              "PresetId": "ce4dd394-2599-4602-a42c-1f09271b8825",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Right Rough"
-          },
-          "GUID": "c6f0168d-9bb0-49b4-a76c-4ff4c2966202",
-          "Active": true,
-          "Name": "AS530 - Right Large Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>H:AS530_RightSmallKnob_Left)",
-              "PresetId": "115b2bd4-5c2e-43a5-ad0c-0297e8023454",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>H:AS530_RightSmallKnob_Right)",
-              "PresetId": "c3962792-4a50-487a-aaba-c8b5ba16f354",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Right Fine"
-          },
-          "GUID": "50d933df-d042-40ab-a8b0-8284f0384446",
-          "Active": true,
-          "Name": "AS530 - Right Small Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "LEFT",
-          "Value": "0"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS530_RightSmallKnob_Push)",
-              "PresetId": "07ff4423-26c6-4612-a9c9-c4068b2b1c21",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "R_PRESS"
-          },
-          "GUID": "2a89990e-c4f9-45b4-872b-bb00281effea",
-          "Active": true,
-          "Name": "AS530 - Push CRSR",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        }
-      ]
-    },
-    {
-      "Label": "KMA28",
-      "FileName": null,
-      "ReferenceOnly": false,
-      "EmbedContent": true,
-      "ConfigItems": [
         {
           "Source": {
             "SimConnectValue": {
-              "UUID": "798c4ddc-7eb2-474d-b242-dea45d8cecf8",
-              "Value": "(A:OUTER MARKER,Bool)",
+              "UUID": "d6602b7d-c154-447d-8236-9a7c3d2ced9b",
+              "Value": "(L:XMLVAR_STBYBattery_Test, bool)",
               "VarType": 2
             },
             "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "LED 1",
-            "Pin": "LED 1",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "LED 1",
-          "GUID": "d4c00197-81c0-4379-9e9f-bb0aa2e261cc",
-          "Active": true,
-          "Name": "LED_O",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          },
-          "Status": {
-            "Test": "TEST_EXECUTION"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "e851495e-d47f-4923-b076-d49d5244587e",
-              "Value": "(A:MIDDLE MARKER,Bool)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "LED 2",
-            "Pin": "LED 2",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "LED 2",
-          "GUID": "f6d04e5c-1cc0-4176-8998-f13642f1793e",
-          "Active": true,
-          "Name": "LED_M",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "94fe3445-0444-4212-afe4-786a5241e924",
-              "Value": "(A:INNER MARKER,Bool)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "LED 3",
-            "Pin": "LED 3",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "LED 3",
-          "GUID": "5565b47b-8bdd-429b-9ba4-cd01391301f5",
-          "Active": true,
-          "Name": "LED_I",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "159c0b98-de47-4f65-828a-59c8652d3852",
-              "Value": "(A:COM RECEIVE:1,bool)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "Output 8",
-            "Pin": "Output 8",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "Output 8",
-          "GUID": "c181e775-f6a1-4d62-aec7-07996b5fe8f4",
-          "Active": true,
-          "Name": "COM1",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "159c0b98-de47-4f65-828a-59c8652d3852",
-              "Value": "(A:COM RECEIVE:2,bool)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "Output 10",
-            "Pin": "Output 10",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "Output 10",
-          "GUID": "39124809-2ec9-4add-b2e5-d9f6a573d534",
-          "Active": true,
-          "Name": "COM2",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "71747e68-c78d-4f26-933c-ce5ae103454d",
-              "Value": "(A:NAV SOUND:1,Bool)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "Output",
@@ -1413,124 +84,27 @@
           },
           "DeviceType": "Output",
           "DeviceName": "Output",
-          "GUID": "7c7599e4-80d6-4a1f-a46f-aa802cd4f2b4",
+          "GUID": "cf10e12b-b927-4d91-be86-0c20051f64e6",
           "Active": true,
-          "Name": "NAV1",
+          "Name": "STDBY BATT TEST LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
-              "UUID": "71747e68-c78d-4f26-933c-ce5ae103454d",
-              "Value": "(A:NAV SOUND:2,Bool)",
+              "UUID": "0",
+              "Value": "(L:XMLVAR_ELT_STATE, Number)",
               "VarType": 2
             },
             "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "Output 2",
-            "Pin": "Output 2",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "Output 2",
-          "GUID": "c2952821-abaf-4a79-8bc7-74c9070e27a8",
-          "Active": true,
-          "Name": "NAV2",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "44282df1-365f-4fe9-be2c-fcaca8f341e8",
-              "Value": "(A:MARKER SOUND:1,Bool)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "Output 4",
-            "Pin": "Output 4",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "Output 4",
-          "GUID": "a36d0bb8-6b0a-4bce-bab6-d91ebae61e96",
-          "Active": true,
-          "Name": "MKR",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "00ae62dd-a323-4b0a-9faa-5af7c9c0788c",
-              "Value": "(A:INTERCOM SYSTEM ACTIVE,Bool)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "Output 6",
-            "Pin": "Output 6",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "Output 6",
-          "GUID": "493f3946-9bc5-4406-b74e-2356a8f837c3",
-          "Active": true,
-          "Name": "ICS",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "e304f7aa-d764-4ce3-bf1a-690b96b2c038",
-              "Value": "(A:ADF SOUND:1,Bool)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "Output 1",
@@ -1541,1354 +115,48 @@
           },
           "DeviceType": "Output",
           "DeviceName": "Output 1",
-          "GUID": "6db60099-ffde-40c7-9e8b-1ecb3d756ac7",
+          "GUID": "580db871-01e6-4463-a8e3-6a37d4915c2e",
           "Active": true,
-          "Name": "ADF",
+          "Name": "ELT LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "Source": {
-            "MobiFlightVariable": {
-              "TYPE": "number",
-              "Name": "AuxDummy",
-              "Number": 0.0,
-              "Text": "",
-              "Expression": "$"
-            },
-            "Type": "VariableSource"
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
           },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "Output 3",
-            "Pin": "Output 3",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "Output 3",
-          "GUID": "2b090a2e-c4ec-4b96-a2d6-5eb2a03ed990",
-          "Active": true,
-          "Name": "AUX",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "49394772-d6a9-4d7d-b8ed-daa39513abd0",
-              "Value": "(A:DME SOUND:1,Bool)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "Output 5",
-            "Pin": "Output 5",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "Output 5",
-          "GUID": "1f06c3a8-bbff-471a-9d41-efffb49e39eb",
-          "Active": true,
-          "Name": "DME",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "ebecd40d-8b9b-473e-965a-e7839482a133",
-              "Value": "(A:SPEAKER ACTIVE,Bool)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "Output 7",
-            "Pin": "Output 7",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "Output 7",
-          "GUID": "a7d1449c-121c-43a1-9261-02fdc7746765",
-          "Active": true,
-          "Name": "SPR",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "52024d40-60a4-4444-b248-576abbb31c94",
-              "Value": "(A:PILOT TRANSMITTING,Bool)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "LED TX",
-            "Pin": "LED TX",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "LED TX",
-          "GUID": "aaa8d3e5-fe37-43d0-a134-25c57fc85007",
-          "Active": true,
-          "Name": "TRANSMIT",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "LED SWAP",
-            "Pin": "LED SWAP",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "LED SWAP",
-          "GUID": "66978400-bb6a-4344-bc70-4b8f9546d8cc",
-          "Active": true,
-          "Name": "SWAP",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(A:AUDIO PANEL VOLUME,Percent) -- 0 max (>K:AUDIO_PANEL_VOLUME_SET)\n(A:AUDIO PANEL VOLUME,Percent) -- 0 max (>K:AUDIO_PANEL_VOLUME_SET)\n(A:AUDIO PANEL VOLUME,Percent) -- 0 max (>K:AUDIO_PANEL_VOLUME_SET)\n(A:AUDIO PANEL VOLUME,Percent) -- 0 max (>K:AUDIO_PANEL_VOLUME_SET)\n(A:AUDIO PANEL VOLUME,Percent) -- 0 max (>K:AUDIO_PANEL_VOLUME_SET)",
-              "PresetId": "9d472c20-f031-45e4-bb44-d3df8bde7aa1",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (>K:AUDIO_PANEL_VOLUME_SET) \n(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (>K:AUDIO_PANEL_VOLUME_SET) \n(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (>K:AUDIO_PANEL_VOLUME_SET) \n(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (>K:AUDIO_PANEL_VOLUME_SET) \n(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (>K:AUDIO_PANEL_VOLUME_SET) ",
-              "PresetId": "350ca165-8240-414c-b949-5e5e052ae7ea",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 2"
-          },
-          "GUID": "1d604cda-cab0-4d17-9d67-ff98980a5501",
-          "Active": true,
-          "Name": "VOL Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>K:MARKER_BEACON_SENSITIVITY_HIGH)",
-              "PresetId": "5c0d9501-04d2-419c-9202-f9f63b9170ee",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": {
-              "Command": "(>K:MARKER_BEACON_SENSITIVITY_LOW)",
-              "PresetId": "3cf5163a-2aae-4bda-afd0-2c805fc6b49f",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 41"
-          },
-          "GUID": "d81b3ac3-8530-4afb-b210-a9d46f493eeb",
-          "Active": true,
-          "Name": "HI/LO",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>K:MARKER_BEACON_TEST_MUTE)",
-              "PresetId": "485d9976-13b1-4518-bca0-0a939c39c563",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": {
-              "Command": "(>K:MARKER_BEACON_SENSITIVITY_LOW)",
-              "PresetId": "3cf5163a-2aae-4bda-afd0-2c805fc6b49f",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 42"
-          },
-          "GUID": "4ca49d5b-4d19-485b-a52c-bc5dc3da7cd7",
-          "Active": true,
-          "Name": "LO/TM",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "0 (>K:INTERCOM_MODE_SET)",
-              "PresetId": "c9d56f6e-1aef-445e-bcdc-6b3215b6f981",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": {
-              "Command": "1 (>K:INTERCOM_MODE_SET)",
-              "PresetId": "c9d56f6e-1aef-445e-bcdc-6b3215b6f981",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 32"
-          },
-          "GUID": "59a7d2bb-1b5d-45c5-a2db-6dec9edb2c72",
-          "Active": true,
-          "Name": "ISO/ALL",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "2 (>K:INTERCOM_MODE_SET)",
-              "PresetId": "c9d56f6e-1aef-445e-bcdc-6b3215b6f981",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": {
-              "Command": "1 (>K:INTERCOM_MODE_SET)",
-              "PresetId": "c9d56f6e-1aef-445e-bcdc-6b3215b6f981",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 33"
-          },
-          "GUID": "2d583205-cf3d-4a9e-a4ab-8db5bc4bf4c9",
-          "Active": true,
-          "Name": "ALL/CREW",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(A:COM RECEIVE EX1:1, Bool) ! (>K:COM1_RECEIVE_SELECT)",
-              "PresetId": "b8e059bd-822c-468c-b578-41c5168cb111",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 37"
-          },
-          "GUID": "e25b3618-2d18-415f-9d31-43bc0fd8c27c",
-          "Active": true,
-          "Name": "Com1",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(A:COM RECEIVE EX1:2, Bool) ! (>K:COM2_RECEIVE_SELECT)",
-              "PresetId": "d3e7dee5-45eb-40e0-b0ba-839df2a6ee26",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 38"
-          },
-          "GUID": "a129dcaf-94a2-44ff-a384-736925f2c653",
-          "Active": true,
-          "Name": "Com2",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>K:RADIO_VOR1_IDENT_TOGGLE)",
-              "PresetId": "f27546e8-b061-464c-8509-f9e7e884e161",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 39"
-          },
-          "GUID": "0529b439-5f5d-4de9-9bb9-f6138da39a3b",
-          "Active": true,
-          "Name": "Nav1",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>K:RADIO_VOR2_IDENT_TOGGLE)",
-              "PresetId": "54d19ede-e668-4f0a-aed8-2ed6aace18f3",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button"
-          },
-          "GUID": "78ed3dda-88e3-4bba-b509-0c33230162d9",
-          "Active": true,
-          "Name": "Nav2",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>K:MARKER_SOUND_TOGGLE)",
-              "PresetId": "f5fe108b-b37e-4ea0-b88d-b1541b1562f6",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 1"
-          },
-          "GUID": "18a28a33-c1bb-4ade-b159-14e60201e5c8",
-          "Active": true,
-          "Name": "MKR",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>K:TOGGLE_ICS)",
-              "PresetId": "cf92da77-92a1-4181-ba33-ee30f5668978",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 2"
-          },
-          "GUID": "222792d3-eaf9-4ded-be85-cb9daf221f3f",
-          "Active": true,
-          "Name": "ICS",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>K:RADIO_ADF_IDENT_TOGGLE)",
-              "PresetId": "926ed660-e295-449c-bb31-ccf900850aad",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 3"
-          },
-          "GUID": "17315a1b-250f-48db-93a5-b0982bbe7022",
-          "Active": true,
-          "Name": "ADF",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Variable": {
-                "TYPE": "number",
-                "Name": "AuxDummy",
-                "Number": 0.0,
-                "Text": "",
-                "Expression": "($+1)%2"
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
               },
-              "Type": "VariableInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 4"
-          },
-          "GUID": "04dd3f32-16ad-4336-b830-2ee0bf46a54c",
-          "Active": true,
-          "Name": "AUX (Dummy)",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
+              {
+                "Type": "Blink",
+                "BlinkValue": "0",
+                "OnOffSequence": [
+                  150,
+                  150
+                ],
+                "Active": true
+              }
+            ]
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>K:RADIO_DME1_IDENT_TOGGLE)",
-              "PresetId": "91db0a4b-9a2f-4d6d-9663-9105e21027e1",
+              "Command": "1 (>B:SAFETY_ELT_1_ON)",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 6"
-          },
-          "GUID": "06a11c10-80fa-4efb-8db4-0309fd541831",
-          "Active": true,
-          "Name": "DME",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>K:TOGGLE_SPEAKER)",
-              "PresetId": "3f02d528-b3a6-434a-8e1e-cc51dc247ef0",
+            "onRelease": {
+              "Command": "1 (>B:SAFETY_ELT_1_ARM) ",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 40"
-          },
-          "GUID": "b7952c20-6931-4020-9313-40b076c972ae",
-          "Active": true,
-          "Name": "SPR",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "2 (>K:COPILOT_TRANSMITTER_SET)\n2 (>K:PILOT_TRANSMITTER_SET)",
-              "PresetId": "f7641dde-c79e-440f-888d-17061ea7b0a4",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 48"
-          },
-          "GUID": "a97b202a-d4c3-44bb-88d6-213ddc35a7fc",
-          "Active": true,
-          "Name": "COM3",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "1 (>K:PILOT_TRANSMITTER_SET)\n1 (>K:COPILOT_TRANSMITTER_SET)\n",
-              "PresetId": "f7641dde-c79e-440f-888d-17061ea7b0a4",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 50"
-          },
-          "GUID": "2c8ab5df-7752-44f1-a220-073b873263ef",
-          "Active": true,
-          "Name": "COM2",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "0 (>K:PILOT_TRANSMITTER_SET)\n0 (>K:COPILOT_TRANSMITTER_SET)",
-              "PresetId": "f7641dde-c79e-440f-888d-17061ea7b0a4",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 52"
-          },
-          "GUID": "ec5a8d3c-2f0c-416c-bbd5-d2c5eb576eec",
-          "Active": true,
-          "Name": "COM1",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "0 (>K:PILOT_TRANSMITTER_SET)\n1 (>K:COPILOT_TRANSMITTER_SET)",
-              "PresetId": "f7641dde-c79e-440f-888d-17061ea7b0a4",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 49"
-          },
-          "GUID": "1359e6db-d880-46ed-b1ea-d2aacfc042bb",
-          "Active": true,
-          "Name": "COM1/2",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "1 (>K:PILOT_TRANSMITTER_SET)\n0 (>K:COPILOT_TRANSMITTER_SET)",
-              "PresetId": "f7641dde-c79e-440f-888d-17061ea7b0a4",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 51"
-          },
-          "GUID": "9589e042-e60a-4e6b-849d-fc85c1e6bf23",
-          "Active": true,
-          "Name": "COM2/1",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "4 (>K:PILOT_TRANSMITTER_SET)\n5 (>K:COPILOT_TRANSMITTER_SET)",
-              "PresetId": "7c26ad0e-9031-4109-a086-fdcf9b1c75bb",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "GUID": "e2ab172b-bb0a-4d10-b737-55c26cd72510",
-          "Active": true,
-          "Name": "TEL",
-          "Type": "InputConfigItem",
-          "Controller": null
-        }
-      ]
-    },
-    {
-      "Label": "KT78C",
-      "FileName": null,
-      "ReferenceOnly": false,
-      "EmbedContent": true,
-      "ConfigItems": [
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>K:XPNDR_IDENT_TOGGLE)",
-              "PresetId": "e813249a-5730-4972-a27c-022d97ae5a55",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 53"
-          },
-          "GUID": "903475cb-f8a9-4bf5-88bd-1a65ce7e46c1",
-          "Active": true,
-          "Name": "IDENT",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:Transponder0)",
-              "PresetId": "2b07b723-64b0-44c1-9bdf-f6193c10bf05",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 17"
-          },
-          "GUID": "5b13e2ec-c103-4ec0-acc5-88b00cf59ce6",
-          "Active": true,
-          "Name": "XPNDR 0",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:Transponder1)",
-              "PresetId": "09ddd15e-a50f-4f62-9532-3fd306f996cb",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 16"
-          },
-          "GUID": "1ba77345-b698-4545-8804-fe0d91c57db8",
-          "Active": true,
-          "Name": "XPNDR 1",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:Transponder2)",
-              "PresetId": "1eb9ae7f-c95d-443c-ba87-dd3810fe6216",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 18"
-          },
-          "GUID": "998c6590-6462-47be-976c-f0655cbf1ccc",
-          "Active": true,
-          "Name": "XPNDR 2",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:Transponder3)",
-              "PresetId": "8f2a5b95-d06d-4156-af6c-f294e2d1438a",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 19"
-          },
-          "GUID": "298f7ee8-8eb8-480d-ba81-ff4656ee715a",
-          "Active": true,
-          "Name": "XPNDR 3",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:Transponder4)",
-              "PresetId": "a0777872-878e-4d48-ac84-34e87c041930",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 20"
-          },
-          "GUID": "d7708111-3342-4e9c-b397-d8e25e42ecd4",
-          "Active": true,
-          "Name": "XPNDR 4",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:Transponder5)",
-              "PresetId": "99255895-102e-41b9-8763-2fc144768ed0",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 21"
-          },
-          "GUID": "955f7754-d904-4326-9335-cdb605266c23",
-          "Active": true,
-          "Name": "XPNDR 5",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:Transponder6)",
-              "PresetId": "38faa3cf-4058-454e-b486-f1726aeef8e6",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 22"
-          },
-          "GUID": "03531580-bf8f-4082-8d10-e41ddd5e1829",
-          "Active": true,
-          "Name": "XPNDR 6",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:Transponder7)",
-              "PresetId": "611e1dee-1148-4196-8a43-0d691368b979",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 24"
-          },
-          "GUID": "ffeb55ed-78a5-41ff-92a2-3a17e5493601",
-          "Active": true,
-          "Name": "XPNDR 7",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "0 (>A:TRANSPONDER STATE:1, Enum)",
-              "PresetId": "6902c298-52d6-41b2-9ed5-14c6f7aafe66",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 26"
-          },
-          "GUID": "c348ebc2-565b-4a1f-b939-d8a82b57a6de",
-          "Active": true,
-          "Name": "OFF",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "1 (>A:TRANSPONDER STATE:1, Enum)",
-              "PresetId": "6bb83f0e-6466-4cc1-9f3d-26c205a340a5",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 27"
-          },
-          "GUID": "8e682f6b-8ac7-4f9a-9442-dc0428f16f06",
-          "Active": true,
-          "Name": "STBY",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "2 (>A:TRANSPONDER STATE:1, Enum)",
-              "PresetId": "9f327640-f61f-4492-a224-589bdeac983a",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 30"
-          },
-          "GUID": "539ae676-e18c-4541-b65c-29b52d1e0274",
-          "Active": true,
-          "Name": "TST",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "3 (>A:TRANSPONDER STATE:1, Enum)",
-              "PresetId": "f93b81d9-73f3-4734-a9b6-08f9684f179b",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 28"
-          },
-          "GUID": "acc0a3fe-b909-4ced-ab29-aba169733519",
-          "Active": true,
-          "Name": "ON",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "4 (>A:TRANSPONDER STATE:1, Enum)",
-              "PresetId": "22f6b23a-79cd-4761-b066-b2bc1a309df6",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 29"
-          },
-          "GUID": "33e48116-4c76-497f-8d85-ba55dda06062",
-          "Active": true,
-          "Name": "ALT",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:TransponderCLR)",
-              "PresetId": "e5082fa3-af6a-40bf-aff0-c5163c00aa28",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 23"
-          },
-          "GUID": "bba84c07-3827-4796-9781-926d3dbae056",
-          "Active": true,
-          "Name": "CLR",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:TransponderVFR)",
-              "PresetId": "cb4278d8-5c94-47b1-bb60-958da077feb6",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 25"
-          },
-          "GUID": "82ade648-eff8-4aa4-9339-f46b4e878f15",
-          "Active": true,
-          "Name": "VFR",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        }
-      ]
-    },
-    {
-      "Label": "KAP140",
-      "FileName": null,
-      "ReferenceOnly": false,
-      "EmbedContent": true,
-      "ConfigItems": [
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:KAP140_Push_AP)",
-              "PresetId": "b5d5d0f7-2622-454c-b8c8-981d6bda5f3b",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 31"
-          },
-          "GUID": "35b2f988-32b0-4614-b2c8-43c39d485d08",
-          "Active": true,
-          "Name": "AP",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>H:KAP140_Knob_Inner_DEC)",
-              "PresetId": "eefc1077-93cb-46f5-8ac4-4d6781505aae",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>H:KAP140_Knob_Inner_INC)",
-              "PresetId": "1f668a5a-7a1d-4666-aa5e-7bf5b8a2662a",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder"
-          },
-          "GUID": "69050e4c-e622-4ab2-adfe-24b6932abaa6",
-          "Active": true,
-          "Name": "Knob Inner",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>H:KAP140_Knob_Outer_DEC)",
-              "PresetId": "1b3ff687-62f6-4c35-9c7e-e8dfead098d3",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>H:KAP140_Knob_Outer_INC)",
-              "PresetId": "13ba2864-6ed1-42ea-96a5-cc2471a85d2f",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "Encoder 1"
-          },
-          "GUID": "2f86f33d-ae9e-4236-a692-bcfdad700ffb",
-          "Active": true,
-          "Name": "Knob Outer",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:KAP140_Push_HDG)",
-              "PresetId": "0c5bdc9c-95f4-47ae-9f8f-3b1531321483",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 12"
-          },
-          "GUID": "db50de92-ab4a-4992-943d-1939bc84b760",
-          "Active": true,
-          "Name": "HDG",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:KAP140_Push_NAV)",
-              "PresetId": "bd1c903e-cd11-4f2f-91fa-c54696278b73",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 11"
-          },
-          "GUID": "1cee2787-77cf-40d3-9375-d968504883a7",
-          "Active": true,
-          "Name": "NAV",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:KAP140_Push_APR)",
-              "PresetId": "91d01ded-64c1-43ee-9620-29cecdb7ee1d",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -2897,25 +165,85 @@
             "Type": "Button",
             "Name": "Button 10"
           },
-          "GUID": "86112324-f9e1-4492-85c4-0e03fe747690",
+          "GUID": "412a414b-8084-42f7-958f-e5e90fbe3453",
           "Active": true,
-          "Name": "APR",
+          "Name": "ELT ON",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:KAP140_Push_REV)",
-              "PresetId": "0890b69d-5c75-4f8e-a59a-6febeb0b5366",
+              "Command": "0 (>B:ELECTRICAL_BATTERY_STBY_2_Set)",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
+            "onRelease": {
+              "Command": "1 (>B:ELECTRICAL_BATTERY_STBY_2_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 2"
+          },
+          "GUID": "89857221-6946-4c1f-a6f6-8f838858ccea",
+          "Active": true,
+          "Name": "STBY BATT ON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "2 (>B:ELECTRICAL_BATTERY_STBY_2_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRelease": {
+              "Command": "1 (>B:ELECTRICAL_BATTERY_STBY_2_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 4"
+          },
+          "GUID": "b2f33abc-b15b-4c1e-b4d3-d9f34801d967",
+          "Active": true,
+          "Name": "STDBY BATT TEST",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:BEACON_LIGHTS_ON)",
+              "PresetId": "876cc2ca-f2f3-4976-b127-2de104ad6ff8",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRelease": {
+              "Command": "(>K:BEACON_LIGHTS_OFF)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -2924,25 +252,85 @@
             "Type": "Button",
             "Name": "Button 9"
           },
-          "GUID": "a8192c37-64b2-44f3-8059-771e0344a825",
+          "GUID": "9c045b16-5e84-40e8-9fb2-e8e19f7fd9a5",
           "Active": true,
-          "Name": "REV",
+          "Name": "BEACON LIGHT",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:KAP140_Push_ALT)",
-              "PresetId": "bb49f877-aec6-4255-8cb1-abbbf05633fe",
+              "Command": "1 1 (>K:2:LANDING_LIGHTS_SET) 1 (>L:LIGHTING_LANDING_1)",
+              "PresetId": "af7fdf6b-1681-4921-b9cb-9a9ec96e539b",
               "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
+            "onRelease": {
+              "Command": "1 0 (>K:2:LANDING_LIGHTS_SET) 0 (>L:LIGHTING_LANDING_1)",
+              "PresetId": "453ea54e-8b38-4186-9755-d4f57e3d9df8",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 6"
+          },
+          "GUID": "495da851-3b5b-43cd-aee6-7f61e538c9af",
+          "Active": true,
+          "Name": "LAND LIGHT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "1 (>K:TAXI_LIGHTS_SET)",
+              "PresetId": "de6a10e9-de1b-41ca-90bc-77b5faf9f660",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRelease": {
+              "Command": "0 (>K:TAXI_LIGHTS_SET)",
+              "PresetId": "d4c024a6-e293-441d-84f8-e26c3ec13f7f",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button"
+          },
+          "GUID": "f366e644-892f-4fa3-bc9d-df8c7f15e91b",
+          "Active": true,
+          "Name": "TAXI LIGHT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "1 (>K:NAV_LIGHTS_SET)",
+              "PresetId": "4d3c4792-81b2-4170-a177-c63452540194",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRelease": {
+              "Command": "0 (>K:NAV_LIGHTS_SET)",
+              "PresetId": "1b199647-edfa-40f1-b2ca-8b004598c403",
+              "Type": "MSFS2020CustomInputAction"
+            },
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -2951,52 +339,114 @@
             "Type": "Button",
             "Name": "Button 8"
           },
-          "GUID": "a903c4a5-0211-4d26-b872-6debda1cd350",
+          "GUID": "ae0250ae-961f-44da-9362-65dbbd766ed4",
           "Active": true,
-          "Name": "ALT",
+          "Name": "NAV LIGHT",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:KAP140_Push_UP)",
-              "PresetId": "1c5c5184-fdc8-4490-bd3e-207b6c0f49cf",
+              "Command": "(>K:STROBES_ON)",
+              "PresetId": "4e4e5190-4ce5-4bb4-83e1-4f01857b4102",
               "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
+            "onRelease": {
+              "Command": "(>K:STROBES_OFF)",
+              "PresetId": "1b89a2d8-6ffc-41bc-abd3-9bcff681e8a2",
+              "Type": "MSFS2020CustomInputAction"
+            },
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
           },
           "Device": {
             "Type": "Button",
-            "Name": "Button 13"
+            "Name": "Button 3"
           },
-          "GUID": "9235e9de-e1d3-4082-b7fa-db146da5b39f",
+          "GUID": "2da4247a-8f73-4715-bbd0-66822fe0e67b",
           "Active": true,
-          "Name": "UP",
+          "Name": "STROBE LIGHT",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:KAP140_Push_DN)",
-              "PresetId": "517b2a48-18ec-4ff9-9949-4d05a1c03cd6",
+              "Command": "1 (>B:FUEL_PUMP_1_ON)",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
+            "onRelease": {
+              "Command": "1 (>B:FUEL_PUMP_1_OFF)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 5"
+          },
+          "GUID": "a6a80b40-b901-4b73-bb32-d29b88f900ae",
+          "Active": true,
+          "Name": "FUEL PUMP",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(A:PITOT HEAT, Bool) 0 == if{ (>K:PITOT_HEAT_TOGGLE) }",
+              "PresetId": "46097dd2-4ce5-49bb-94c3-16fefc1cd29a",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRelease": {
+              "Command": "(A:PITOT HEAT, Bool) 1 == if{ (>K:PITOT_HEAT_TOGGLE) }",
+              "PresetId": "d439d6fe-1fab-47a3-8efe-bf1ae93a1833",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 1"
+          },
+          "GUID": "7dbc0638-96ef-43d8-b2c5-974fafa24f2d",
+          "Active": true,
+          "Name": "PITOT HEAT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "1 (>B:ELECTRICAL_ELECTRICAL_SWITCH_POWER12V_ON)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRelease": {
+              "Command": "1 (>B:ELECTRICAL_ELECTRICAL_SWITCH_POWER12V_OFF)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -3005,633 +455,14 @@
             "Type": "Button",
             "Name": "Button 7"
           },
-          "GUID": "e39602f4-1f95-444b-882e-3824be0296b8",
+          "GUID": "b12896ff-a9b5-48fb-bf98-aabf59bcafda",
           "Active": true,
-          "Name": "DN",
+          "Name": "CABIN PWR 12V",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
           }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:KAP140_Push_BARO)",
-              "PresetId": "ed596e47-f596-4b4f-a9c1-fa379166fc57",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": {
-              "Command": "(>H:KAP140_Long_Push_BARO)",
-              "PresetId": "3ec0df79-66cb-4104-90bb-62564ec14e10",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 15"
-          },
-          "GUID": "e1e030a3-445b-428c-9836-be31bae418a5",
-          "Active": true,
-          "Name": "BARO",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:KAP140_Push_ARM)",
-              "PresetId": "eeb07e96-7eb7-4c3b-8d81-15b2705ae03a",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 15"
-          },
-          "GUID": "30d8bc81-0798-4ca1-ae22-e5315b05898e",
-          "Active": true,
-          "Name": "ARM",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "Avionics",
-            "Serial": "SN-4F6-017"
-          }
-        }
-      ]
-    },
-    {
-      "Label": "GNS430",
-      "FileName": null,
-      "ReferenceOnly": false,
-      "EmbedContent": true,
-      "ConfigItems": [
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_COMSWAP_Push)",
-              "PresetId": "6c751e63-382f-4fb9-bbfd-2ca219fdc9dd",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_11"
-          },
-          "GUID": "85a24899-b226-44d7-84a1-426a44eec6ce",
-          "Active": true,
-          "Name": "AS430 - COM Swap",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_NAVSWAP_Push)",
-              "PresetId": "2856cad2-e99f-4c29-9167-026edaaa6ec2",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_13"
-          },
-          "GUID": "f739675a-94d5-45e9-8dfc-d8618c624a87",
-          "Active": true,
-          "Name": "AS430 - NAV Swap",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>H:AS430_LeftLargeKnob_Left)",
-              "PresetId": "faada33d-46c4-4431-b50e-cd5c60c9e0c6",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>H:AS430_LeftLargeKnob_Right)",
-              "PresetId": "0d90bd9b-eb7d-49d6-8c53-594bc9428d2c",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "ENCODER_EXT_3"
-          },
-          "GUID": "e34368c0-7624-4601-8dc5-8dd9d072b2ab",
-          "Active": true,
-          "Name": "AS430 - Left Large Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>H:AS430_LeftSmallKnob_Left)",
-              "PresetId": "0434ceaf-025c-409d-8b64-7f2798dadc86",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>H:AS430_LeftSmallKnob_Right)",
-              "PresetId": "60010378-de7e-4518-a50b-d5edc2258e65",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "ENCODER_EXT_4"
-          },
-          "GUID": "f74b5a47-6387-4f04-ac91-181ec494f383",
-          "Active": true,
-          "Name": "AS430 - Left Small Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_LeftSmallKnob_Push)",
-              "PresetId": "d4cfac5e-b1b2-4c82-be82-8e3a977c1724",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_14"
-          },
-          "GUID": "3e8cd93f-5ab2-439f-afa8-09ee3635af03",
-          "Active": true,
-          "Name": "AS430 - Push CV",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_CDI_Push)",
-              "PresetId": "34b8a1df-8586-450e-8dcf-e5ecd1bc822b",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_15"
-          },
-          "GUID": "d6d12340-e8fe-447f-9e0c-c49955b12cc0",
-          "Active": true,
-          "Name": "AS430 - CDI",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_OBS_Push)",
-              "PresetId": "b08a9184-9c16-4404-9ae5-e894e9e8ec17",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_12"
-          },
-          "GUID": "fb564cd4-3eb7-431d-a18b-e5b8558b870a",
-          "Active": true,
-          "Name": "AS430 - OBS",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_MSG_Push)",
-              "PresetId": "efe59f1f-1267-4809-a00d-73d125ebb9ea",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_10"
-          },
-          "GUID": "87649577-a128-42b4-b77e-e63521aaed09",
-          "Active": true,
-          "Name": "AS430 - MSG",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_FPL_Push)",
-              "PresetId": "b77171d9-0a54-44c3-a7e8-6db807f4fed4",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_9"
-          },
-          "GUID": "42913ed7-813a-4f27-a18e-203f8d53a065",
-          "Active": true,
-          "Name": "AS430 - FPL",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_PROC_Push)",
-              "PresetId": "8944e46e-8139-49ca-904a-5be0a09e644a",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_8"
-          },
-          "GUID": "b3bac26f-e350-452f-a4dd-fa278ab5685e",
-          "Active": true,
-          "Name": "AS430 - PROC",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_RNG_Zoom)",
-              "PresetId": "f1267eba-d875-4a15-89c6-fc5082f53735",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_1"
-          },
-          "GUID": "acf4bfb4-6b4a-46d5-91b2-b6fbc53c0f76",
-          "Active": true,
-          "Name": "AS430 - Range Zoom",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_RNG_Dezoom)",
-              "PresetId": "f30011f3-b3a6-49ac-a8da-b1d75ae2e054",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_2"
-          },
-          "GUID": "7abe470f-7521-4019-85d4-580c6ef3206f",
-          "Active": true,
-          "Name": "AS430 - Range Dezoom",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_DirectTo_Push)",
-              "PresetId": "a5309e62-d49e-4cf5-beed-766310a11f4d",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_5"
-          },
-          "GUID": "e7c394e0-4d19-4f01-bd3a-8a76d1f55d65",
-          "Active": true,
-          "Name": "AS430 - Direct To",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_MENU_Push)",
-              "PresetId": "09eb8aeb-e6f8-4844-a302-b938167c0400",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_3"
-          },
-          "GUID": "e46e34f9-dcd4-40c8-87cf-25e4f1b435cc",
-          "Active": true,
-          "Name": "AS430 - Menu",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_CLR_Push)",
-              "PresetId": "e85fa675-cf15-4269-8f7e-398f161417ee",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": {
-              "Command": "(>H:AS430_CLR_Push_Long)",
-              "PresetId": "4a79de15-5185-48d4-972f-0bb3ef3f98f7",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_7"
-          },
-          "GUID": "28169b83-8453-4709-a468-699f76951806",
-          "Active": true,
-          "Name": "AS430 - CLR",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_ENT_Push)",
-              "PresetId": "b40e333b-3c84-4a45-bdc6-06e746153885",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_6"
-          },
-          "GUID": "34b7e338-c511-48eb-ada8-dabe556c3496",
-          "Active": true,
-          "Name": "AS430 - ENT",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>H:AS430_RightLargeKnob_Left)",
-              "PresetId": "4d43af5c-7d8b-4849-a03f-93a6b6fbeb39",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>H:AS430_RightLargeKnob_Right)",
-              "PresetId": "4e92d309-e2f7-487c-991c-f6ee5532ac20",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "ENCODER_EXT_1"
-          },
-          "GUID": "ff6679db-0fc7-4d4f-9d28-2b3584f321e5",
-          "Active": true,
-          "Name": "AS430 - Right Large Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          }
-        },
-        {
-          "encoder": {
-            "onLeft": {
-              "Command": "(>H:AS430_RightSmallKnob_Left)",
-              "PresetId": "24411cb4-4c7d-4092-91d1-b0f162bf2889",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onLeftFast": null,
-            "onRight": {
-              "Command": "(>H:AS430_RightSmallKnob_Right)",
-              "PresetId": "8978043f-c3ba-48b3-9009-c0c276c3cd1c",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRightFast": null
-          },
-          "Device": {
-            "Type": "Encoder",
-            "Name": "ENCODER_EXT_2"
-          },
-          "GUID": "68921606-125e-4e9c-ab9e-31243a388c1a",
-          "Active": true,
-          "Name": "AS430 - Right Small Knob",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "LEFT",
-          "Value": "0"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>H:AS430_RightSmallKnob_Push)",
-              "PresetId": "e831393e-d469-46ee-8ba5-89aa91524808",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BUTTON_EXT_4"
-          },
-          "GUID": "295aa693-4414-40ff-b4cc-288bb43ea470",
-          "Active": true,
-          "Name": "AS430 - Push CRSR",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "GNS",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": "1"
         }
       ]
     }

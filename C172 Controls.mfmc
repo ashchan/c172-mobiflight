@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>C172 Controls</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <AnalogInput Name="Analog Input" Pin="54" Sensitivity="5" />
+  <AnalogInput Name="Analog Input 1" Pin="55" Sensitivity="5" />
+  <AnalogInput Name="Analog Input 2" Pin="56" Sensitivity="5" />
+  <AnalogInput Name="Analog Input 3" Pin="57" Sensitivity="5" />
+  <Button Name="Button" Pin="31" />
+  <Button Name="Button 1" Pin="30" />
+  <Button Name="Button 2" Pin="29" />
+  <Button Name="Button 3" Pin="28" />
+  <Button Name="Button 4" Pin="27" />
+  <Button Name="Button 5" Pin="26" />
+  <Button Name="Button 6" Pin="25" />
+  <Button Name="Button 7" Pin="24" />
+  <Button Name="Button 8" Pin="23" />
+  <Button Name="Button 9" Pin="22" />
+  <Output Name="Output" Pin="47" />
+  <Output Name="Output 1" Pin="46" />
+  <Button Name="Button 10" Pin="20" />
+</Config>
