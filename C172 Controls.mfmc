@@ -20,4 +20,5 @@
   <Output Name="Output" Pin="47" />
   <Output Name="Output 1" Pin="46" />
   <Button Name="Button 10" Pin="20" />
+  <Servo Name="Servo" DataPin="44" />
 </Config>

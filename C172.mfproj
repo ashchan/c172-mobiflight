@@ -463,6 +463,53 @@
             "Name": "C172 Controls",
             "Serial": "SN-9FB-4DA"
           }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:TRAILING EDGE FLAPS LEFT PERCENT, Percent)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 255.0
+          },
+          "Device": {
+            "Name": "Servo",
+            "Address": "Servo",
+            "Min": "0",
+            "Max": "255",
+            "MaxRotationPercent": "22",
+            "Type": "Servo"
+          },
+          "DeviceType": "Servo",
+          "DeviceName": "Servo",
+          "GUID": "7d6c9543-a15a-417c-b8f6-e4677ec36492",
+          "Active": true,
+          "Name": "FLAP INDICATOR",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "0": 0.0,
+                  "100": 255.0
+                },
+                "Count": 2,
+                "Max": 255.0,
+                "Min": 0.0,
+                "Active": true
+              }
+            ]
+          }
         }
       ]
     }
