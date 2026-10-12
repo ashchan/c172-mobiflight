@@ -510,6 +510,90 @@
               }
             ]
           }
+        },
+        {
+          "analog": {
+            "onChange": {
+              "Command": "@ 100 * 1023 / (>B:LIGHTING_PANEL_1_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "Analog Input"
+          },
+          "GUID": "a1edef78-8b0f-4b0a-b063-2e4348da09b3",
+          "Active": true,
+          "Name": "SW/CB PANELS Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
+          }
+        },
+        {
+          "analog": {
+            "onChange": {
+              "Command": "@ 100 * 1023 / (>B:LIGHTING_PANEL_2_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "Analog Input 1"
+          },
+          "GUID": "c8e4263c-f345-424f-8759-6f7c98a98796",
+          "Active": true,
+          "Name": "STBY IND Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
+          }
+        },
+        {
+          "analog": {
+            "onChange": {
+              "Command": "@ 15 - 10 / near  0 max 100 min s0 (>L:LIGHTING_PEDESTRAL_1) \nl0 1 (>K:2:PEDESTRAL_LIGHTS_POWER_SETTING_SET) \nl2 ! 1 l0 (>K:2:PEDESTRAL_LIGHTS_SET) ",
+              "PresetId": "2201a126-7741-4cf4-917c-93c9dda7e155",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "Analog Input 2"
+          },
+          "GUID": "28611732-18e7-42d7-a1a2-3f5101f4c845",
+          "Active": true,
+          "Name": "PEDESTAL Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
+          }
+        },
+        {
+          "analog": {
+            "onChange": {
+              "Command": "@ 100 * 1023 / (>B:LIGHTING_POTENTIOMETER_5_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "Analog Input 3"
+          },
+          "GUID": "0af4d32a-dccf-423a-b561-e1e8e80bb3ad",
+          "Active": true,
+          "Name": "AVIONICS Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "C172 Controls",
+            "Serial": "SN-9FB-4DA"
+          }
         }
       ]
     }
