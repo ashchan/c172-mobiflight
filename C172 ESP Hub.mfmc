@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Config>
   <ModuleType>C172 ESP Hub ESP32-S3</ModuleType>
   <ModuleName>C172 ESP Hub</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
   <CustomDevice Name="Sixpack" CustomType="C172_ESP_HUB" Pins="" Config="">
     <ConfiguredPins />
   </CustomDevice>
+  <Encoder Name="ALT_BARO" PinLeft="1" PinRight="2" EncoderType="0" />
+  <Encoder Name="AIRSPEED_TAPE" PinLeft="4" PinRight="5" EncoderType="0" />
+  <Encoder Name="ATTITUDE_REF" PinLeft="6" PinRight="7" EncoderType="0" />
 </Config>

@@ -761,7 +761,7 @@
           "Source": {
             "SimConnectValue": {
               "UUID": "0",
-              "Value": "(A:AIRSPEED TRUE CALIBRATE, degrees) -3.333333 * 5 +",
+              "Value": "(A:AIRSPEED TRUE CALIBRATE, degrees) 0 max 30 min -3.333333 * 5 +",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -792,7 +792,7 @@
           "Source": {
             "SimConnectValue": {
               "UUID": "0",
-              "Value": "(A:ATTITUDE BARS POSITION, percent over 100) -35 *",
+              "Value": "(A:ATTITUDE BARS POSITION, percent over 100) -35 * 3 -",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -845,6 +845,84 @@
           "Active": true,
           "Name": "Hub Attitude Fail Flag",
           "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "C172 ESP Hub",
+            "Serial": "SN-D00FDC1D0470"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Command": "0 (>K:KOHLSMAN_DEC)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "0 (>K:KOHLSMAN_INC)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ALT_BARO"
+          },
+          "GUID": "913cac5d-ca66-406d-a779-f57c123dffd5",
+          "Active": true,
+          "Name": "Hub Altimeter Baro Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "C172 ESP Hub",
+            "Serial": "SN-D00FDC1D0470"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Command": "(A:AIRSPEED TRUE CALIBRATE, degrees) 0.25 - 0 max 30 min (>A:AIRSPEED TRUE CALIBRATE, degrees)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "(A:AIRSPEED TRUE CALIBRATE, degrees) 0.25 + 0 max 30 min (>A:AIRSPEED TRUE CALIBRATE, degrees)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "AIRSPEED_TAPE"
+          },
+          "GUID": "35a5c6bc-7a58-407c-965a-824b05d8606d",
+          "Active": true,
+          "Name": "Hub Airspeed Calibration Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "C172 ESP Hub",
+            "Serial": "SN-D00FDC1D0470"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Command": "(A:ATTITUDE BARS POSITION, percent) 4 - -100 max 100 min 0 (>K:2:ATTITUDE_BARS_POSITION_SET)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "(A:ATTITUDE BARS POSITION, percent) 4 + -100 max 100 min 0 (>K:2:ATTITUDE_BARS_POSITION_SET)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ATTITUDE_REF"
+          },
+          "GUID": "fd154b52-d47d-4075-b0f5-fd836b7e546e",
+          "Active": true,
+          "Name": "Hub Attitude Reference Knob",
+          "Type": "InputConfigItem",
           "Controller": {
             "Name": "C172 ESP Hub",
             "Serial": "SN-D00FDC1D0470"
