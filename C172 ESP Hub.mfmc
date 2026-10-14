@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>C172 ESP Hub ESP32-S3</ModuleType>
+  <ModuleName>C172 ESP Hub</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <CustomDevice Name="Sixpack" CustomType="C172_ESP_HUB" Pins="" Config="">
+    <ConfiguredPins />
+  </CustomDevice>
+</Config>

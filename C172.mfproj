@@ -596,6 +596,261 @@
           }
         }
       ]
+    },
+    {
+      "Label": "Hub",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:INDICATED ALTITUDE:1, feet)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "Sixpack",
+            "CustomName": "Sixpack",
+            "MessageType": 0,
+            "Value": "$",
+            "Type": "CustomDevice"
+          },
+          "DeviceType": "CustomDevice",
+          "DeviceName": "Sixpack",
+          "GUID": "de671e90-7917-4638-9c38-043649b09964",
+          "Active": true,
+          "Name": "Hub Altitude",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "C172 ESP Hub",
+            "Serial": "SN-D00FDC1D0470"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:KOHLSMAN SETTING HG:1, inHg)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "Sixpack",
+            "CustomName": "Sixpack",
+            "MessageType": 1,
+            "Value": "$",
+            "Type": "CustomDevice"
+          },
+          "DeviceType": "CustomDevice",
+          "DeviceName": "Sixpack",
+          "GUID": "97721af1-2f89-435c-8f88-ebd88c11a5ec",
+          "Active": true,
+          "Name": "Hub Baro",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "C172 ESP Hub",
+            "Serial": "SN-D00FDC1D0470"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AIRSPEED INDICATED, knots)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "Sixpack",
+            "CustomName": "Sixpack",
+            "MessageType": 2,
+            "Value": "$",
+            "Type": "CustomDevice"
+          },
+          "DeviceType": "CustomDevice",
+          "DeviceName": "Sixpack",
+          "GUID": "4eb1d315-2e5c-4a34-a7a3-11f4048dffb2",
+          "Active": true,
+          "Name": "Hub Airspeed",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "C172 ESP Hub",
+            "Serial": "SN-D00FDC1D0470"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:PLANE PITCH DEGREES, degrees) -1 *",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "Sixpack",
+            "CustomName": "Sixpack",
+            "MessageType": 3,
+            "Value": "$",
+            "Type": "CustomDevice"
+          },
+          "DeviceType": "CustomDevice",
+          "DeviceName": "Sixpack",
+          "GUID": "925b4e77-8e4f-4806-afaf-0ad17d5b2352",
+          "Active": true,
+          "Name": "Hub Pitch",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "C172 ESP Hub",
+            "Serial": "SN-D00FDC1D0470"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:PLANE BANK DEGREES, degrees)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "Sixpack",
+            "CustomName": "Sixpack",
+            "MessageType": 4,
+            "Value": "$",
+            "Type": "CustomDevice"
+          },
+          "DeviceType": "CustomDevice",
+          "DeviceName": "Sixpack",
+          "GUID": "3fb2d3e1-aee6-4c84-86fa-50ff3da65200",
+          "Active": true,
+          "Name": "Hub Bank",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "C172 ESP Hub",
+            "Serial": "SN-D00FDC1D0470"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:AIRSPEED TRUE CALIBRATE, degrees) -3.333333 * 5 +",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "Sixpack",
+            "CustomName": "Sixpack",
+            "MessageType": 5,
+            "Value": "$",
+            "Type": "CustomDevice"
+          },
+          "DeviceType": "CustomDevice",
+          "DeviceName": "Sixpack",
+          "GUID": "78f288a9-40fa-43b5-93d0-93602ee6261e",
+          "Active": true,
+          "Name": "Hub Airspeed Tape",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "C172 ESP Hub",
+            "Serial": "SN-D00FDC1D0470"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:ATTITUDE BARS POSITION, percent over 100) -35 *",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "Sixpack",
+            "CustomName": "Sixpack",
+            "MessageType": 6,
+            "Value": "$",
+            "Type": "CustomDevice"
+          },
+          "DeviceType": "CustomDevice",
+          "DeviceName": "Sixpack",
+          "GUID": "53b64c03-ff7d-463d-bfa7-c797ebccccea",
+          "Active": true,
+          "Name": "Hub Attitude Plane Symbol",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "C172 ESP Hub",
+            "Serial": "SN-D00FDC1D0470"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:SUCTION PRESSURE, inHg) 1 <=",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "Sixpack",
+            "CustomName": "Sixpack",
+            "MessageType": 7,
+            "Value": "$",
+            "Type": "CustomDevice"
+          },
+          "DeviceType": "CustomDevice",
+          "DeviceName": "Sixpack",
+          "GUID": "95998759-18d4-4a52-b01e-1f5afad5f2ee",
+          "Active": true,
+          "Name": "Hub Attitude Fail Flag",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "C172 ESP Hub",
+            "Serial": "SN-D00FDC1D0470"
+          }
+        }
+      ]
     }
   ],
   "Sim": "msfs",
